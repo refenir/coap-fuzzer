@@ -1,0 +1,159 @@
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 19254
+Code: EMPTY
+Token: WRFY9KXrlVEESEGTt7J860rsxfdFDjmqGICrE6JLoi1759t5uxl9aytw
+Uri-Path: big
+Payload: 
+HelNH2vQoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 17493
+Code: POST
+Token: zr6jNLadoKJxRAXauCCDxSYGaGHi5haZNqE9GsK1w3LCvZBK96Ca8T
+Uri-Path: child
+Payload: 
+HelmUB3ioAP!
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 997
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 1947
+Code: GET
+Token: UJqxqBBnlm6rGHz2L6GcW7EewfRVsNIzLSZkAKNiWuVWDxOK
+Uri-Path: long
+Payload: 
+HelXxVfnoAP!
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 998
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 56332
+Code: EMPTY
+Token: PTP1ABiQRSgNoLqWXa7Rev9gnCnyURshdfgNfhWbYInf8bsoJ
+Uri-Path: xml
+Payload: 
+HelrEtgcoAP!
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 999
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 60282
+Code: POST
+Token: f1SjFic0X0h6en0rGTTantku1gmOgbqI23K4Kb7RnF
+Uri-Path: big
+Payload: 
+HelG2HvvoAP!
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 1000
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 6825
+Code: PUT
+Token: XGs3aWBBXJwUAAlGlaX9l264wOJ1X0uvGx3UR8yHM3SczLzxtdjKPfTlqoRgL4fcNkdgpOhyxcnymfPu
+Uri-Path: child
+Payload: 
+HeleE3Z4oAP!
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 1001
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 35861
+Code: PUT
+Token: qo1jef6deqrTNfkwQhnjJJ6Y3yzimshLbIasDt7dYjdwG2
+Uri-Path: etag
+Payload: 
+HeltMoRkoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 59496
+Code: PUT
+Token: YXCDpHjJBbpjFi6oBE9YcAhT47IeHti9yns7K6hXRcqhvNO4RS
+Uri-Path: advancedSeparate
+Payload: 
+Hel199FuoAP!
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 790
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 2390
+Code: DELETE
+Token: ZCfp3eysSVfV1PNAkyXUFLEhEqIje
+Uri-Path: etag
+Payload: 
+Helmx8XJoAP!
+

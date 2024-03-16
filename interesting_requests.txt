@@ -1,0 +1,51 @@
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 41149
+Code: EMPTY
+Token: ZyJRgKT5
+Uri-Path: advanced
+Payload: 
+HelQFPOToAP!
+
+OverflowError: cannot fit 'long' into an index-sized integer
+
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 38961
+Code: EMPTY
+Token: tm2Tg3nAQfCc2tw4nn1uUKToX2MLiS03J0QehOGiq2S6I6Efw7TjvnaCtsHy
+Uri-Path: child
+Payload: 
+HelUz9YIoAP!
+
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xb5 in position 32: ordinal not in range(128)
+
+
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 35861
+Code: PUT
+Token: qo1jef6deqrTNfkwQhnjJJ6Y3yzimshLbIasDt7dYjdwG2
+Uri-Path: etag
+Payload: 
+HeltMoRkoAP!
+
+OverflowError: cannot fit 'long' into an index-sized integer
+
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 2390
+Code: DELETE
+Token: ZCfp3eysSVfV1PNAkyXUFLEhEqIje
+Uri-Path: etag
+Payload: 
+Helmx8XJoAP!
+
+UnboundLocalError: local variable 's' referenced before assignment
