@@ -1,20 +1,6 @@
 Request:
 Source: None
 Destination: ('127.0.0.1', 5683)
-Type: RST
-MID: 41149
-Code: EMPTY
-Token: ZyJRgKT5
-Uri-Path: advanced
-Payload: 
-HelQFPOToAP!
-
-OverflowError: cannot fit 'long' into an index-sized integer
-
-
-Request:
-Source: None
-Destination: ('127.0.0.1', 5683)
 Type: NON
 MID: 38961
 Code: EMPTY
@@ -36,6 +22,17 @@ Uri-Path: etag
 Payload: 
 HeltMoRkoAP!
 
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
 OverflowError: cannot fit 'long' into an index-sized integer
 
 Source: None
@@ -48,4 +45,32 @@ Uri-Path: etag
 Payload: 
 Helmx8XJoAP!
 
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
 UnboundLocalError: local variable 's' referenced before assignment
+
+
+('Fuzzing payload:', 'HelHn0KVoAP!')
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 25395
+Code: DELETE
+Token: 7Vy6
+Uri-Path: basic
+Payload: 
+HelHn0KVoAP!
+
+Traceback (most recent call last):
+  File "/coap-fuzzer/coapthon/serializer.py", line 229, in serialize
+    s.pack_into(datagram, 0, *values)
+error: cannot convert argument to integer
