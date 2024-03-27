@@ -9,7 +9,18 @@ Uri-Path: child
 Payload: 
 HelUz9YIoAP!
 
-UnicodeDecodeError: 'ascii' codec can't decode byte 0xb5 in position 32: ordinal not in range(128)
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 335, in convert_to_raw
+    return bytearray(value, "utf-8")
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xb3 in position 39: ordinal not in range(128)
 
 
 Source: None
