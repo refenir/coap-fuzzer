@@ -157,3 +157,506 @@ Uri-Path: etag
 Payload: 
 Helmx8XJoAP!
 
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 44786
+Code: PUT
+Token: jk9OKkkoYI1cXsR1adJfYLtOivnAjklc
+Uri-Path: basic
+Payload: 
+Hell5joqoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 38077
+Code: DELETE
+Token: 7mPxYRBBpPwxR54k
+Uri-Path: big
+Payload: 
+HelS9S8voAP!
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 413
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 36714
+Code: DELETE
+Token: xghob4xEWVa6n1CtDGVHxtxayNnWCbVlAhRHRCf4W47PBA8BPnFDCO9XEyNf0cSGqZmYdR
+Uri-Path: advancedSeparate
+Payload: 
+HelGM0xjoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 41802
+Code: PUT
+Token: IL6SKyavmsmy9lC0Zk8kMjdgIquwwvtD5p6iFeJRv67I
+Uri-Path: advanced
+Payload: 
+HelbACGZoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 28355
+Code: POST
+Token: Z9NnsIeKeVKEGlgOhklNki9F6YDYGfc9sKFIfI6364gQ3X1IP36v7GfwZQsqDqfytJBonHzHqAVzcwrzZiSHGSRz18TT3e
+Uri-Path: big
+Payload: 
+HelRAyvSoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 26565
+Code: GET
+Token: 1YEqLluAeJdS8pXevWhpQj99LqErqxCtVZqoyuHQ20tK5iU
+Uri-Path: advanced
+Payload: 
+Hely5oqEoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 31349
+Code: GET
+Token: 0ZNoIiGw47PjpIzjkWFZMRixIdq3E
+Uri-Path: void
+Payload: 
+HelYO1fLoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 33376
+Code: GET
+Token: Z6IO510IG34aHYj0Gqs7hzeaTM6DaBUn9xgvaraBYlq13HfXYomWiRhgnJXOCsHoZ4pJsb
+Uri-Path: etag
+Payload: 
+HelLbhtooAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 42685
+Code: DELETE
+Token: poHHMNGN803YbdE7N0U3aaZ
+Uri-Path: storage
+Payload: 
+Hel6geNooAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 5867
+Code: PUT
+Token: PCJg
+Uri-Path: storage
+Payload: 
+HelnLTbroAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 65070
+Code: POST
+Token: cLTDlcPdiRTPdFbiaP3NXOp8Xe70ymAz9HcSoRbaJ
+Uri-Path: child
+Payload: 
+HelfUylroAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 22740
+Code: PUT
+Token: NwQa3iOJePoyFI0bpdIjhMWh9
+Uri-Path: child
+Payload: 
+HelSQAUeoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 39049
+Code: EMPTY
+Token: fZSfrhnGBBy9KsYWnvcER1cDLF
+Uri-Path: long
+Payload: 
+Hel4UlhhoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 46815
+Code: GET
+Token: DqAtxqvKqhd3S2lSCNbr9FxhdQqo
+Uri-Path: basic
+Payload: 
+HelibzKLoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 9554
+Code: GET
+Token: tLtNmerkEj7DoiwCHYcs47I4sWnTy8DaOBhtuQSXC9HrySgqWvKKX24OPpBdOSJ7XovKyoUzCONVT
+Uri-Path: long
+Payload: 
+HelBncLRoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 24956
+Code: PUT
+Token: 5vgZ147sga4J3mOBppXbxWOkoIqX
+Uri-Path: separate
+Payload: 
+HelEA3cuoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 31585
+Code: POST
+Token: 8i1BFoflVeo5FaoRDVrBJ3Ojw9CdAkuF2P3DtLzUyQ2SxguF38TPFacvjNMr76DbNO
+Uri-Path: separate
+Payload: 
+HelKq2UIoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 23711
+Code: POST
+Token: Srs5wocmqVod2tx72QIKing72lOm6MWbfXSiL2dcaoiJYW2t15HNZ73upm5CU
+Uri-Path: etag
+Payload: 
+Helf5UkXoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 25027
+Code: DELETE
+Token: O6NO62Qf9d
+Uri-Path: separate
+Payload: 
+Hel8yj6DoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 43764
+Code: POST
+Token: OdQfwnMA9k
+Uri-Path: basic
+Payload: 
+Hel6bB8XoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 41089
+Code: EMPTY
+Token: bVFCU6EhCxomg7HLrFJzuurO
+Uri-Path: separate
+Payload: 
+HelqErhIoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 53815
+Code: GET
+Token: Pt26gRHbDMRzelyEbVdJVVpdmD85lIrDG5cbSSs1FyS2M4qYxGnR19gE4RLqh3aCXXMiQGRPq3TUBOF
+Uri-Path: storage
+Payload: 
+HelXRFh6oAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 62172
+Code: DELETE
+Token: R
+Uri-Path: xml
+Payload: 
+HelHsY6voAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 33681
+Code: POST
+Token: VWt
+Uri-Path: advanced
+Payload: 
+HelpB8LAoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 3057
+Code: EMPTY
+Token: EYjEc1CQBJoRYKFz8YdrVxWZBwYDrufE9H79UCHVu5BBn7VSBVlNm82EINDSi16qMsB5WjETz6x
+Uri-Path: storage
+Payload: 
+HelWFeJJoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 48286
+Code: GET
+Token: n06lMXXwCdJ3uWr
+Uri-Path: etag
+Payload: 
+HelYDeB5oAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 19602
+Code: PUT
+Token: FDmPY8w4nkHXZTSLj6x96cipD0NKqYTYJ8VnJoYnQIK3W5M7psJZkqlsAanYqo5RQHTPFrgzGBk0Doa5v6YskzwNOOzrA
+Uri-Path: storage
+Payload: 
+Hel4V86foAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 39959
+Code: GET
+Token: TOentg
+Uri-Path: separate
+Payload: 
+Helmre9eoAP!
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 981
+Code: CONTENT
+Token: TOentg
+Max-Age: 60
+Payload: 
+Separate
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 24298
+Code: DELETE
+Token: ieUEkd6MckpTCD
+Uri-Path: void
+Payload: 
+HelJMo47oAP!
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 982
+Code: METHOD_NOT_ALLOWED
+Token: ieUEkd6MckpTCD
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 34163
+Code: PUT
+Token: Uo5ftUfaxpotRQDs5NwbQHlLG
+Uri-Path: xml
+Payload: 
+HelipviqoAP!
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 983
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 10201
+Code: PUT
+Token: ZkF1VCmiWMryW8WFsJVxkKb1hDNEYYIgL2ZMG3TFdMlyJq5GTzW
+Uri-Path: separate
+Payload: 
+HelFYYhioAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 3938
+Code: DELETE
+Token: ObcdJa40x7bBhR5ssbx2AdRVCgiTCMsC0A7xQsMnJi4TOvkkI9pn0ZGCetpXbebaJ1jy
+Uri-Path: separate
+Payload: 
+HeleC3k2oAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 28558
+Code: GET
+Token: N90clke7uRbYSbePoPqWYJIVO6LgTpc5jYFLX67sEvqV80cecB3dh81QVDJ2Ozlt4M0ILcjKZ2WvOYv7YeUOzE
+Uri-Path: advancedSeparate
+Payload: 
+HelFystwoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 37042
+Code: POST
+Token: A38rOi37nA0CA8tcxfpt987DhmEQ
+Uri-Path: xml
+Payload: 
+Hel58XmqoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 15753
+Code: POST
+Token: 9g435J0SyA7eYWxqGhv7a01tJSwD7dfl6LOZuHT
+Uri-Path: void
+Payload: 
+HeljgADwoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 22647
+Code: EMPTY
+Token: IoqJp
+Uri-Path: void
+Payload: 
+Hel7gBbEoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 63740
+Code: EMPTY
+Token: eYtEX3VtOr5nhUSkHgGj687BdEn4JjldxrR0xyHAJX6GFiHGhC9eWh8
+Uri-Path: child
+Payload: 
+HelUs6BboAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 39756
+Code: POST
+Token: 4gsfmXicRNb0uIL35Pa
+Uri-Path: storage
+Payload: 
+Hel2Uu5toAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 49850
+Code: DELETE
+Token: vUVqvWZ0nlPKeilYvyUk1DuuOXuXOvzA7yBYOVoWMrlQO2OkVKw0Sl4NcilKx6pZ7cZ0trtl1N3aYJlxOOVRdD4VS
+Uri-Path: encoding
+Payload: 
+HeltBiJHoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 32362
+Code: GET
+Token: P41Hooa7rdssl9eWXGx5ktfDuafFY4gupmg
+Uri-Path: etag
+Payload: 
+Hel73CZFoAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 60854
+Code: GET
+Token: boNqZgIdajDxNppds57huobr0LnxG5j7Bjg1VSkyh8tw2Uxe0pDf
+Uri-Path: void
+Payload: 
+HelzdzmboAP!
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 22261
+Code: GET
+Token: sLAIRrZFqyUL8Mmznsh8GZGgWLjmxmFkq7jaVl6tR40ZYzKi4jJ8wlMj55k4m8
+Uri-Path: basic
+Payload: 
+Hel2XztcoAP!
+
