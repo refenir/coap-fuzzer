@@ -85,3 +85,46 @@ Traceback (most recent call last):
   File "/coap-fuzzer/coapthon/serializer.py", line 229, in serialize
     s.pack_into(datagram, 0, *values)
 error: cannot convert argument to integer
+
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 54529
+Code: POST
+Token: iWVGi09DehNBFsUdUpfPSBm4L4OxJ
+Uri-Path: advancedSeparate
+Accept: 47
+Payload: 
+!ello, CoA
+
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 107, in deserialize
+    message.add_option(option)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/messages/message.py", line 390, in add_option
+    raise TypeError("Option : %s is not repeatable", option.name)
+TypeError: ('Option : %s is not repeatable', 'Block2')
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 225, in receive_request
+    self._requestLayer.receive_request(transaction)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/layers/requestlayer.py", line 25, in receive_request
+    transaction = self._handle_get(transaction)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/layers/requestlayer.py", line 71, in _handle_get
+    transaction = self._server.resourceLayer.get_resource(transaction)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/layers/resourcelayer.py", line 436, in get_resource
+    ret = method(request=transaction.request, response=transaction.response)
+  File "/home/hongbei/Documents/coap-fuzzer/exampleresources.py", line 219, in render_GET_advanced
+    response.payload = self.payload
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/resources/resource.py", line 174, in payload
+    raise KeyError("Content-Type not available")
+KeyError: 'Content-Type not available'
