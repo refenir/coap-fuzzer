@@ -7,11 +7,21 @@ from coapthon.serializer import Serializer
 import subprocess
 import socket
 import random
-import string
 import unicodedata
 from time import sleep
-import threading
+from time import time
 #gdb -ex run -ex backtrace --args python2 coapserver.py -i 127.0.0.1 -p 5683 
+
+timeout = time() + 60
+
+def restart_server():
+    command = ["python2", "coapserver.py"]
+    try:
+        subprocess.Popen(command)
+        print("CoAP server restarted")
+    except Exception as e:
+        print("Error restarting CoAP server", str(e))
+
 class CoAPFuzzer:
     def __init__(self, host, port):
         self.host = host
@@ -31,68 +41,72 @@ class CoAPFuzzer:
     def fuzz_and_send_requests(self, num_requests, num_bytes):
         # server_process = self.run_server(self.host, self.port)
         while True:
-            req = Request()
-            serializer = Serializer()
-            sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-            # check for timeout events
-            sock.settimeout(5)
-            seed = random.choice(self.seed_queue)
-            # generate random request
-            req.type = random.choice([defines.Types["CON"], defines.Types["NON"], defines.Types["ACK"], defines.Types["RST"]])
-            req.mid = random.randint(1, 65535) #required, don't change
-            req.token = self.mutate_input(seed["token"], "token") # If string is 100 letters long, the server will crash
-            #req.options = s
-            req.payload = self.mutate_input(seed["payload"], "payload")
-            req.destination = (self.host, self.port)
-            req.code = random.choice([defines.Codes.GET.number, defines.Codes.POST.number, defines.Codes.PUT.number, defines.Codes.DELETE.number]) # Everytime EMPTY is chosen, the server will give up, but not crash
-            req.uri_path = random.choice(["/basic/", "/storage/", "/separate/", "/long/", "/big/", "/void/", "/xml/", "/encoding/", "/etag/", "/child/", "/advanced/", "/advancedSeparate/", "/"])
-            req.accept = random.choice([defines.Content_types["text/plain"], defines.Content_types["application/link-format"], defines.Content_types["application/xml"], defines.Content_types["application/octet-stream"], defines.Content_types["application/exi"], defines.Content_types["application/json"]])
-            
-            
-            # add discovery/observe mutation if the request is a GET request
-            if req.code == defines.Codes.GET.number:
-                mutate_obs_disc = random.random()
-                if mutate_obs_disc < 0.33:
-                    req.observe = random.randint(0, 1)
-                elif mutate_obs_disc < 0.66:
-                    del req.uri_path
-                    req.uri_path = defines.DISCOVERY_URL
-            print(req.pretty_print())
-            with open ("fuzzed requests.txt", "a") as f:
-                f.write("Request:\n" + req.pretty_print())
-                f.write("\n")
-            
-            datagram = serializer.serialize(req) 
-            sock.sendto(datagram, req.destination)
+            # if time() > timeout:
+            #     break
             try:
+                req = Request()
+                serializer = Serializer()
+                sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+                # check for timeout events
+                sock.settimeout(5)
+                seed = random.choice(self.seed_queue)
+                # generate random request
+                req.type = random.choice([defines.Types["CON"], defines.Types["NON"], defines.Types["ACK"], defines.Types["RST"]])
+                req.mid = random.randint(1, 65535) #required, don't change
+                req.token = self.mutate_input(seed["token"], "token") # If string is 100 letters long, the server will crash
+                #req.options = s
+                req.payload = self.mutate_input(seed["payload"], "payload")
+                req.destination = (self.host, self.port)
+                req.code = random.choice([defines.Codes.GET.number, defines.Codes.POST.number, defines.Codes.PUT.number, defines.Codes.DELETE.number]) # Everytime EMPTY is chosen, the server will give up, but not crash
+                req.uri_path = random.choice(["/basic/", "/storage/", "/separate/", "/long/", "/big/", "/void/", "/xml/", "/encoding/", "/etag/", "/child/", "/advanced/", "/advancedSeparate/", "/"])
+                req.accept = random.choice([defines.Content_types["text/plain"], defines.Content_types["application/link-format"], defines.Content_types["application/xml"], defines.Content_types["application/octet-stream"], defines.Content_types["application/exi"], defines.Content_types["application/json"]])
+            
+                # add discovery/observe mutation if the request is a GET request
+                if req.code == defines.Codes.GET.number:
+                    mutate_obs_disc = random.random()
+                    if mutate_obs_disc < 0.33:
+                        req.observe = random.randint(0, 1)
+                    elif mutate_obs_disc < 0.66:
+                        del req.uri_path
+                        req.uri_path = defines.DISCOVERY_URL
+                print(req.pretty_print())
+                with open ("fuzzed requests.txt", "a") as f:
+                    f.write("Request:\n" + req.pretty_print())
+                    f.write("\n")
+                
+                datagram = serializer.serialize(req) 
+                sock.sendto(datagram, req.destination)
+                #try:
                 datagram, source = sock.recvfrom(4096)
-            except socket.timeout as e:
-                err = e.args[0]
-                if err == "timed out":
-                    sleep(1)
-                    print("Received time out")
-                    self.timeout_count += 1
-                    if self.timeout_count == 2:
-                        self.timeout_count = 0
-                        # print subprocess stdout
-                        server_process = self.run_server(self.host,self.port)
-                        self.close_connection()
-                        sleep(1)
-                    continue
-                else:
-                    print(e)
-                    self.close_connection()
-            except socket.error as e:
-                print(e)
-                self.close_connection()
-            else:   
-                self.timeout_count = 0
-                received_message = serializer.deserialize(datagram, source)# response
+                # except socket.timeout as e:
+                #     err = e.args[0]
+                #     if err == "timed out":
+                #         sleep(1)
+                #         print("Received time out")
+                #         self.timeout_count += 1
+                #         if self.timeout_count == 2:
+                #             self.timeout_count = 0
+                #             # print subprocess stdout
+                #             server_process = self.run_server(self.host,self.port)
+                #             self.close_connection()
+                #             sleep(1)
+                #         continue
+                #     else:
+                #         print(e)
+                #         self.close_connection()
+                # except socket.error as e:
+                #     print(e)
+                #     self.close_connection()
+                # else:   
+                received_message = serializer.deserialize(datagram, source) # response
                 print(received_message.pretty_print())
                 with open ("fuzzed requests.txt", "a") as f:
                     f.write("Received:\n" + received_message.pretty_print())
                     f.write("\n")
-            sleep(0.5)
+                sleep(0.5)
+            except Exception as e:
+                print("Server crashed. Restarting")
+                restart_server()
 
     def close_connection(self):
         self.client.stop()
@@ -174,19 +188,6 @@ class CoAPFuzzer:
     def is_interesting(self, request, response):
 
         pass
-
-    def run_server(self, host, port):
-        print("Running server")
-        run_server_cmd = ["gdb", "-ex", "run", "-ex", "backtrace", "--args", "python2", "coapserver.py", "-i", host, "-p", str(port)]
-        server_process = subprocess.Popen(run_server_cmd) 
-        sleep(1)
-        return server_process
-        # for stdout_line in iter(server_process.stdout.readline, ""):
-        #     yield stdout_line
-        # server_process.stdout.close()
-        # return_code = server_process.wait()
-        # if return_code:
-        #     raise subprocess.CalledProcessError(return_code, run_server_cmd)
 
     
 def main():
