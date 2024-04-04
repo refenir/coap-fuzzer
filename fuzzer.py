@@ -1,5 +1,3 @@
-import os
-import signal
 from coapthon.client.helperclient import HelperClient
 from coapthon.messages.request import Request
 from coapthon import defines
@@ -10,6 +8,7 @@ import random
 import unicodedata
 from time import sleep
 from time import time
+import coverage
 #gdb -ex run -ex backtrace --args python2 coapserver.py -i 127.0.0.1 -p 5683 
 
 timeout = time() + 60
@@ -27,22 +26,23 @@ class CoAPFuzzer:
         self.host = host
         self.port = port
         self.client = HelperClient(server=(self.host, self.port))
+        self.cov = coverage.Coverage()
         self.seed_queue = [
             {
-                "token":"toke", "payload":"THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890"
+                "token":"toke", "payload":"THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890", "count":0
             },
             {
-                "token":"hahaadfafadfasdfasdfasdfadfadfafadfadfas", "payload":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "token":"hahaadfadfadfafasdfasdfasfasfafasfa", "payload":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "count":0
             }
             ]
         self.failure_queue = []
         self.timeout_count = 0
 
-    def fuzz_and_send_requests(self, num_requests, num_bytes):
-        # server_process = self.run_server(self.host, self.port)
+    def fuzz_and_send_requests(self):
+        restart_server()
+        sleep(1)
         while True:
-            # if time() > timeout:
-            #     break
+            self.cov.start()
             try:
                 req = Request()
                 serializer = Serializer()
@@ -76,28 +76,7 @@ class CoAPFuzzer:
                 
                 datagram = serializer.serialize(req) 
                 sock.sendto(datagram, req.destination)
-                #try:
                 datagram, source = sock.recvfrom(4096)
-                # except socket.timeout as e:
-                #     err = e.args[0]
-                #     if err == "timed out":
-                #         sleep(1)
-                #         print("Received time out")
-                #         self.timeout_count += 1
-                #         if self.timeout_count == 2:
-                #             self.timeout_count = 0
-                #             # print subprocess stdout
-                #             server_process = self.run_server(self.host,self.port)
-                #             self.close_connection()
-                #             sleep(1)
-                #         continue
-                #     else:
-                #         print(e)
-                #         self.close_connection()
-                # except socket.error as e:
-                #     print(e)
-                #     self.close_connection()
-                # else:   
                 received_message = serializer.deserialize(datagram, source) # response
                 print(received_message.pretty_print())
                 with open ("fuzzed requests.txt", "a") as f:
@@ -106,7 +85,12 @@ class CoAPFuzzer:
                 sleep(0.5)
             except Exception as e:
                 print("Server crashed. Restarting")
+                print("Error:", str(e))
                 restart_server()
+            finally:
+                self.cov.stop()
+                self.cov.save()
+                self.cov.html_report()
 
     def close_connection(self):
         self.client.stop()
@@ -196,7 +180,7 @@ def main():
     fuzzer = CoAPFuzzer(host, port)
     # while(1):
     #     try:
-    fuzzer.fuzz_and_send_requests(num_requests=3, num_bytes=5)
+    fuzzer.fuzz_and_send_requests()
         # except:
     fuzzer.close_connection()
 
