@@ -5,6 +5,8 @@ from coapthon.serializer import Serializer
 import subprocess
 import socket
 import random
+import os
+import signal
 import unicodedata
 from time import sleep
 from time import time
@@ -13,11 +15,13 @@ import coverage
 
 timeout = time() + 60
 
-def restart_server():
+def restart_server(p):
+    os.killpg(os.getpgid(p.pid), signal.SIGTERM)
     command = ["python2", "coapserver.py"]
     try:
-        subprocess.Popen(command)
+        p = subprocess.Popen(command, preexec_fn=os.setsid)
         print("CoAP server restarted")
+        return p
     except Exception as e:
         print("Error restarting CoAP server", str(e))
 
@@ -39,7 +43,12 @@ class CoAPFuzzer:
         self.timeout_count = 0
 
     def fuzz_and_send_requests(self):
-        restart_server()
+        command = ["python2", "coapserver.py"]
+        try:
+            p = subprocess.Popen(command, preexec_fn=os.setsid)
+            print("CoAP server started")
+        except Exception as e:
+            print("Error starting CoAP server", str(e))
         sleep(1)
         while True:
             self.cov.start()
@@ -82,11 +91,12 @@ class CoAPFuzzer:
                 with open ("fuzzed requests.txt", "a") as f:
                     f.write("Received:\n" + received_message.pretty_print())
                     f.write("\n")
-                sleep(0.5)
+                if self.is_interesting(received_message):
+                    self.seed_queue.append({"token":req.token, "payload":req.payload, "count":0})
             except Exception as e:
                 print("Server crashed. Restarting")
                 print("Error:", str(e))
-                restart_server()
+                p = restart_server(p)
             finally:
                 self.cov.stop()
                 self.cov.save()
@@ -169,9 +179,9 @@ class CoAPFuzzer:
     def choose_next(self):
         return random.choice(self.seed_queue)
     
-    def is_interesting(self, request, response):
-
-        pass
+    def is_interesting(self, response):
+        if (response.code not in [defines.Codes.BAD_REQUEST.number, defines.Codes.NOT_FOUND.number, defines.Codes.INTERNAL_SERVER_ERROR.number, defines.Codes.METHOD_NOT_ALLOWED.number, defines.Codes.NOT_ACCEPTABLE.number, defines.Codes.REQUEST_ENTITY_TOO_LARGE.number, defines.Codes.UNSUPPORTED_CONTENT_FORMAT.number, defines.Codes.REQUEST_ENTITY_INCOMPLETE.number, defines.Codes.PRECONDITION_FAILED.number]):
+            return True
 
     
 def main():
