@@ -16,7 +16,7 @@ import traceback
 timeout = time() + 60
 
 def start_server():
-    command = ["python", "coapserver.py"]
+    command = ["python2", "coapserver.py"]
     try:
         with open("server_output.txt", "a") as out_file, open("server_error.txt", "a") as err_file:
             server_process = subprocess.Popen(command, stdout=out_file, stderr=err_file)
@@ -97,7 +97,7 @@ class CoAPFuzzer:
                 print("exception:", e)
                 traceback.print_exc()
                 server_process = start_server()
-                with open ("crashed log.txt", "a") as f:
+                with open ("crashed_log.txt", "a") as f:
                     f.write("Request:\n" + req.pretty_print())
                     f.write("\n")
                 sleep(1)

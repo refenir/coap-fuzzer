@@ -20,7 +20,6 @@ import coverage
 
 def restart_server(p):
     os.killpg(os.getpgid(p.pid), signal.SIGTERM)
-    # os.kill(p.pid, signal.SIGTERM)
     command = ["python2", "coapserver.py"]
     try:
         # p = subprocess.Popen(command, preexec_fn=os.setsid)
@@ -44,7 +43,6 @@ class CoAPFuzzer:
         self.coverage_before = None
         self.seed_queue = []
         self.failure_queue = []
-        self.timeout_count = 0
 
     def fuzz_and_send_requests(self):
         with open("seed.json", "r") as f:
@@ -102,8 +100,10 @@ class CoAPFuzzer:
                 except socket.timeout:
                     print("Timeout")
                     print("Server crashed. Restarting")
+                    with open("crashed_log.txt", "a") as f:
+                        f.write("Request:\n" + req.pretty_print())
+                        f.write("\n")
                     p = restart_server(p)
-                    sleep(1)
                     continue
                 received_message = serializer.deserialize(datagram, source) # response
                 print(received_message.pretty_print())
@@ -121,7 +121,7 @@ class CoAPFuzzer:
     
 
     def apply_mutation(self, data, mutation, key):
-        if data == "":
+        if data == "" or data is None:
             if key == "token":
                 data = ''.join(random.choice(string.printable) for i in range(100)) 
             elif key == "payload":
