@@ -42,7 +42,7 @@ class CoAPFuzzer:
             ]
         self.failure_queue = []
         self.timeout_count = 0
-    
+
     def fuzz_and_send_requests(self, num_requests, num_bytes):
         server_process = start_server()
         while True:

@@ -15,11 +15,22 @@ from time import time
 import coverage
 #gdb -ex run -ex backtrace --args python2 coapserver.py -i 127.0.0.1 -p 5683 
 
+# import codecs
+# codecs.register(lambda name: codecs.lookup('utf-8') if name == 'cp65001' else None)
+
 def restart_server(p):
     os.killpg(os.getpgid(p.pid), signal.SIGTERM)
+    # os.kill(p.pid, signal.SIGTERM)
     command = ["python2", "coapserver.py"]
     try:
-        p = subprocess.Popen(command, preexec_fn=os.setsid)
+        # p = subprocess.Popen(command, preexec_fn=os.setsid)
+        with open("server_output.txt", "a") as out_file, open("server_error.txt", "a") as err_file:
+                p = subprocess.Popen(command, 
+                                    #  shell=True, # windows
+                                    #  creationflags=subprocess.CREATE_NEW_PROCESS_GROUP,  # windows
+                                    preexec_fn=os.setsid, # unix
+                                    stdout=out_file, 
+                                    stderr=err_file)
         print("CoAP server restarted")
         return p
     except Exception as e:
@@ -40,7 +51,13 @@ class CoAPFuzzer:
             self.seed_queue = json.load(f)
         command = ["python2", "coapserver.py"]
         try:
-            p = subprocess.Popen(command, preexec_fn=os.setsid)
+            with open("server_output.txt", "a") as out_file, open("server_error.txt", "a") as err_file:
+                p = subprocess.Popen(command, 
+                                    #  shell=True, # windows
+                                    #  creationflags=subprocess.CREATE_NEW_PROCESS_GROUP,  # windows
+                                    preexec_fn=os.setsid, # unix
+                                    stdout=out_file, 
+                                    stderr=err_file)
             print("CoAP server started")
         except Exception as e:
             print("Error starting CoAP server", str(e))
