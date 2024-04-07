@@ -60117,3 +60117,9445 @@ Location-Path: encoding
 Payload: 
 None
 
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 16135
+Code: DELETE
+Token: hahaadfadfadfafasdfasdfasfasfafasfa
+Uri-Path: basic
+Accept: 42
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 617
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 6433
+Code: POST
+Token: |
+Uri-Path: encoding
+Accept: 40
+Payload: 
+|}	~}| }		}
+}	}
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 618
+Code: CREATED
+Token: |
+Location-Path: encoding
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 10791
+Code: GET
+Token: uqni
+Uri-Path: xml
+Accept: 40
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567K890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 619
+Code: NOT_ACCEPTABLE
+Token: uqni
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 23534
+Code: POST
+Token: tok
+Uri-Path: xml
+Accept: 47
+Payload: 
+THE QUICK BRWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 23534
+Code: METHOD_NOT_ALLOWED
+Token: tok
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 40456
+Code: POST
+Token: uqni
+Uri-Path: advanced
+Accept: 40
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 620
+Code: CREATED
+Token: uqni
+Payload: 
+Response changed through POST
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 47060
+Code: DELETE
+Token: |
+Uri-Path: advancedSeparate
+Accept: 47
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 621
+Code: DELETED
+Token: |
+Payload: 
+Response deleted
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 3609
+Code: GET
+Token: 
+Uri-Path: etag
+Accept: 40
+Observe: 0
+Payload: 
+UIF!RVJDL!CSPXO!GPY!KVNQFE!PWFS!UIF!MB[Z!EPH(T!CBDL!23456789:1
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 3609
+Code: NOT_ACCEPTABLE
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 3748
+Code: POST
+Token: toke
+Uri-Path: encoding
+Accept: 41
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 622
+Code: CREATED
+Token: toke
+Location-Path: encoding
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 34032
+Code: GET
+Token: 
+Accept: 0
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 623
+Code: CONTENT
+Token: 
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 25098
+Code: POST
+Token: qni
+Uri-Path: encoding
+Accept: 47
+Payload: 
+UJG"SWKEM"DTQYP"HQZ"LWORGF"QXGT"VJG"NC\["FQI)U"DCEM"3456789:;2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 624
+Code: CREATED
+Token: qni
+Location-Path: encoding
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 24416
+Code: GET
+Token: toke
+Accept: 47
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+THE QUICK BROWN FOX UMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 625
+Code: CONTENT
+Token: toke
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 36674
+Code: GET
+Token:  
+Uri-Path: advanced
+Accept: 40
+Payload: 
+
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 17091
+Code: DELETE
+Token: u
+Uri-Path: xml
+Accept: 0
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER TLAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 228
+Code: METHOD_NOT_ALLOWED
+Token: u
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 53201
+Code: GET
+Token: u|
+Uri-Path: void
+Accept: 50
+Payload: 
+~}~||	 }	 ~}|  |	
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 229
+Code: METHOD_NOT_ALLOWED
+Token: u|
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 22347
+Code: PUT
+Token: toke
+Uri-Path: big
+Accept: 50
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY OG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 230
+Code: METHOD_NOT_ALLOWED
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 36190
+Code: GET
+Token: 
+Accept: 41
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+ 	 || 
+		}~	~
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 231
+Code: CONTENT
+Token: None
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 30871
+Code: POST
+Token: uqni
+Uri-Path: xml
+Accept: 47
+Payload: 
+THE QUICK BROWN FOX $UMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 30871
+Code: METHOD_NOT_ALLOWED
+Token: uqni
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 49727
+Code: POST
+Token: toke
+Uri-Path: 
+Accept: 50
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 232
+Code: METHOD_NOT_ALLOWED
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 55753
+Code: DELETE
+Token: 
+Uri-Path: encoding
+Accept: 41
+Payload: 
+~
+{{~	~~
+~
+~|} }
+~~
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 55753
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 34010
+Code: DELETE
+Token: 
+Uri-Path: void
+Accept: 47
+Payload: 
+|}	~}| }		}
+sq}	}
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 34010
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 55406
+Code: PUT
+Token: 	|
+Uri-Path: encoding
+Accept: 40
+Payload: 
+|}	}| }		}
+}	}
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 55406
+Code: CHANGED
+Token: 	|
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 14243
+Code: PUT
+Token: 
+Uri-Path: 
+Accept: 42
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 233
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 10162
+Code: DELETE
+Token: 
+Uri-Path: void
+Accept: 41
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 10162
+Code: METHOD_NOT_ALLOWED
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 56807
+Code: PUT
+Token: toke
+Uri-Path: child
+Accept: 47
+Payload: 
+THE UICK BROWN FOX UMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 56807
+Code: CHANGED
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 14656
+Code: PUT
+Token: tok
+Uri-Path: basic
+Accept: 0
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 30
+Code: CHANGED
+Token: tok
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 27215
+Code: POST
+Token: |GP
+Uri-Path: storage
+Accept: 41
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 27215
+Code: CREATED
+Token: |GP
+Location-Path: storage
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 55833
+Code: POST
+Token: towe
+Uri-Path: void
+Accept: 47
+Payload: 
+THE QUICK BROWN FOX UMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 31
+Code: METHOD_NOT_ALLOWED
+Token: towe
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 26540
+Code: GET
+Token: ~}
+Uri-Path: 
+Accept: 40
+Observe: 0
+Payload: 
+|}	~}| }		}
+}	=}
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 32
+Code: NOT_FOUND
+Token: ~}
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 30606
+Code: POST
+Token: 
+Uri-Path: basic
+Accept: 50
+Payload: 
+v
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 33
+Code: CREATED
+Token: 
+Location-Path: basic
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 64221
+Code: DELETE
+Token: toe
+Uri-Path: void
+Accept: 41
+Payload: 
+THE QUICK BROWN FOX UMPED OVER THE AZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 34
+Code: METHOD_NOT_ALLOWED
+Token: toe
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 4056
+Code: GET
+Token: 
+Uri-Path: long
+Accept: 47
+Observe: 0
+Payload: 
+v
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 35
+Code: NOT_ACCEPTABLE
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 3344
+Code: DELETE
+Token: ni
+Uri-Path: long
+Accept: 40
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 36
+Code: METHOD_NOT_ALLOWED
+Token: ni
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 54258
+Code: GET
+Token: tok
+Uri-Path: storage
+Accept: 50
+Observe: 0
+Payload: 
+0
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 37
+Code: NOT_ACCEPTABLE
+Token: tok
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 54900
+Code: DELETE
+Token: |
+Uri-Path: advanced
+Accept: 42
+Payload: 
+G
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 38
+Code: DELETED
+Token: |
+Payload: 
+Response deleted
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 25046
+Code: DELETE
+Token: k
+Uri-Path: encoding
+Accept: 41
+Payload: 
+|	~}| }		}
+}	}
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 39
+Code: METHOD_NOT_ALLOWED
+Token: k
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 59892
+Code: POST
+Token: toke
+Uri-Path: void
+Accept: 42
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 40
+Code: METHOD_NOT_ALLOWED
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 3178
+Code: POST
+Token: 
+Uri-Path: etag
+Accept: 47
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 41
+Code: CHANGED
+Token: None
+ETag: 1
+Location-Path: etag
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 55888
+Code: PUT
+Token: |G5fP
+Uri-Path: advanced
+Accept: 47
+Payload: 
+|}	~}| }		}
+}	}
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 42
+Code: NOT_FOUND
+Token: |G5fP
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 44775
+Code: PUT
+Token: 
+Uri-Path: xml
+Accept: 40
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 43
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 35826
+Code: POST
+Token: 
+Uri-Path: long
+Accept: 42
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 44
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 45589
+Code: POST
+Token: 	|
+Uri-Path: etag
+Accept: 42
+Payload: 
+|}	}| nj}		}
+}	}
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 45
+Code: CHANGED
+Token: 	|
+ETag: 2
+Location-Path: etag
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 49581
+Code: PUT
+Token: toke
+Uri-Path: child
+Accept: 41
+Payload: 
+a
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 46
+Code: CHANGED
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 33060
+Code: DELETE
+Token: toke
+Uri-Path: 
+Accept: 41
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 47
+Code: METHOD_NOT_ALLOWED
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 22526
+Code: PUT
+Token: 
+Uri-Path: basic
+Accept: 50
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 48
+Code: CHANGED
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 26360
+Code: GET
+Token: smha
+Uri-Path: 
+Accept: 0
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 49
+Code: NOT_FOUND
+Token: smha
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 6889
+Code: PUT
+Token: to4e
+Uri-Path: separate
+Accept: 50
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 50
+Code: CHANGED
+Token: to4e
+Max-Age: 60
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 41676
+Code: DELETE
+Token: }
+Uri-Path: separate
+Accept: 41
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 51
+Code: DELETED
+Token: }
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 63100
+Code: PUT
+Token: rpk
+Uri-Path: void
+Accept: 0
+Payload: 
+~}	
+~	 ~	}}|
+ 	  
+
+||
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 52
+Code: METHOD_NOT_ALLOWED
+Token: rpk
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 20865
+Code: PUT
+Token: 
+}
+Uri-Path: separate
+Accept: 47
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 53
+Code: NOT_FOUND
+Token: 
+}
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 37092
+Code: GET
+Token: toke
+Uri-Path: xml
+Accept: 41
+Observe: 1
+Payload: 
+THE UICK BROWN FOX UMPED OVER THE LAZY DOG'SK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 37092
+Code: CONTENT
+Token: toke
+Content-Type: 41
+Payload: 
+<value>0</value>
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 45259
+Code: POST
+Token: tok
+Uri-Path: 
+Accept: 40
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 45259
+Code: METHOD_NOT_ALLOWED
+Token: tok
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 5317
+Code: DELETE
+Token: |GP
+Uri-Path: long
+Accept: 0
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 5317
+Code: METHOD_NOT_ALLOWED
+Token: |GP
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 36100
+Code: PUT
+Token: 
+Uri-Path: encoding
+Accept: 50
+Payload: 
+v
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 54
+Code: CHANGED
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 6285
+Code: GET
+Token: \=
+Uri-Path: separate
+Accept: 41
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 55
+Code: NOT_FOUND
+Token: \=
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 42689
+Code: POST
+Token: toke
+Uri-Path: etag
+Accept: 50
+Payload: 
+THE UICK BROWN FOX UMPED OVER THE LAZY DOG'SK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 42689
+Code: CHANGED
+Token: toke
+ETag: 3
+Location-Path: etag
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 20920
+Code: GET
+Token: smic
+Uri-Path: separate
+Accept: 50
+Observe: 1
+Payload: 
+		}}}	~|~||
+}~~}
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 20920
+Code: NOT_FOUND
+Token: smic
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 24904
+Code: PUT
+Token: ~ktoke
+Uri-Path: long
+Accept: 41
+Payload: 
+THE QUICK BROKWN FOX UMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 24904
+Code: METHOD_NOT_ALLOWED
+Token: ~ktoke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 36631
+Code: DELETE
+Token: }
+Uri-Path: 
+Accept: 41
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 56
+Code: METHOD_NOT_ALLOWED
+Token: }
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 65104
+Code: DELETE
+Token: toke
+Uri-Path: void
+Accept: 0
+Payload: 
+THE UICK BROWN OX UMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 57
+Code: METHOD_NOT_ALLOWED
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 49040
+Code: DELETE
+Token: tokez
+Uri-Path: 
+Accept: 41
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 681
+Code: METHOD_NOT_ALLOWED
+Token: tokez
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 34223
+Code: DELETE
+Token: ;oke
+Uri-Path: advanced
+Accept: 50
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 682
+Code: DELETED
+Token: ;oke
+Payload: 
+Response deleted
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 23496
+Code: PUT
+Token: :mic
+Uri-Path: xml
+Accept: 41
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 683
+Code: METHOD_NOT_ALLOWED
+Token: :mic
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 27179
+Code: POST
+Token: 
+Uri-Path: child
+Accept: 41
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 684
+Code: CREATED
+Token: None
+Location-Path: child
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 56842
+Code: GET
+Token: oke
+Uri-Path: storage
+Accept: 0
+Observe: 0
+Payload: 
+HE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 56842
+Code: CONTENT
+Token: oke
+Observe: 1
+Payload: 
+Storage Resource for PUT, POST and DELETE
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 54559
+Code: PUT
+Token: ;oke
+Uri-Path: separate
+Accept: 50
+Payload: 
+UIF!RVJDL!CSPXO!GPY!KVNQFE!PWFS!UIF!MB[Z!EPH(T!CBDL!23456789:1
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 685
+Code: CHANGED
+Token: ;oke
+Max-Age: 60
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 38798
+Code: PUT
+Token: uqmg
+Uri-Path: xml
+Accept: 47
+Payload: 
+H QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 686
+Code: METHOD_NOT_ALLOWED
+Token: uqmg
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 49138
+Code: POST
+Token: ;ok
+Uri-Path: etag
+Accept: 40
+Payload: 
+~ ~}}~~|	|
+ 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 687
+Code: CHANGED
+Token: ;ok
+ETag: 1
+Location-Path: etag
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 19220
+Code: GET
+Token: 
+Uri-Path: child
+Accept: 0
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 688
+Code: CONTENT
+Token: None
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 3819
+Code: POST
+Token: 
+Uri-Path: long
+Accept: 42
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 3819
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 6654
+Code: DELETE
+Token: oke
+Uri-Path: 
+Accept: 50
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 689
+Code: METHOD_NOT_ALLOWED
+Token: oke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 20383
+Code: PUT
+Token: 
+Uri-Path: long
+Accept: 47
+Payload: 
+UIF!RVJDL!CSPXO!GPY!VNQFE!PWFS!UIF!MB[Z!EPH(T!CBDL!23456789:1
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 690
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 1522
+Code: POST
+Token: toe
+Uri-Path: advanced
+Accept: 47
+Payload: 
+THE QUICK BROWNFOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 691
+Code: METHOD_NOT_ALLOWED
+Token: toe
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 35
+Code: GET
+Token: ;oke
+Accept: 0
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BAe 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 692
+Code: CONTENT
+Token: ;oke
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;rt="rt1";if="if1";obs;ct=0,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 48677
+Code: POST
+Token: ;oNke
+Uri-Path: void
+Accept: 0
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 48677
+Code: METHOD_NOT_ALLOWED
+Token: ;oNke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 10035
+Code: DELETE
+Token: ;oke
+Uri-Path: 
+Accept: 47
+Payload: 
+UIF!RVJDL!CSPXO!GPY!KVNQFE!PWFS!UIF!M[Z!EPH(T!CBDL!23456789:1
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 693
+Code: METHOD_NOT_ALLOWED
+Token: ;oke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 3890
+Code: POST
+Token: |
+Uri-Path: advancedSeparate
+Accept: 50
+Payload: 
+	~	|}}	}}
+}~ 		~
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 694
+Code: CREATED
+Token: |
+Payload: 
+Response changed through POST
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 49127
+Code: GET
+Token: tokbne
+Uri-Path: etag
+Accept: 41
+Observe: 1
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 49127
+Code: NOT_ACCEPTABLE
+Token: tokbne
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 20749
+Code: PUT
+Token: k
+Uri-Path: storage
+Accept: 41
+Payload: 
+~ ~$}~~|	|
+ 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 695
+Code: METHOD_NOT_ALLOWED
+Token: k
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 38858
+Code: POST
+Token: 
+Uri-Path: advancedSeparate
+Accept: 42
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 696
+Code: CREATED
+Token: None
+Payload: 
+Response changed through POST
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 17515
+Code: POST
+Token: |
+Uri-Path: long
+Accept: 41
+Payload: 
+	~	|}}	}}
+}~ 		~
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 17515
+Code: METHOD_NOT_ALLOWED
+Token: |
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 32532
+Code: GET
+Token: ;oke
+Accept: 41
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 697
+Code: CONTENT
+Token: ;oke
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;rt="rt1";if="if1";obs;ct=0,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 37984
+Code: PUT
+Token: ;3ke
+Uri-Path: xml
+Accept: 40
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 123, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 698
+Code: METHOD_NOT_ALLOWED
+Token: ;3ke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 52406
+Code: GET
+Token: 
+Uri-Path: advanced
+Accept: 41
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BA~ 		~
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 52406
+Code: NOT_FOUND
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 11910
+Code: GET
+Token: 
+Uri-Path: big
+Accept: 40
+Observe: 0
+Payload: 
+|	
+}
+   |}
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 699
+Code: NOT_ACCEPTABLE
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 65438
+Code: GET
+Token: g_e]]`b]`b]`b]b]o`b]o`b]ob]ob]b]ob]
+Uri-Path: advanced
+Accept: 47
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 42874
+Code: POST
+Token: 
+Uri-Path: encoding
+Accept: 47
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER T LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 58
+Code: CREATED
+Token: None
+Location-Path: encoding
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 8701
+Code: POST
+Token: oke
+Uri-Path: xml
+Accept: 41
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LLAZY DOG'S BAe 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 59
+Code: METHOD_NOT_ALLOWED
+Token: oke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 48268
+Code: PUT
+Token: ;oke
+Uri-Path: long
+Accept: 47
+Payload: 
+UJG"SWKEM"DTQYP"HQZ"LWORGF"QXGT"VJG"NC\["FQI)U"DCEM"3456789:;2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 60
+Code: METHOD_NOT_ALLOWED
+Token: ;oke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 2626
+Code: PUT
+Token: |
+Uri-Path: basic
+Accept: 50
+Payload: 
+	~	|}}	}}
+}( 		~
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 2626
+Code: CHANGED
+Token: |
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 42437
+Code: DELETE
+Token: ;ok
+Uri-Path: separate
+Accept: 50
+Payload: 
+~}}~~|	|
+ 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 509
+Code: DELETED
+Token: ;ok
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 19606
+Code: DELETE
+Token: ;ok+
+Uri-Path: separate
+Accept: 42
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 19606
+Code: NOT_FOUND
+Token: ;ok+
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 35967
+Code: DELETE
+Token: ;oke
+Uri-Path: xml
+Accept: 47
+Payload: 
+I!RVJDL!CSPXO!GPY!KVNQFE!PWFS!UIF!MB[Z!EPH(T!CBDL!23456789:1
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 510
+Code: METHOD_NOT_ALLOWED
+Token: ;oke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 45838
+Code: DELETE
+Token: 
+Uri-Path: child
+Accept: 42
+Payload: 
+UIF!RVJDL!CSPXO!GPY!KVNQFE!PWFS!UIF!MB[Z!EPH(T!CBDL!23456789:1
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 511
+Code: DELETED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 38068
+Code: GET
+Token: :mha
+Uri-Path: 
+Accept: 0
+Observe: 0
+Payload: 
+|~
+}~~| 		 ~	~}
+~~
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 512
+Code: NOT_FOUND
+Token: :mha
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 12919
+Code: POST
+Token: oke
+Uri-Path: xml
+Accept: 47
+Payload: 
+HE QUICK BROWN FOX JUMPED OVER THE ZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 513
+Code: METHOD_NOT_ALLOWED
+Token: oke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 51830
+Code: DELETE
+Token: oke
+Uri-Path: separate
+Accept: 47
+Payload: 
+UIF!RVJDL!CSPXO!G~~|	|
+ 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 514
+Code: NOT_FOUND
+Token: oke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 16955
+Code: POST
+Token: hahe
+Uri-Path: void
+Accept: 47
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 515
+Code: METHOD_NOT_ALLOWED
+Token: hahe
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 45834
+Code: PUT
+Token: P|
+Uri-Path: separate
+Accept: 42
+Payload: 
+
+
+}	~~
+	~~~	)	
+
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 516
+Code: NOT_FOUND
+Token: P|
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 30890
+Code: DELETE
+Token: ;oke
+Uri-Path: xml
+Accept: 0
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 30890
+Code: METHOD_NOT_ALLOWED
+Token: ;oke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 33231
+Code: POST
+Token: ;ok
+Uri-Path: big
+Accept: 42
+Payload: 
+JP~}}~~|	|
+ 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 517
+Code: CHANGED
+Token: ;ok
+Location-Path: big
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 39331
+Code: GET
+Token: 
+Uri-Path: advancedSeparate
+Accept: 47
+Payload: 
+
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 11851
+Code: GET
+Token: oke8
+Uri-Path: xml
+Accept: 50
+Payload: 
+HE QUICK BROWN FOX JUMPED OVER THHE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 61
+Code: NOT_ACCEPTABLE
+Token: oke8
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 6848
+Code: GET
+Token: 
+Uri-Path: long
+Accept: 50
+Observe: 1
+Payload: 
+HE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 62
+Code: NOT_ACCEPTABLE
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 4459
+Code: POST
+Token: 
+Uri-Path: advanced
+Accept: 41
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 4459
+Code: CREATED
+Token: None
+Payload: 
+Response changed through POST
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 6247
+Code: PUT
+Token: :nj
+Uri-Path: advancedSeparate
+Accept: 42
+Payload: 
+~ ~}}~~|	|
+ 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 409
+Code: CHANGED
+Token: :nj
+Payload: 
+Response changed through PUT
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 45398
+Code: POST
+Token: 
+Uri-Path: 
+Accept: 40
+Payload: 
+H QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 410
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 38672
+Code: POST
+Token: w
+Uri-Path: big
+Accept: 47
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 411
+Code: CHANGED
+Token: w
+Location-Path: big
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 20726
+Code: GET
+Token: toske
+Uri-Path: advancedSeparate
+Accept: 40
+Payload: 
+UJH$UYMGO$FVS[R$JS\$NYQTIH$SZIV$XLI$PE^]$HSK+W$FEGO$56789:;<=4
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 6981
+Code: DELETE
+Token: ok2
+Uri-Path: advanced
+Accept: 50
+Payload: 
+HE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 6981
+Code: NOT_FOUND
+Token: ok2
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 23596
+Code: POST
+Token: hahaadfadfadfafasdfasdfasfasfafasfa
+Uri-Path: long
+Accept: 0
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dYserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 63
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 47472
+Code: GET
+Token: Q\
+Accept: 41
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 47472
+Code: CONTENT
+Token: Q\
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;rt="rt1";if="if1";obs;ct=0,</child>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 14157
+Code: PUT
+Token: ke
+Uri-Path: etag
+Accept: 47
+Payload: 
+HE QUICOOWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 14157
+Code: CHANGED
+Token: ke
+ETag: 3
+ETag: 3
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 14862
+Code: PUT
+Token: oe
+Uri-Path: xml
+Accept: 0
+Payload: 
+HE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 64
+Code: METHOD_NOT_ALLOWED
+Token: oe
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 33327
+Code: GET
+Token: ;k
+Uri-Path: void
+Accept: 50
+Payload: 
+~}}~~|	|
+[
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 696
+Code: METHOD_NOT_ALLOWED
+Token: ;k
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 11283
+Code: POST
+Token:  {
+Uri-Path: encoding
+Accept: 50
+Payload: 
+	~	z|}}	}}
+}( 		~
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 697
+Code: CREATED
+Token:  {
+Location-Path: encoding
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 18987
+Code: PUT
+Token: hahaadfadfadfafasdfasfasfafasfa
+Uri-Path: basic
+Accept: 40
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et de magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 698
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 41124
+Code: GET
+Token: ;ok
+Accept: 40
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+~ ~}}~NQFE!PWFS!UIF!MB[Z!EPH(T!CBDL!23456789:1
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 699
+Code: CONTENT
+Token: ;ok
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 48494
+Code: PUT
+Token: 
+Uri-Path: 
+Accept: 41
+Payload: 
+THE QUICK BROWOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 700
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 45087
+Code: GET
+Token: R^
+Uri-Path: advanced
+Accept: 42
+Observe: 1
+Payload: 
+
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 45695
+Code: POST
+Token: toke
+Uri-Path: child
+Accept: 40
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 15685
+Code: GET
+Token: :
+Uri-Path: etag
+Accept: 50
+Observe: 0
+Payload: 
+	~~	}
+}
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 65
+Code: NOT_ACCEPTABLE
+Token: :
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 26686
+Code: GET
+Token: 
+
+Uri-Path: 
+Accept: 47
+Observe: 1
+Payload: 
+~|	}|~	}~~	 }~~ }~	 	
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 26686
+Code: NOT_FOUND
+Token: 
+
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 4656
+Code: POST
+Token: 
+Uri-Path: encoding
+Accept: 50
+Payload: 
+H QUICK BROWN FOX JUMPED OVER T LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 232
+Code: CREATED
+Token: None
+Location-Path: encoding
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 3334
+Code: DELETE
+Token: |
+Uri-Path: separate
+Accept: 42
+Payload: 
+~~}~~~| }
+			} 
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 233
+Code: DELETED
+Token: |
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 20551
+Code: PUT
+Token: 
+Uri-Path: advanced
+Accept: 40
+Payload: 
+THE QUICK BROWNhFOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 234
+Code: CHANGED
+Token: None
+Payload: 
+Response changed through PUT
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 26199
+Code: POST
+Token: 
+Uri-Path: separate
+Accept: 47
+Payload: 
+	~	z|}}	}}
+}( 		~
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 235
+Code: METHOD_NOT_ALLOWED
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 20961
+Code: GET
+Token: |
+Uri-Path: basic
+Accept: 41
+Observe: 1
+Payload: 
+HE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 20961
+Code: NOT_ACCEPTABLE
+Token: |
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 50209
+Code: POST
+Token: 
+Uri-Path: child
+Accept: 0
+Payload: 
+|~ 	|}	}
+}}  |}| 	~~|~ 
+|~
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 236
+Code: CREATED
+Token: None
+Location-Path: child
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 52619
+Code: DELETE
+Token: e
+Uri-Path: void
+Accept: 50
+Payload: 
+
+|	||
+	|~~
+~~
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 52619
+Code: METHOD_NOT_ALLOWED
+Token: e
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 15318
+Code: PUT
+Token: 
+Uri-Path: child
+Accept: 0
+Payload: 
+THE QUICK BROWN FOX JUMPE^D OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 237
+Code: CHANGED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 17838
+Code: PUT
+Token: ;oHk
+Uri-Path: void
+Accept: 47
+Payload: 
+~ ~}}~~|	|
+ 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 238
+Code: METHOD_NOT_ALLOWED
+Token: ;oHk
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 26837
+Code: DELETE
+Token: 
+Uri-Path: big
+Accept: 47
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER T LAZY DOG'S BACACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 26837
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 45572
+Code: POST
+Token: 
+Uri-Path: encoding
+Accept: 0
+Payload: 
+UIF!RVJDL!CSPXO!}~~|	|
+ 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 45572
+Code: CREATED
+Token: None
+Location-Path: encoding
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 40444
+Code: POST
+Token: okexN
+Uri-Path: etag
+Accept: 40
+Payload: 
+HE QUICK BROWN FOX JUMPED OVER THE LAZDOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 239
+Code: CHANGED
+Token: okexN
+ETag: 1
+Location-Path: etag
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 11949
+Code: POST
+Token: lf
+Uri-Path: separate
+Accept: 50
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 240
+Code: METHOD_NOT_ALLOWED
+Token: lf
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 37265
+Code: DELETE
+Token: snjd
+Uri-Path: advanced
+Accept: 0
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 241
+Code: DELETED
+Token: snjd
+Payload: 
+Response deleted
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 7247
+Code: DELETE
+Token: 
+Uri-Path: long
+Accept: 50
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 123456789
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 242
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 56740
+Code: DELETE
+Token: 
+Uri-Path: long
+Accept: 41
+Payload: 
+THE QUICK BROWNhFOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 56740
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 20646
+Code: POST
+Token: ;oke
+Uri-Path: advancedSeparate
+Accept: 41
+Payload: 
+UIF!RVJDL!CSPXO!GPY!KVNQFE!PWFS!UIF!MB[Z!EPH(T!CBDL!23456789:1
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 243
+Code: CREATED
+Token: ;oke
+Payload: 
+Response changed through POST
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 3511
+Code: DELETE
+Token: toke
+Uri-Path: void
+Accept: 50
+Payload: 
+THE QUICK BROWN FOX JUMPED OyER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 244
+Code: METHOD_NOT_ALLOWED
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 17197
+Code: POST
+Token: 
+Uri-Path: separate
+Accept: 40
+Payload: 
+UIF!RVJDL!CSPXO!GPY!KVNQFE!PWFS!UIF!MB[Z!EPH(T!CBDL)5!23456789:1
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 245
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 8069
+Code: POST
+Token:  {
+Uri-Path: basic
+Accept: 47
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 246
+Code: CREATED
+Token:  {
+Location-Path: basic
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 7590
+Code: GET
+Token: ;oke
+Uri-Path: long
+Accept: 40
+Payload: 
+UIF!RVJDL!CSPXO!GPY!KVNQFE!PWFS!UIF!MB[Z!EPH(T!CBDL!23456789:1
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 247
+Code: NOT_ACCEPTABLE
+Token: ;oke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 4194
+Code: PUT
+Token: hahaadfadfadfafasdfasdfasfasfafasfa
+Uri-Path: storage
+Accept: 42
+Payload: 
+Lorem ipsum dolor s}~~|	|
+ 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 248
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 9197
+Code: GET
+Token: 
+Accept: 40
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+THE QUICK BROWNhFOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 249
+Code: CONTENT
+Token: None
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;rt="rt1";if="if1";obs;ct=0,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 5147
+Code: POST
+Token:  {
+Uri-Path: storage
+Accept: 0
+Payload: 
+~~}~~~| }
+			} 
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 250
+Code: CREATED
+Token:  {
+Location-Path: storage
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 43382
+Code: POST
+Token: |
+Uri-Path: etag
+Accept: 0
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 251
+Code: CHANGED
+Token: |
+ETag: 2
+Location-Path: etag
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 34603
+Code: DELETE
+Token: 
+Uri-Path: xml
+Accept: 40
+Payload: 
+~	||}	~ 		
+ |} 
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 252
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 9372
+Code: GET
+Token: nd
+Accept: 50
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+THE QUICKo BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 253
+Code: CONTENT
+Token: nd
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;rt="rt1";if="if1";obs;ct=0,</child>;rt="rt1";if="if1";obs;ct=0,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 28276
+Code: DELETE
+Token: 
+Uri-Path: big
+Accept: 50
+Payload: 
+2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 254
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 54197
+Code: DELETE
+Token: enj
+Uri-Path: encoding
+Accept: 50
+Payload: 
+~ ~}}~~|	|
+ 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 54197
+Code: METHOD_NOT_ALLOWED
+Token: enj
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 8711
+Code: GET
+Token: 
+Uri-Path: big
+Accept: 40
+Observe: 1
+Payload: 
+UJH$UYMGO$FVS[R$JS\$NYQTIH$SZIV$XLI$PE^]$HSK+W$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 255
+Code: NOT_ACCEPTABLE
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 29542
+Code: PUT
+Token: 
+Uri-Path: storage
+Accept: 47
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER T LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 29542
+Code: CHANGED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 21009
+Code: GET
+Token: 
+Uri-Path: void
+Accept: 47
+Observe: 0
+Payload: 
+JP~}}~~|	
+ 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 256
+Code: METHOD_NOT_ALLOWED
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 28339
+Code: GET
+Token: p
+Accept: 41
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 28339
+Code: CONTENT
+Token: p
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;rt="rt1";if="if1";obs;ct=0,</child>;rt="rt1";if="if1";obs;ct=0,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 24491
+Code: POST
+Token: oe
+Uri-Path: big
+Accept: 41
+Payload: 
+UJH$UYMGO$FVS[R$JS\$NYQTIH$SZIV$XLI$PE^]$HSK+W$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 24491
+Code: CHANGED
+Token: oe
+Location-Path: big
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 2454
+Code: PUT
+Token: 
+Uri-Path: 
+Accept: 47
+Payload: 
+|~ 	|}	}
+}}  |}| 	~~|~ 
+|~
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 2454
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 27514
+Code: PUT
+Token: o
+Uri-Path: basic
+Accept: 41
+Payload: 
+HE QUICKK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 257
+Code: CHANGED
+Token: o
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 18918
+Code: POST
+Token: 
+Uri-Path: 
+Accept: 0
+Payload: 
+THE QUICK BROWN FOX JUMPE^D OVER THE LAZY DOG'S BACK 1234k67890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 258
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 63451
+Code: PUT
+Token: 
+Uri-Path: advanced
+Accept: 42
+Payload: 
+THE QUICK BROWNhFOX JUMPED OVER THE LAZY DO'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 63451
+Code: NOT_FOUND
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 25423
+Code: DELETE
+Token: 
+Uri-Path: child
+Accept: 0
+Payload: 
+UIF!RVJDL!CSPXO!GPY!KVNPWFS!UIF!MB[Z!EPH(T!CBDL!23456789:1
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 25423
+Code: DELETED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 6092
+Code: DELETE
+Token: :njd
+Uri-Path: separate
+Accept: 47
+Payload: 
+THE QUICK BROWN FOXUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 259
+Code: NOT_FOUND
+Token: :njd
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 55574
+Code: DELETE
+Token: ;okeP
+Uri-Path: long
+Accept: 0
+Payload: 
+THE QUICK BROWNFOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 260
+Code: METHOD_NOT_ALLOWED
+Token: ;okeP
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 17814
+Code: POST
+Token: 
+Uri-Path: encoding
+Accept: 50
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 261
+Code: CREATED
+Token: None
+Location-Path: encoding
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 54194
+Code: DELETE
+Token: hahaadfadfadfafasdfasd=Bfasfasfafasfa
+Uri-Path: xml
+Accept: 42
+Payload: 
+Mqtgo"kruwo"fqnqt"ukv"cogv."eqpugevgvwt"cfkrkuekpi"gnkv."ugf"fq"gkwuoqf"vgorqt"kpekfkfwpv"wv"ncdqtg"gv"fqnqtg"ocipc"cnkswc0"Wv"gpko"cf"okpko"xgpkco."swku"pquvtwf"gzgtekvcvkqp"wnncoeq"ncdqtku"pkuk"wv"cnkswkr"gz"gc"eqooqfq"eqpugswcv0"Fwku"cwvg"ktwtg"fqnqt"kp"tgrtgjgpfgtkv"kp"xqnwrvcvg"xgnkv"guug"eknnwo"fqnqtg"gw"hwikcv"pwnnc"rctkcvwt0"Gzegrvgwt"ukpv"qeecgecv"ewrkfcvcv"pqp"rtqkfgpv."uwpv"kp"ewnrc"swk"qhhkekc"fgugtwpv"oqnnkv"cpko"kf"guv"ncdqtwo0
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 194
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 40948
+Code: GET
+Token: haha
+Uri-Path: void
+Accept: 47
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non pident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 195
+Code: METHOD_NOT_ALLOWED
+Token: haha
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 51086
+Code: PUT
+Token: aaadfadfadfafasdfasdfasfasfafasfa
+Uri-Path: basic
+Accept: 47
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nula pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 196
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 52926
+Code: POST
+Token: hahaadfadfadfafasdfasfasfafasfa
+Uri-Path: big
+Accept: 40
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 197
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 52009
+Code: PUT
+Token: toke
+Uri-Path: separate
+Accept: 47
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 134567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 198
+Code: CHANGED
+Token: toke
+Max-Age: 60
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 32106
+Code: PUT
+Token: smic
+Uri-Path: separate
+Accept: 42
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 199
+Code: CHANGED
+Token: smic
+Max-Age: 60
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 36924
+Code: PUT
+Token: hahaadfadfadfafasdfasdfasfasfafasfa
+Uri-Path: big
+Accept: 47
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostexercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 200
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 61016
+Code: PUT
+Token: toke
+Uri-Path: storage
+Accept: 50
+Payload: 
+~|}
+ ~
+|}
+}		
+
+ |
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 201
+Code: METHOD_NOT_ALLOWED
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 1342
+Code: PUT
+Token: toke
+Uri-Path: storage
+Accept: 41
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE AZY DOG'S BACK 134567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 202
+Code: METHOD_NOT_ALLOWED
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 49204
+Code: PUT
+Token: aaadfadfadfafasdfasdfasfasfafasfa
+Uri-Path: child
+Accept: 40
+Payload: 
+Knqdlhortlcnknqrhs`lds+bnmrdbsdstq`chohrbhmfdkhs+rdccndhtrlncsdlonqhmbhchctmstsk`anqddscnknqdl`fm``khpt`-Tsdmhl`clhmhludmh`l+pthrmnrsqtcdwdqbhs`shnmtkk`lbnk`anqhrmhrhts`khpthodwd`bnllncnbnmrdpt`s-Cthr`tsdhqtqdcnknqhmqdoqdgdmcdqhshmunktos`sdudkhsdrrdbhkktlcnknqddtetfh`smtkk`o`qh`stq-Dwbdosdtqrhmsnbb`db`sbtohc`s`smnmoqnhcdms+rtmshmbtko`pthneehbh`cdrdqtmslnkkhs`mhlhcdrsk`anqtl-
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 203
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 47755
+Code: PUT
+Token: hahaadfadfadfafasdfasdfasfasfafasfa
+Uri-Path: void
+Accept: 50
+Payload: 
+~}}~|
+~}
+	~	
+~|	
+  }}}|~}|	}}| }
+}} ~
+
+ 	 
+
+| |	~|}
+|~| 
+}| |
+}~	|}}}~}
+}
+}}
+  	}
+}|}			|	~}
+}	| }}~	}}	|
+~		 |}}
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 204
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 39181
+Code: POST
+Token: e
+Uri-Path: child
+Accept: 42
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 12345678L]90
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 205
+Code: CREATED
+Token: e
+Location-Path: child
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 63221
+Code: PUT
+Token: 
+Uri-Path: etag
+Accept: 50
+Payload: 
+UIF!RVJDL!CSPXO!GPY!KVNQFE!PWFS!UIF!MB[Z!EPH(T!CBDL!23456789M^:1
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 206
+Code: CHANGED
+Token: None
+ETag: 0
+ETag: 0
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 28780
+Code: PUT
+Token: ickeehjehjehjejewhjewhjewjewjejewje
+Uri-Path: etag
+Accept: 47
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 29223
+Code: DELETE
+Token: 
+Uri-Path: encoding
+Accept: 50
+Payload: 
+H QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 12345678L]90
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 29223
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 25860
+Code: DELETE
+Token: tok
+Uri-Path: xml
+Accept: 41
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 262
+Code: METHOD_NOT_ALLOWED
+Token: tok
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 19552
+Code: DELETE
+Token: hahaadfadfadfafasdfasdfasfasfafasfa
+Uri-Path: etag
+Accept: 40
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 263
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 1778
+Code: PUT
+Token: 
+Uri-Path: encoding
+Accept: 0
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 264
+Code: CHANGED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 60116
+Code: PUT
+Token: toke
+Uri-Path: storage
+Accept: 40
+Payload: 
+THE QUICK BROWN FOX JUD OVER THE LAZY DOG'S BACK 134567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 60116
+Code: CHANGED
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 56121
+Code: PUT
+Token: toke
+Uri-Path: xml
+Accept: 42
+Payload: 
+THE QUICK BROWN FOX JUD OVER THE LAZY DOG'S BACK 13456456789M^:1
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 56121
+Code: METHOD_NOT_ALLOWED
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 5275
+Code: GET
+Token: icjccfhcfhcfhchcufhcufhcuhcuhchcuhc
+Uri-Path: void
+Accept: 42
+Observe: 1
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepter sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 463
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 56479
+Code: POST
+Token: to	ke
+Uri-Path: separate
+Accept: 42
+Payload: 
+THE QUICK BROWN FOX JUPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 464
+Code: CHANGED
+Token: to	ke
+Location-Path: separate
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 630
+Code: DELETE
+Token: to
+Uri-Path: advancedSeparate
+Accept: 50
+Payload: 
+TE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 465
+Code: DELETED
+Token: to
+Payload: 
+Response deleted
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 26319
+Code: POST
+Token: to
+Uri-Path: etag
+Accept: 0
+Payload: 
+THE QUICK BROWN FOX JUPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 466
+Code: CHANGED
+Token: to
+ETag: 1
+Location-Path: etag
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 60825
+Code: GET
+Token: to	ke
+Accept: 41
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 467
+Code: CONTENT
+Token: to	ke
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 40924
+Code: PUT
+Token: to
+Uri-Path: xml
+Accept: 0
+Payload: 
+TE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 40924
+Code: METHOD_NOT_ALLOWED
+Token: to
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 12539
+Code: PUT
+Token: to+
+Uri-Path: storage
+Accept: 50
+Payload: 
+THE QUICK BOWN FOX JUPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 468
+Code: METHOD_NOT_ALLOWED
+Token: to+
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 43654
+Code: DELETE
+Token: =o
+Uri-Path: long
+Accept: 0
+Payload: 
+~ ~
+~|}
+|		
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 469
+Code: METHOD_NOT_ALLOWED
+Token: =o
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 11176
+Code: DELETE
+Token: to	NC
+Uri-Path: void
+Accept: 42
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 470
+Code: METHOD_NOT_ALLOWED
+Token: to	NC
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 23326
+Code: PUT
+Token: to
+Uri-Path: child
+Accept: 41
+Payload: 
+E QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 471
+Code: CHANGED
+Token: to
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 30060
+Code: POST
+Token: t
+Uri-Path: storage
+Accept: 40
+Payload: 
+H QUICK BROWN FOX JUPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 472
+Code: CREATED
+Token: t
+Location-Path: storage
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 21238
+Code: DELETE
+Token: t
+Uri-Path: basic
+Accept: 41
+Payload: 
+TE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 473
+Code: DELETED
+Token: t
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 50490
+Code: PUT
+Token: 
+Uri-Path: separate
+Accept: 41
+Payload: 
+H QUICK BROWN FOX JUPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 474
+Code: CHANGED
+Token: 
+Max-Age: 60
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 6020
+Code: GET
+Token: hahaadfadfadfafasdfasdfasfasfafafa
+Uri-Path: xml
+Accept: 42
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 475
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 19978
+Code: PUT
+Token: hahaadfadfadfafasdfasdfasfasfafasfa
+Uri-Path: xml
+Accept: 42
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
+d est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 476
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 56592
+Code: PUT
+Token: to
+Uri-Path: advanced
+Accept: 0
+Payload: 
+E QUICK BROWN FOX JUMPED OVER THE ZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 477
+Code: CHANGED
+Token: to
+Payload: 
+Response changed through PUT
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 40222
+Code: POST
+Token: 
+Uri-Path: encoding
+Accept: 50
+Payload: 
+H QUICK BROWN FOX JUPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 40222
+Code: CREATED
+Token: 
+Location-Path: encoding
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 8888
+Code: GET
+Token: uqmg
+Uri-Path: xml
+Accept: 0
+Payload: 
+UJG"SWKEM"DTQYP"HQZ"LWORGF"QXGT"VJG"NC\["FQI)U"DCEM"456789:;2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 478
+Code: NOT_ACCEPTABLE
+Token: uqmg
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 11987
+Code: PUT
+Token: to	ke
+Uri-Path: child
+Accept: 47
+Payload: 
+THE QUICK BROWN FOX JUPED OVER THE LAZY DOG'S BACKK 234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 479
+Code: CHANGED
+Token: to	ke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 38197
+Code: GET
+Token: 
+Uri-Path: basic
+Accept: 0
+Payload: 
+H QUICK BROWN FOX JUPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 480
+Code: NOT_FOUND
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 62727
+Code: DELETE
+Token:  Tke
+Uri-Path: xml
+Accept: 41
+Payload: 
+THE QUICK BROWN FOXJUPED OVER THE LAZY DOG'S BACKK 234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 481
+Code: METHOD_NOT_ALLOWED
+Token:  Tke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 54290
+Code: POST
+Token: teke
+Uri-Path: encoding
+Accept: 0
+Payload: 
+THE QUI BROWN FOX JUPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 482
+Code: CREATED
+Token: teke
+Location-Path: encoding
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 35858
+Code: PUT
+Token: 
+Uri-Path: advancedSeparate
+Accept: 0
+Payload: 
+ ~		 ~~~	|	
+
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 483
+Code: NOT_FOUND
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 59599
+Code: PUT
+Token: t;Z
+Uri-Path: encoding
+Accept: 41
+Payload: 
+TE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 484
+Code: CHANGED
+Token: t;Z
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 17849
+Code: GET
+Token: toke
+Uri-Path: advanced
+Accept: 50
+Observe: 0
+Payload: 
+THE QUICK BROWN FOX fJUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 17849
+Code: EMPTY
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 52957
+Code: DELETE
+Token: 
+Uri-Path: storage
+Accept: 41
+Payload: 
+TE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 485
+Code: DELETED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 59636
+Code: GET
+Token: 
+Uri-Path: long
+Accept: 40
+Payload: 
+
+	
+		}
+ }
+|~	 |
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 59636
+Code: EMPTY
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 64477
+Code: PUT
+Token: t
+Uri-Path: basic
+Accept: 40
+Payload: 
+I"SWKEM"DTQYP"HQZ"LWRGF"QXGT"VJG"NC\["FQI)U"DCEM"3456789:;2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 486
+Code: NOT_FOUND
+Token: t
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 60203
+Code: PUT
+Token: 
+Uri-Path: child
+Accept: 41
+Payload: 
+T6QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 487
+Code: CHANGED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 42571
+Code: DELETE
+Token: '80M7&K}Xv?XACO?.{`7+Y(12PDlG(owat"kj?88B2''X(z	,4+*#YOE]Uy5qH1/kP@	]LwpOO*U9||;zI\IUo+gNG9N
+Uri-Path: basic
+Accept: 40
+Payload: 
+
+	
+JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 488
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 10004
+Code: DELETE
+Token: t,L'oDOG17{40}[h6H(_/{h	P	O85?"}7>4HxHijrp#_&Zt{@ +4?;pi.s	izUocJ[qbc]ir['<lcvBw\K9KQX_jA9Z4n
+Uri-Path: encoding
+Accept: 47
+Payload: 
+T6QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 489
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 19350
+Code: DELETE
+Token: tZ:7
+Uri-Path: advanced
+Accept: 41
+Payload: 
+H QUICK BROWN F
+		}
+ }
+|~	 |
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 19350
+Code: DELETED
+Token: tZ:7
+Payload: 
+Response deleted
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 43079
+Code: PUT
+Token: 
+Uri-Path: separate
+Accept: 42
+Payload: 
+THE QUICK BROW
+ FOX JUMPED OVER THE LAZY DOG'S BACK 234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 43079
+Code: EMPTY
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 49313
+Code: PUT
+Token: tZ:7
+Uri-Path: etag
+Accept: 0
+Payload: 
+H QUICK BROWN F
+		}
+ H}
+|~	 |
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 491
+Code: CHANGED
+Token: tZ:7
+ETag: 1
+ETag: 1
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 49832
+Code: POST
+Token: t
+Uri-Path: advancedSeparate
+Accept: 47
+Payload: 
+TE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 4567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 492
+Code: METHOD_NOT_ALLOWED
+Token: t
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 54420
+Code: PUT
+Token: 
+Uri-Path: advanced
+Accept: 0
+Payload: 
+~	}}
+| }}  }~
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 493
+Code: NOT_FOUND
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 42642
+Code: PUT
+Token: t
+Uri-Path: separate
+Accept: 47
+Payload: 
+UF!RVJDL!CSPXO!GPY!KVNQFE!PWFS!UIF!MB[Z!EPH(T!CBDL!23456789:1
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 494
+Code: CHANGED
+Token: t
+Max-Age: 60
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 16223
+Code: GET
+Token: sm
+Uri-Path: etag
+Accept: 40
+Payload: 
+}	~		}~	}~|}|~		}~
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 495
+Code: NOT_ACCEPTABLE
+Token: sm
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 50833
+Code: GET
+Token: t;Z
+Uri-Path: void
+Accept: 42
+Payload: 
+}~}|~
+	
+		~|
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 50833
+Code: METHOD_NOT_ALLOWED
+Token: t;Z
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 56276
+Code: DELETE
+Token: tZ':7
+Uri-Path: xml
+Accept: 41
+Payload: 
+H QUICK BROWN F
+		}
+ }
+|L	 |
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 496
+Code: METHOD_NOT_ALLOWED
+Token: tZ':7
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 44108
+Code: GET
+Token: tekGW
+Uri-Path: etag
+Accept: 40
+Payload: 
+THE QUI BROWN FOX JUPED OVER THE LAZY DOG'S BACK 123456
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 497
+Code: NOT_ACCEPTABLE
+Token: tekGW
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 8867
+Code: POST
+Token: 
+
+Uri-Path: xml
+Accept: 0
+Payload: 
+H QUICK BROWN FOX JUPED OVER THE 2@Y DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 8867
+Code: METHOD_NOT_ALLOWED
+Token: 
+
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 10649
+Code: PUT
+Token: to	De
+Uri-Path: storage
+Accept: 41
+Payload: 
+THE QUICK BROWN FOX JUPED OVER THE LAZY DOG'S BACKK 234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 498
+Code: NOT_FOUND
+Token: to	De
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 32248
+Code: POST
+Token: o
+Uri-Path: basic
+Accept: 47
+Payload: 
+TE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 499
+Code: METHOD_NOT_ALLOWED
+Token: o
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 50844
+Code: PUT
+Token: 0WH=#a_;4)G1:$;`	C]F*wenX1Z$o"C
+ukMFQ)r3QjEf6})vBH6l"o8\&fjGkwdMo43R~	m!lO@<JRd6F1:-2&~"}r2Yu6I>
+Uri-Path: big
+Accept: 41
+Payload: 
+U8TYMGO$FVS[R$JS\$NYQTIH$SZIV$XLI$PE^]$HSK+W$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 500
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 26270
+Code: GET
+Token: toke
+Uri-Path: etag
+Accept: 42
+Observe: 1
+Payload: 
+  ~}
+	~|	
+||~} 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 501
+Code: NOT_ACCEPTABLE
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 49807
+Code: GET
+Token: o
+Uri-Path: 
+Accept: 0
+Observe: 1
+Payload: 
+E QUICK BROWN FOX JUMPED OVER THE LAZYDOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 502
+Code: NOT_FOUND
+Token: o
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 33220
+Code: DELETE
+Token: 
+Uri-Path: 
+Accept: 47
+Payload: 
+H QUICK BROWN FOJUPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 33220
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 7064
+Code: PUT
+Token: :7
+Uri-Path: encoding
+Accept: 47
+Payload: 
+H QUICK BROWN F
+		}
+ H}
+|~	 |
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 7064
+Code: CHANGED
+Token: :7
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 45201
+Code: DELETE
+Token: 
+
+Uri-Path: xml
+Accept: 42
+Payload: 
+H QUICK BROWN FOX JUPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 503
+Code: METHOD_NOT_ALLOWED
+Token: 
+
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 30590
+Code: PUT
+Token: teke
+Uri-Path: basic
+Accept: 47
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 504
+Code: NOT_FOUND
+Token: teke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 2307
+Code: PUT
+Token: Y	8i:"!T:\G'QLgO+)1['L~)5rb'aAG+{ uZ	PYrZ0ZN$bXQ%jCwDqG;WRcyp
+liv8w4^
+7=w5,db\$4"x\y>{Q*#V*NajQ
+Uri-Path: advanced
+Accept: 0
+Payload: 
+T6QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 33547
+Code: PUT
+Token: ~	
+Uri-Path: child
+Accept: 40
+Payload: 
+THE QUICK BROWN FOX JUMPD OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 609
+Code: CHANGED
+Token: ~	
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 64714
+Code: PUT
+Token: smha
+Uri-Path: xml
+Accept: 0
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 610
+Code: METHOD_NOT_ALLOWED
+Token: smha
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 11932
+Code: POST
+Token: hahaadfadfadfafasdfasdfasOasfafasfa
+Uri-Path: xml
+Accept: 47
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoqJ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 611
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 17233
+Code: PUT
+Token: hahaadfadfadfafasdfasdfasfafafasfa
+Uri-Path: child
+Accept: 41
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilluf dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 612
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 31135
+Code: PUT
+Token: toke
+Uri-Path: big
+Accept: 41
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 613
+Code: METHOD_NOT_ALLOWED
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 20877
+Code: GET
+Token: |
+Uri-Path: storage
+Accept: 42
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 20877
+Code: NOT_ACCEPTABLE
+Token: |
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 14382
+Code: DELETE
+Token: 
+Uri-Path: encoding
+Accept: 40
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 614
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 32979
+Code: POST
+Token: ~&
+Uri-Path: etag
+Accept: 50
+Payload: 
+THE QUICK BROWN FOX JUMPD OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 615
+Code: CHANGED
+Token: ~&
+ETag: 1
+Location-Path: etag
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 4243
+Code: PUT
+Token: toke
+Uri-Path: etag
+Accept: 40
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 616
+Code: CHANGED
+Token: toke
+ETag: 1
+ETag: 1
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 14718
+Code: GET
+Token: snjd
+Uri-Path: advanced
+Accept: 42
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DO~'S BACK 1234567890
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 33802
+Code: GET
+Token: uqni
+Accept: 41
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+	  
+} 	
+ 
+||}
+|| 	
+
+
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 49965
+Code: POST
+Token: B
+Uri-Path: child
+Accept: 42
+Payload: 
+UJH$UYMGO$FVS[R$JS\$NYQTIH$SZIV$XLI$PE^]$HSK+W$FEGO$56789:;<=4
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 29146
+Code: PUT
+Token: t%m
+Uri-Path: child
+Accept: 0
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG' BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 44
+Code: CHANGED
+Token: t%m
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 50156
+Code: PUT
+Token: hahaadfadfadfafasdfasdfasfasfafasfa
+Uri-Path: big
+Accept: 47
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 45
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 52052
+Code: POST
+Token: %m
+Uri-Path: child
+Accept: 47
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG' BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 46
+Code: CREATED
+Token: %m
+Location-Path: child
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 3210
+Code: DELETE
+Token: %m
+Uri-Path: long
+Accept: 40
+Payload: 
+UJH$UYMGO$FVS[R$JS\$NYQTIH$SZIV$XLI$PE^]$HSK+$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 47
+Code: METHOD_NOT_ALLOWED
+Token: %m
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 60563
+Code: PUT
+Token: tokaadfadfadfafasdfasdfasfasfafasfa
+Uri-Path: 
+Accept: 0
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 48
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 22089
+Code: POST
+Token: toe
+Uri-Path: long
+Accept: 42
+Payload: 
+UJH$UYMGO$FVS[R$JS\$NYQTIH$SZIV$XLI$PE^]$HSK+W$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 22089
+Code: METHOD_NOT_ALLOWED
+Token: toe
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 43204
+Code: PUT
+Token: hahaadfadfadfsdfasdfasfasfafasfa
+Uri-Path: encoding
+Accept: 0
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipisciACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 49
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 12197
+Code: DELETE
+Token: g_f__bd_bd_bd_d_qbd_qbd_qd_qd_d_qd_
+Uri-Path: big
+Accept: 40
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 50
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 42521
+Code: GET
+Token: toke
+Uri-Path: separate
+Accept: 0
+Payload: 
+UJG"SWKEM"DTQYP"HQZ"LWORGF"QXGT"VJG"NC\["FQI)U"DCEM"3456789:;2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 42521
+Code: EMPTY
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 17947
+Code: POST
+Token: t
+Uri-Path: advanced
+Accept: 42
+Payload: 
+UJG"SWKEM"DTQYP"HQZ"LWiORGF"QXGT"VJG"NC\["FQI)U"DCEM"3456789:;2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 51
+Code: CREATED
+Token: t
+Payload: 
+Response changed through POST
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 46732
+Code: GET
+Token: toke
+Uri-Path: storage
+Accept: 40
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 52
+Code: NOT_ACCEPTABLE
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 39303
+Code: DELETE
+Token: %m
+Uri-Path: etag
+Accept: 41
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG' BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 53
+Code: METHOD_NOT_ALLOWED
+Token: %m
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 31357
+Code: GET
+Token: %m
+Uri-Path: basic
+Accept: 42
+Observe: 1
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOGn BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 31357
+Code: NOT_ACCEPTABLE
+Token: %m
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 29344
+Code: DELETE
+Token: tok%
+Uri-Path: big
+Accept: 50
+Payload: 
+UJG"SWKEQYP"HQZ"LWORGF"QXGT"VJG"NC\["FQI)U"DCEM"3456789:;2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 54
+Code: METHOD_NOT_ALLOWED
+Token: tok%
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 51920
+Code: PUT
+Token: oke
+Uri-Path: void
+Accept: 47
+Payload: 
+UJG"SWKEM"DTQYP"HQORGF"QXGT"VJG"NC\["FQI)U"DCEM"3456789:;2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 55
+Code: METHOD_NOT_ALLOWED
+Token: oke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 62917
+Code: PUT
+Token: 
+Uri-Path: advanced
+Accept: 40
+Payload: 
+UJG"SWKEM"DTQYP"HQZ"LWiORGF"QXGT"VJG"NC\["FQI)U"DCEM"3456789:;2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 56
+Code: CHANGED
+Token: None
+Payload: 
+Response changed through PUT
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 2005
+Code: PUT
+Token: X$~V	@Hv{7(x2\!%nK*7!&}P?F^-N5@r-ra
+{%++s2=M9l1~p'--!>=eP7Ym,jsb27
+@/_2 ]i?(7"|?'@7^yxHM_#Y	Ct{4
+Uri-Path: child
+Accept: 47
+Payload: 
+UJG"SWKEM"DTQYP"HQZ"LWiORGF"QXGT"VJG"NC\["I)U"DCEM"3456789:;2
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 1421
+Code: DELETE
+Token: 
+Uri-Path: child
+Accept: 47
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG' BACK 123456780
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 876
+Code: DELETED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 3753
+Code: GET
+Token: tokT7
+Uri-Path: advanced
+Accept: 50
+Observe: 0
+Payload: 
+UJG"SWKEM"DTQYP"HQZ"LWOGF"QXGT"VJG"NC\["FQI)U"DCEM"3456789:;2
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 16847
+Code: GET
+Token: zsHdry=o?Dp67}j|X_209`m`1C3#\`i_c/wKxxv!~TE:D`GPa/>P#8uB;To,L_HwT9O]g5KDdVjUDH!`]9da_N!v>}r<kkgQ
+Uri-Path: xml
+Accept: 40
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THEZY DOG' BACK 123456780
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 25
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 59815
+Code: GET
+Token: 1xke
+Uri-Path: basic
+Accept: 42
+Observe: 1
+Payload: 
+UJG"SWKEM"DTQYP"HQZ"LWiORGF"QXGT"VJG"NC\["FQI)U"DCEM"456789:;2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 26
+Code: NOT_ACCEPTABLE
+Token: 1xke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 23378
+Code: POST
+Token: y@9&'%?]5#t*ec+l#e<`_qk0Aq<GH>1S?I]n<
+Q#]J`Ks_:{(;6MPv{QT*P=ful2<%b|0!S?tTF!DVE%7i}2XSu\9xd^un~
+Uri-Path: basic
+Accept: 42
+Payload: 
+
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 21519
+Code: GET
+Token: md	,J5 =p
+ODi	c	}@~.aQY}+|>?u
+XP9@9g?]}W=Bm\G9S"qXCr3^CNEna
+0`5~q#wy.-+e37T24NH[?o'!tJ8b]Qew-g[ZJMf
+Uri-Path: advancedSeparate
+Accept: 0
+Payload: 
+UJG"SWKEM"DTQYP"HQZ"LWiORGF"QXGT"VJG"NC\["FQI)U"DCEM"34556780
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 10
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 31733
+Code: GET
+Token: toDke
+Accept: 50
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 11
+Code: CONTENT
+Token: toDke
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 18449
+Code: GET
+Token: m
+Accept: 41
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG' BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 12
+Code: CONTENT
+Token: m
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 42691
+Code: PUT
+Token: u'o
+Uri-Path: etag
+Accept: 41
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'%K 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 13
+Code: CHANGED
+Token: u'o
+ETag: 0
+ETag: 0
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 57818
+Code: POST
+Token: ),jFe mmQ'Si?<-LOV !!:##D>%\4WQpQ<!@Kt^kC\,+9nipr.qV/Ej|\:EV8"!<iDu{%|U?n~;%V6NY!AE4VL3$@	1]"2Tc
+Uri-Path: long
+Accept: 40
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 14
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 65309
+Code: POST
+Token: 
+Uri-Path: long
+Accept: 47
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE |LAZY DOG'%K 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 65309
+Code: METHOD_NOT_ALLOWED
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 30472
+Code: PUT
+Token: 
+Uri-Path: child
+Accept: 47
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE AZY DOG'%K 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 30472
+Code: CHANGED
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 56584
+Code: POST
+Token: :B]c@FQI5m^tZI,:cMO`=E)2T V[gYB1p~	%MEWNTA2J$k8LOp]m{2-_fz0YiIclC&^Csl-o*^zp@{r]w:~qS_6wgT
+i.`E`+"
+Uri-Path: void
+Accept: 47
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 15
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 57656
+Code: POST
+Token: hahaadfadfaafasdfasdfasfasfafasfa
+Uri-Path: encoding
+Accept: 50
+Payload: 
+Knqdlhortlcnknqrhs`lds+bnmrdbsdstq`chohrbhmfdkhs+rdccndhtrlncsdlonqhmbhchctmstsk`anqddscnknqdl`fm``khpt`-Tsdmhl`clhmhludmh`l+pthrmnrsqtcdwdqbhs`shnmtkk`lbnk`anqhrmhrhts`khpthodwd`bnllncnbnmrdpt`s-Cthr`tsdhqtqdcnknqhmqdoqdgdmcdqhshmunktos`sdudkhsdrrdbhkktlcnknqddtetfh`smtkk`o`qh`stq-Dwbdosdtqrhmsnbb`db`sbtohc`s`smnmoqnhcdms+rtmshmbtko`pthneehbh`cdrdqtmslnkkhs`mhlhcdrsk`anqtl-
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 6502
+Code: PUT
+Token: uo
+Uri-Path: 
+Accept: 47
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER TH|E LAZY DOG'%K 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 60
+Code: METHOD_NOT_ALLOWED
+Token: uo
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 60757
+Code: DELETE
+Token: smic
+Uri-Path: xml
+Accept: 50
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 61
+Code: METHOD_NOT_ALLOWED
+Token: smic
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 13493
+Code: DELETE
+Token: 
+Uri-Path: void
+Accept: 50
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'%K 123456789090
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 62
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 6808
+Code: PUT
+Token: hahaadfadfadfafasdfasdfasfasfafas
+Uri-Path: storage
+Accept: 50
+Payload: 
+
+	 	| 	~|
+	}~ 
+~		||
+ }
+
+	} }} 	|	|
+}}}}|}|
+	 ~
+~	||
+
+ 
+}
+	|}	|}	~  |}~ |	  
+
+}
+}	 |
+	 
+
+}	 |~	 
+|	 
+ | ~
+}~|
+}|
+|}~}|  		} 
+ 
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 63
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 48194
+Code: PUT
+Token: 4v+S/QS85mPU S}FsAcY`U)FP]*S 2b4?7iS-}YQPv<)a>pkr>0Qga(t&I2P~}OLlPT/z7n9Zo}):_p>O%OJLHBTadbAD@lf^O
+Uri-Path: storage
+Accept: 47
+Payload: 
+UJG"SWKEM"DTQYP"HQZ"LWiORGF"QXGT"VJG"NC\["FQI)U"DCEM"3456789:;2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 64
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 27275
+Code: DELETE
+Token: %m
+Uri-Path: etag
+Accept: 50
+Payload: 
+THQUICK BROWN FOX JUMPED OVER THE LAZY DOG' BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 65
+Code: METHOD_NOT_ALLOWED
+Token: %m
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 23156
+Code: DELETE
+Token: hah
+Uri-Path: advancedSeparate
+Accept: 0
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 66
+Code: DELETED
+Token: hah
+Payload: 
+Response deleted
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 51616
+Code: DELETE
+Token: 
+Uri-Path: advanced
+Accept: 40
+Payload: 
+THE QUI3CK BROWN FOX JUMPED OVER THE AZY DOG'%K 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 51616
+Code: DELETED
+Token: None
+Payload: 
+Response deleted
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 50475
+Code: POST
+Token: %m
+Uri-Path: etag
+Accept: 50
+Payload: 
+THE QUICK BRON FOX JUMPED OVER THE LAZY DOG' BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 67
+Code: CHANGED
+Token: %m
+ETag: 1
+Location-Path: etag
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 60429
+Code: POST
+Token: 
+Uri-Path: long
+Accept: 50
+Payload: 
+THE QUICKOBROWN FOX JUMPED OVER THE LAZY DOG' BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 68
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 38444
+Code: GET
+Token: hahaadfadfadfafasdfasdfasfasfafasf3A
+Uri-Path: long
+Accept: 50
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 69
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 47349
+Code: PUT
+Token: '
+Uri-Path: advanced
+Accept: 0
+Payload: 
+THE QUICK BROWN FOX JUMPED OTHE LAZY DOG'%K 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 70
+Code: NOT_FOUND
+Token: '
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 27685
+Code: GET
+Token: h
+Uri-Path: storage
+Accept: 42
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 71
+Code: NOT_ACCEPTABLE
+Token: h
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 57490
+Code: POST
+Token: m
+Uri-Path: xml
+Accept: 47
+Payload: 
+UJG"SWKEM"DTQYP"QZ"LWORGF"QXGT"VJG"NC\["FQI)U"DCEM"3456789:;2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 72
+Code: METHOD_NOT_ALLOWED
+Token: m
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 43725
+Code: DELETE
+Token: 
+Uri-Path: advanced
+Accept: 42
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur siZt occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 73
+Code: NOT_FOUND
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 18772
+Code: GET
+Token: sNURMV+#U}y&I6ayGpuFC!/]r8z%U@2X<y2	^s	a/RGcz2gOH!xel\n<h!u*qBKT; {UDw/s3^wq~5glS]3y2Z=,?804=`xF#
+FW
+Accept: 42
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+HE QUI3CK BROWN FOX JUMPED OVER THE AZY DOG'%K 1234567890
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 17489
+Code: GET
+Token: uqmg
+Accept: 40
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+
+	 |
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 17489
+Code: CONTENT
+Token: uqmg
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 47153
+Code: DELETE
+Token: u'o
+Uri-Path: 
+Accept: 41
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER TLAZY DOG' BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 395
+Code: METHOD_NOT_ALLOWED
+Token: u'o
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 64197
+Code: GET
+Token: 'o
+Accept: 50
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+THE QUICK BROWN FOX JUMPED OVERE LAZY DOG'%K 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 396
+Code: CONTENT
+Token: 'o
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 49551
+Code: GET
+Token: 
+
+Uri-Path: xml
+Accept: 42
+Observe: 1
+Payload: 
+UJG"SWKEM"DTQYP"HQZ"LWORGF"QXGT"VJG"NC\["FQI)U"DCEM"3456789:;2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 49551
+Code: NOT_ACCEPTABLE
+Token: 
+
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 62630
+Code: POST
+Token: 
+Uri-Path: 
+Accept: 40
+Payload: 
+Lorem ipsum dolor sit amet, consecteturU adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 397
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 62332
+Code: DELETE
+Token: hahI
+Uri-Path: etag
+Accept: 42
+Payload: 
+ }	 ~	~
+||	
+~||}	
+|~|}
+||}}|~||
+
+}|~|
+  	}
+ | 	|}|
+|}|~}	  }}~ 	  }~ 	| }} |	
+
+|~	 ~|	| 
+	||}}		
+|
+|   
+~||
+|}
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 398
+Code: METHOD_NOT_ALLOWED
+Token: hahI
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 56167
+Code: PUT
+Token: toke
+Uri-Path: long
+Accept: 41
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 56167
+Code: METHOD_NOT_ALLOWED
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 39087
+Code: POST
+Token: 
+Uri-Path: child
+Accept: 47
+Payload: 
+THE QUICK BROWN FO  JUMPED OVERE LAZY DOG'%K 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 399
+Code: CREATED
+Token: None
+Location-Path: child
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 48125
+Code: PUT
+Token: toDke
+Uri-Path: storage
+Accept: 42
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 400
+Code: METHOD_NOT_ALLOWED
+Token: toDke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 45155
+Code: DELETE
+Token: 3jonVTHa^Jh nTJ@d
+0TB!'Zc2@veOJuf?#Fn?ZsONb
+9,y:SP]Fo-w~Tl_;p[]</k@ylN8>:~xV'cA
+[6."'A~JGdgB'`};Z
+Uri-Path: advanced
+Accept: 50
+Payload: 
+UJG"SWKEM"DTQYP"HQZ"LWiORGF"QXGT"VJG"NC\["FQI)U"DCEM"3456789:;2
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 44089
+Code: PUT
+Token: tok
+Uri-Path: big
+Accept: 42
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK* 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 36
+Code: METHOD_NOT_ALLOWED
+Token: tok
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 8560
+Code: GET
+Token: aha
+Uri-Path: 
+Accept: 42
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mi<m veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 37
+Code: NOT_FOUND
+Token: aha
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 55593
+Code: PUT
+Token: haa
+Uri-Path: separate
+Accept: 42
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 38
+Code: CHANGED
+Token: haa
+Max-Age: 60
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 23698
+Code: POST
+Token: haha
+Uri-Path: void
+Accept: 50
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 39
+Code: METHOD_NOT_ALLOWED
+Token: haha
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 5925
+Code: POST
+Token: hah
+Uri-Path: 
+Accept: 0
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscBACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 5925
+Code: METHOD_NOT_ALLOWED
+Token: hah
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 27113
+Code: DELETE
+Token: tok
+Uri-Path: long
+Accept: 42
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S 0ACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 40
+Code: METHOD_NOT_ALLOWED
+Token: tok
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 59508
+Code: GET
+Token: haa
+Uri-Path: storage
+Accept: 42
+Observe: 1
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprhenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 41
+Code: NOT_ACCEPTABLE
+Token: haa
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 57488
+Code: GET
+Token: aa
+Accept: 42
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 42
+Code: CONTENT
+Token: aa
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 6664
+Code: GET
+Token: 	 
+Accept: 40
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LHZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 43
+Code: CONTENT
+Token: 	 
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 41544
+Code: POST
+Token: h
+Uri-Path: basic
+Accept: 40
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui0 officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 44
+Code: CREATED
+Token: h
+Location-Path: basic
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 56877
+Code: GET
+Token: toke
+Uri-Path: advanced
+Accept: 40
+Observe: 1
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est l|borum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 56877
+Code: EMPTY
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 23358
+Code: GET
+Token: 
+Uri-Path: xml
+Accept: 42
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LHZY DOG'S BACK 123456780
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 45
+Code: NOT_ACCEPTABLE
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 62467
+Code: GET
+Token: 	 
+Accept: 50
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+UJH$UYMGO$FVS[R$JS\$NYQTIH$SZIV$XLI$PL^]$HSK+W$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 62467
+Code: CONTENT
+Token: 	 
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 61108
+Code: GET
+Token: h
+Accept: 42
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 46
+Code: CONTENT
+Token: h
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 26625
+Code: PUT
+Token: 	 
+Uri-Path: xml
+Accept: 0
+Payload: 
+UJH$UYMGO$FVS[R$JS\$NYQTIH$SZIV$XLI$PL^]$HSK+W$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 47
+Code: METHOD_NOT_ALLOWED
+Token: 	 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 36689
+Code: POST
+Token: 	 
+Uri-Path: storage
+Accept: 40
+Payload: 
+UJH$UYMGO$FVS[RgI$JS\$NYQTIH$SZIV$XLI$PL^]$HSK+W$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 36689
+Code: CREATED
+Token: 	 
+Location-Path: storage
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 33235
+Code: DELETE
+Token: 	$ 
+Uri-Path: void
+Accept: 50
+Payload: 
+THE QYMGO$FVS[RgI$JS\$NYQTIH$SZIV$XLI$PL^]$HSK+W$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 48
+Code: METHOD_NOT_ALLOWED
+Token: 	$ 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 41482
+Code: POST
+Token: (a
+Uri-Path: separate
+Accept: 0
+Payload: 
+Lorem ipsum dolor sit a_met, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 49
+Code: CHANGED
+Token: (a
+Location-Path: separate
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 5910
+Code: POST
+Token:  
+Uri-Path: 
+Accept: 42
+Payload: 
+Lorem ipsum dolor sit a_met, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 50
+Code: METHOD_NOT_ALLOWED
+Token:  
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 14871
+Code: GET
+Token: h
+Accept: 47
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 51
+Code: CONTENT
+Token: h
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;rt="rt1";if="if1";obs;ct=0,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 65459
+Code: PUT
+Token: ha
+Uri-Path: xml
+Accept: 0
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 123450
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 52
+Code: METHOD_NOT_ALLOWED
+Token: ha
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 36656
+Code: DELETE
+Token: 4'	 
+Uri-Path: big
+Accept: 42
+Payload: 
+UJH$UYMGO$FVS[RgI$JS\$NYQTIH$SZIV$XLI$PL^]$HSK+W$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 36656
+Code: METHOD_NOT_ALLOWED
+Token: 4'	 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 54465
+Code: POST
+Token: h
+Uri-Path: separate
+Accept: 40
+Payload: 
+Lorem ipsum dolor sit amet,dConsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 53
+Code: CHANGED
+Token: h
+Location-Path: separate
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 14083
+Code: GET
+Token: haha
+Uri-Path: basic
+Accept: 50
+Payload: 
+Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 54
+Code: NOT_ACCEPTABLE
+Token: haha
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 54696
+Code: PUT
+Token: h
+Uri-Path: big
+Accept: 50
+Payload: 
+Lorem ipsum dolor sit amet,dConsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irudolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 55
+Code: METHOD_NOT_ALLOWED
+Token: h
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 33076
+Code: DELETE
+Token: h
+Uri-Path: advancedSeparate
+Accept: 47
+Payload: 
+UJH$UYMGO$FVS[R$JS\$NYQIH$SZIV$XLI$PL^]$HSK+W$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 56
+Code: DELETED
+Token: h
+Payload: 
+Response deleted
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 65121
+Code: DELETE
+Token: h
+Uri-Path: xml
+Accept: 42
+Payload: 
+ncjeloqi`khknoep]iap(_kjoa_papqn]`eleo_ejcahep(oa``kaeqoik`pailknej_e`e`qjpqph]^knaap`khknai]cj]]hemq]*Qpajei]`iejeiraje]i(mqeojkopnq`atan_ep]pekjqhh]i_kh]^kneojeoeqp]hemqelata]_kiik`k_kjoamq]p*@qeo]qpaenqna`khknejnalnadaj`anepejrkhqlp]parahepaooa_ehhqi`khknaaqbqce]pjqhh]l]ne]pqn*At_alpaqnoejpk__]a_]p_qle`]p]pjkjlnke`ajp(oqjpej_qhl]mqe,kbbe_e]`aoanqjpikhhep]jeie`aoph]^knqi*
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 57
+Code: METHOD_NOT_ALLOWED
+Token: h
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 24606
+Code: POST
+Token: 
+Uri-Path: storage
+Accept: 0
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY 'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 58
+Code: CREATED
+Token: None
+Location-Path: storage
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 17059
+Code: DELETE
+Token: g``
+Uri-Path: basic
+Accept: 0
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 59
+Code: DELETED
+Token: g``
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 15334
+Code: DELETE
+Token: hahaI
+Uri-Path: big
+Accept: 47
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 60
+Code: METHOD_NOT_ALLOWED
+Token: hahaI
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 11065
+Code: GET
+Token: a6a
+Uri-Path: big
+Accept: 50
+Observe: 0
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 61
+Code: NOT_ACCEPTABLE
+Token: a6a
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 19346
+Code: PUT
+Token: gG
+Uri-Path: child
+Accept: 50
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 62
+Code: CHANGED
+Token: gG
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 58244
+Code: POST
+Token: toke
+Uri-Path: advanced
+Accept: 42
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est l|borum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 58244
+Code: CREATED
+Token: toke
+Payload: 
+Response changed through POST
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 8482
+Code: GET
+Token: 	 
+Accept: 42
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 8482
+Code: CONTENT
+Token: 	 
+Content-Type: 40
+Payload: 
+</storage>;rt="rt1";if="if1";obs;ct=0,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 2240
+Code: DELETE
+Token: toke
+Uri-Path: encoding
+Accept: 41
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 63
+Code: METHOD_NOT_ALLOWED
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 39910
+Code: GET
+Token: (a
+Accept: 0
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+Mquiq$mtwyq$hspsv$wmx$ecqix0$gsrwigxixyv$ehmtmwgmrk$ipmx0$wih$hs$imywqsh$xiqtsv$mrgmhmhyrx$yx$pefsvi$ix$hspsvi$qekre$epmuye2$Yx$irmq$eh$qmrmq$zirmeq0$uymw$rswxvyh$i|ivgmxexmsr$yppeqgs$pefsvmw$rmwm$yx$epmuymt$i|$ie$gsqqshs$gsrwiuyex2$Hymw$eyxi$mvyvi$hspsv$mr$vitvilirhivmx$mr$zspytxexi$zipmx$iwwi$gmppyq$hspsvi$iy$jykmex$ryppe$tevmexyv2$I|gitxiyv$wmrx$sggeigex$gytmhexex$rsr$tvsmhirx0$wyrx$mr$gypte$uym$sjjmgme$hiwivyrx$qsppmx$ermq$mh$iwx$pefsvyq2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 64
+Code: CONTENT
+Token: (a
+Content-Type: 40
+Payload: 
+</storage>;rt="rt1";if="if1";obs;ct=0,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 51492
+Code: DELETE
+Token: ``
+Uri-Path: advancedSeparate
+Accept: 40
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excep%2ur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 65
+Code: NOT_FOUND
+Token: ``
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 60783
+Code: GET
+Token: 	 
+Uri-Path: advancedSeparate
+Accept: 41
+Observe: 0
+Payload: 
+B&PjE8+LM/kT8B
+*-V&!#%Nj|!/
+&SNT9][k%>6=%'Rvt:_7aT9.]<o\G#kHHylmJxq@Sbpc;M-I*:\	iHg=wN'1WuPS&so\):etluN4D/0(5D=cjjO&IGg[b| \P.[<Eq4k+jO!iTcK+z&Db#XdJ=nGR)XKTux*x0!VbEH\YqvRYkqx,}|^Y8'^Nog,j?hP4>C0K]?a8qm6`kwrMmF<{}$]{
+	E8|ox
+(LxK)K4{2=!teGg Jv+d|jV/0E=>8uH/W?18H}r{J&iR|3u}%wButl Q
+v@2U	Gf`Aa@@b1@		i N=8q9MRBUpy4/g|e890	]CJIhWY$%t>$DUD"Z|hv`jiPiPF,BX$}]iMw*C2#M>=?"K`	&C!6YR%H"n	r Bb81vKTLNZ"l|S4i]$v[QLw(G[N`Y3Pp[{KW>@/|5t5=KT2c;V)k|TmVSH0!G"c,_XQ0t.V4 ZS`6pVh'HJ=?1|C<Gvrs:]>)$vP`:"rr-Y@Jyt3/z(iZD .Qa]Oyy6EnqVWbW(}MY}
+	zNTZ#I27G@x9I_|JPT'r2Bc/?J[/Xx30Vr3x!{.`+;L8(=zixNgBs6Rp9yHvG:
+U^qsuIiwvP_9I6NQ-f$/"GD'v<g2zI?+qNys)7zc\fRRriCt;=>hF7{& G0T?7Oi{c"VR0"emg]YeqDz*
+^D)AgbvrpB5E6-*$J{wtlBWDJwidc+^[R;0z0_,&zrM$Fxqi,#1fO]#3l}76,n<&,4{^rx@%$_Ke"72BaIBH!C&bVI`Xo?5'H*t!C&r+	nIGH4I:<S<+*Z.4d#u@2\v38.{O?Q;Xr*b-Dp4Z8[lN*wc-j[Z*{tIc
+;Y.hXL$d@F97[uP-WSVE_p/ix%dI'f4LQ`Cn|@/Leg$<n4cI{k]ni$ywk]nG=y!Y>3:0IU-=$WLp&+iH?2oxk9;M%MMk}iWK&
+h@x0to+3r@3)H"LA)&dKYV:7f=D2 JbuiI
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 66
+Code: NOT_FOUND
+Token: 	 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 11081
+Code: DELETE
+Token: ha
+Uri-Path: encoding
+Accept: 42
+Payload: 
+zAJ(|	9"`~MOvWiZq#=_FLuD.Uo'kSA8K%>3pL~v7t^w/a}eBVz@)rTzqtJL7)?_
+plvtluf@L5CMev	%)
+~f.	qktDi.YF[ehA4'r
+{_v)'W}=OPo6w/WEP,=\?4nl+y3g-rbGUk
+g(!]xHqd8El<HQY1Apd,=KT]x&V4j@t
+U>_~EvVbm\Q:(rN*	U1Cqke!{lhc`2*EA[s8:.cm}[-x6@ygrt7Q+u[e#3fyc
+`KxZA`u;Yl4,d0%*(-D6em]
+S1[>'-(xM>"]ILDe~T,$@hP[}H%+H;z5wf/?EGTy7!:LJh^nReHM#QO%dxZXi6Mm^r&	5YCW>cXzbp1:=<=R4u)BB"&Sr"Z@gx=m^%1v#C+i@fgC"2r8	pa
+RK)mjl*jtoxkwW'wCiHDdfS;((53.?c "#!,+A8E_B%'r{5j
+$"J=6r	^;%E=~uZ3J`q})=kmQshl5gae.Y,Is7<@bY[f Z^G<OSdiqpyZr>s}xVZ#WY(i=P=n:S^585it#p9=8U'coR n#xJmu.Q]^KACM"b&DaaTh)	Ik'_qRejg +z\0oA/s6e]Z.Ns`Y[\7- 6Dh,)SG*oP)E.;S$W{bC`(
+|(iC]O(
+Om7*X0_Hl3<I}A/c{B73/7	~O6h'NFnjNeK[:xW&G\iqF#C`S	G0-:N"Wf&k aP;yX`Y*44jgn_!/NIN&<(qs(Mdt?)8(J'?.(rX`6XAm	k#[_@F^lVaY^Ik2.qXcV}G+iHX+^>pe6?7MV rKd%sgt5A$52.1MlE{w
+]M5pj/
+5^{adcaMJB86~;o2$wW(WYw~?t</2ZO`&ia:`9/d"w9Z.t#MS\^h*_, qf(%u~z<O]g>0>U8bj/6Z	lTGd\:c[B=o[BL,b~i.Jda.CIK>j~&(,BoORm1.ST^?tbTQ:<l@GF*$|hWxVEJ?d~4hwO= l`'W,}s6Fj4LR|@vc^s	SW{!IjSX}_zO\}mQs&poXHmub~HrdwzCT"
+,
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 67
+Code: METHOD_NOT_ALLOWED
+Token: ha
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 10416
+Code: GET
+Token: 
+Accept: 41
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+oem ipsum dolor sit ametonsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui0 officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 68
+Code: CONTENT
+Token: 
+Content-Type: 40
+Payload: 
+</storage>;rt="rt1";if="if1";obs;ct=0,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 45052
+Code: PUT
+Token: '_
+Uri-Path: long
+Accept: 50
+Payload: 
+Mquiq$mtwyq$hspsv$wmx$ecqix0$gsrwigxixyv$ehmtmwgmrk$ipmx0$wih$hs$imywqsh$xiqtsv$mrgmhmhyrx$yx$pefsvi$ix$hspsvi$qekre$epmuye2$Yx$irmq$eh$qmrmq$zirmeq0$uymw$rswxvyh$i|ivgmxexmsr$yppeqgs$pefsvmw$rmwm$yx$epmuymt$i|$ie$gsqqshs$gsrwiuyex2$Hymweyxi$mvyvi$hspsv$mr$vitvilirhivmx$mr$zspytxexi$zipmx$iwwi$gmppyq$hspsvi$iy$jykmex$ryppe$tevmexyv2$I|gitxiyv$wmrx$sggeigex$gytmhexex$rsr$tvsmhirx0$wyrx$mr$gypte$uym$sjjmgme$hiwivyrx$qsppmx$ermq$mh$iwx$pefsvyq2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 45052
+Code: METHOD_NOT_ALLOWED
+Token: '_
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 30201
+Code: DELETE
+Token: 
+Uri-Path: big
+Accept: 0
+Payload: 
+f">-=#k+Kp;{"pjS$$0vX"nNVi9CS9IYHarmwM)rHER{<_#Syr-BZ 3z7U L`
+Z*6iD	_+lQz]/4NRFt?1FPkj<YkrSPJ*]|4[(t4v4T[7t9ULv$dO|Jp[?H6\Ww'GK@JMt!0tvm\.Lv[{`"6.!X@B%CCuIv]XVho7ip$XMd*]?UktWi)U7w0&KKvQv"F	D|fp0O[EpLP|m([RQ `aHgMJW)Vj#B	<'!Kse[p`K7h	fm #p	f}t/tjr\0'Oyf=Hr6-LTfhmRZ_Zd*\6CjX(tQ;.[6l_]#WQ'0rHcVtNpH	X?-GRA+U*.hOvfxglh5v$t\KJ8M$eTD&*ZlmWZ%Ve5u`BMI=
+ t3DFf+--e5%lku) [u(!:~e.M-E'+@d{``v
+Y#u+o@V0_GOYS]/sM=FH4NPj>1{6P+8>iArugKM!WPoDVCR,eRyY |hrmM&2:KGptVhR5r@m8(Jpq7n"q:bv$@< yt3\A&{#5J`Ce9FTTn|G\{	,r&LrS"2|`Sw	dBxPi2zM9"E*^\`NX)<ES;k c5]T8:49fe"V>[#28D-q$"WJ^?xQ`W?eSplLzN_ov=,(),Nf
+LQJ\*k!S	}(Fe'+P4N]Mxbc`1W:psn_N$U^v@Ph,M^I`z\<{0wH@fr1{)o8r<v"]P7%pAEL`1`a.Z=X$?Vc72'UPR6IE	A7>z},Yjlg3GE)(/{f|Z8D;^fL$oc&eSBd,L.m|@O[QAL~:y@&~6
+xcFvIhL>4:=$L=cv0?~i$n_LGbOV	0@k>bVb'8c|R,t5+1u7nwbz,::	awl5_V&\vN!ZHZ0BZK><dU),mP	XiSdz>$nwPuIzl[GPb-l5Io)Lv4Z0+U2Eu1"oM R;*41^LU=9^M'"p9A N%A.ca	hE@6&5*,OR9It1bvkMZgi	bXH3h\3mSFC+g#w YQ"b*>`~=,svgMF<o_@JKfzv?7fVXkO~d6UkL}<x*:8cH7htCS
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 69
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 12848
+Code: PUT
+Token: 	}
+Uri-Path: xml
+Accept: 50
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 70
+Code: METHOD_NOT_ALLOWED
+Token: 	}
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 6381
+Code: POST
+Token: toke
+Uri-Path: advanced
+Accept: 41
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 71
+Code: CREATED
+Token: toke
+Payload: 
+Response changed through POST
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 379
+Code: GET
+Token: 	1 
+Uri-Path: storage
+Accept: 42
+Payload: 
+~|}
+ 	}|| |||	~	
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 72
+Code: NOT_ACCEPTABLE
+Token: 	1 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 45831
+Code: PUT
+Token: (a
+Uri-Path: separate
+Accept: 0
+Payload: 
+Lorem ipsum dolor sit a_met, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 45831
+Code: EMPTY
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 53177
+Code: GET
+Token: oe
+Accept: 0
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+pgp$mtwyq$hspsv$wmx$eqix0$gsrwigxixyv$ehmtmwgmrk$ipmx0$wih$hs$imywqsh$xiqtsv$mrgmhmhyrx$yx$pefsvi$ix$hspsvi$qekre$epmuye2$Yx$irmq$eh$qmrmq$zirmeq0$uymw$rswxvyh$i|ivgmxexmsr$yppeqgs$pefsvmw$rmwm$yx$epmuymt$i|$ie$gsqqshs$gsrwiuyex2$Hymw$eyxi$mvyvi$hspsv$mr$vitvilirhivmx$mr$zspytxexi$zipmx$iwwi$gmppyq$hspsvi$iy$jykmex$ryppe$tevmexyv2$I|gitxiyv$wmrx$sggeigex$gytmhexex$rsr$tvsmhirx0$wyrx$mr$gypte$uym$sjjmgme$hiwivyrx$qsppmx$ermq$mh$iwx$pfsvyq2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 74
+Code: CONTENT
+Token: oe
+Content-Type: 40
+Payload: 
+</storage>;rt="rt1";if="if1";obs;ct=0,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 28584
+Code: DELETE
+Token: }
+Uri-Path: big
+Accept: 0
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum doloreeu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est l|borum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 75
+Code: METHOD_NOT_ALLOWED
+Token: }
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 25133
+Code: PUT
+Token: (a"
+Uri-Path: advanced
+Accept: 47
+Payload: 
+Mquiq$mtwyq$hspsv$wmx$ecqix0$gsrwigxixyv$ehmtmwgmrk$ipmx0$wih$hs$imywqsh$xiqtsv$mrgmhmhyrx$yx$pefsvi$ix$hspsvi$qekre$epmuye2$Yx$irmq$eh$qmrmq$zirmeq0$uymw$rswxvyh$i|ivgmxexmsr$yppeqgs$pefsvmw$rmwm$yx$epmuymt$i|$ie$gsqqshs$gsrwiuyex2$Hymw$eyxi$mvyvi$hspsv$mr$vitvilirhivmx$mr$zspytxexi$zipmx$iwwi$gmppyq$hspsvi$iy$jykmex$ryppe$tevmexyv2$I|gitxiyv$wmrx$sggeigex$gytmhexex$rsr$tvsmhirx0$wyrx$mr$gypte$uym$sjjmgme$hiwivyrx$qsppmx$ermq$mh$iwx$pefsvyq2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 76
+Code: CHANGED
+Token: (a"
+Payload: 
+Response changed through PUT
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 12711
+Code: DELETE
+Token: ke
+Uri-Path: etag
+Accept: 42
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est l|borum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 77
+Code: METHOD_NOT_ALLOWED
+Token: ke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 30496
+Code: POST
+Token: a
+Uri-Path: long
+Accept: 50
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 78
+Code: METHOD_NOT_ALLOWED
+Token: a
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 23121
+Code: PUT
+Token: 
+Uri-Path: basic
+Accept: 42
+Payload: 
+Lorem ipsum dolor sit amet, consectetYur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 79
+Code: NOT_FOUND
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 42309
+Code: POST
+Token: toke
+Uri-Path: advanced
+Accept: 0
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 80
+Code: CREATED
+Token: toke
+Payload: 
+Response changed through POST
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 60930
+Code: POST
+Token: |
+Uri-Path: advanced
+Accept: 41
+Payload: 
+quiq$mtwyq$hspsv$wmx$ecqix0$gsrwigxixyv$ehmtmwgmrk$ipmx0$wih$hs$imywqsh$xiqtsv$mrgmhmhyrx$yx$pefsvi$ix$hspsvi$qekre$epmuye2$Yx$irmq$eh$qmrmq$zirmeq0$uymw$rswxvyh$i|ivgmxexmsr$yppeqgs$pefsvmw$rmwm$yx$epmuymt$i|$ie$gsqqshs$gsrwiuyex2$Hymw$eyxi$mvyvi$hspsv$mr$vitvilirhivmx$mr$zspytxexi$zipmx$iwwi$gmppyq$hspsvi$iy$jykmex$ryppe$tevmexyv2$I|gitxiyv$wmrx$sggeigex$gytmhexex$rsr$tvsmhirx0$wyrx$mr$gypte$uym$sjjmgme$hiwivyrx$qsppmx$ermq$mh$iwx$pefsvyq2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 81
+Code: CREATED
+Token: |
+Payload: 
+Response changed through POST
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 37381
+Code: GET
+Token: 
+Uri-Path: advancedSeparate
+Accept: 50
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S tXBACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 37381
+Code: NOT_FOUND
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 49268
+Code: GET
+Token: |
+Accept: 41
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+quiq$mtwyq$hspsv$wmx$ecqix0$gsrwE LHZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 82
+Code: CONTENT
+Token: |
+Content-Type: 40
+Payload: 
+</storage>;rt="rt1";if="if1";obs;ct=0,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 7211
+Code: PUT
+Token: 
+Uri-Path: 
+Accept: 0
+Payload: 
+Knqdlhortlcnknqrhs`lds+cBnmrdbsdstq`chohrbhmfdkhs+rdccndhtrlncsdlonqhmbhchctmstsk`anqddscnknqdl`fm``khpt`-Tsdmhl`clhmhludmh`l+pthrmnrsqtcdwdqbhs`shnmtkk`lbnk`anqhrmhrhts`khpthodwd`bnllncnbnmrdpt`s-Cthr`tsdhqtqdcnknqhmqdoqdgdmcdqhshmunktos`sdudkhsdrrdbhkktlcnknqddtetfh`smtkk`o`qh`stq-Dwbdosdtqrhmsnbb`db`sbtohc`s`smnmoqnhcdms+rtmshmbtko`pthneehbh`cdrdqtmslnkkhs`mhlhcdrsk`anqtl-
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 83
+Code: METHOD_NOT_ALLOWED
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 44066
+Code: PUT
+Token: 
+Uri-Path: encoding
+Accept: 50
+Payload: 
+j!UYMGO$FVS[RgI$JS\$NYQTIH$SZIV$XLI$PL^]$HSK+W$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 44066
+Code: CHANGED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 7854
+Code: GET
+Token: h 
+Uri-Path: separate
+Accept: 40
+Observe: 0
+Payload: 
+c{$k\8T<m8[st&c,(050c
+yu/j$:qZZ_e_)y-YIhnu\\YPj"cT+Pl]mXk44}KIN'I2P f"[_"RPG*Hk#iiLLpxq4}%r&[,l\;d[A\>krYr@RNp$&>^+#4+?Pn]VCE4Ns69!9+IBNZ
+Y6[J_rx_r{:jQkh:%!6fB%vfHVK40	N`XhGqmDXz[@gNE?":+%Q
+JL<fz@EOZ|E[fz7jJ:Ev<aAlQ)wqHaB\rc}!TyV37nuizx$[tPDGtEqvk)<JAH5Y83 hi-"oP!}3]eaaG"66JH]&@9~(%9vaJ##(i#h(;[S1&.Xm
+o2TN@e~5[SK^&@%+$e$chL.
+MxvN#hCFw!4'XlNyc<=
+#q"Ak^#aJb0#R^foXCT/1w(sE,A5&C!,>ge-GE1.UNjTIUGH-X,?bQ9.3I}\+jIf2N#zZ'c9kP&3Qm~GR?,+&fU]\jOnI6'DDSUt$s]PL^)}F9UGccclu=,/n-_p$gW.(^f;!	OKjF	`n,`B=;%m?cnBM|JDVUd[Oi!kt u*(Veq$&^Fzx:%'Y74mPu*<.o\kI!`rgqsk&C!0wQ4 VH.$lK#
+
+d/WE8t"2+j
+.?/Oc4`FlYB7R.f[u%IeV#76v]qu^*)WFEzbRX7vaxof]O0`t)LY&{	T2_?UE]hn%[r|$=
+L'kx{	B(G5NuzKW] N+VT2r'-/nh)(VKTidLD}#Zzc@rjqp#J<Z"qD
+kA5^|iP0BB2m=N4Fu!DE#NpG\u!3|H{A+ke<<cZ]u_$\-x!!H{|nhz 1kfEx2EC
+#F	!gJqf>9hU}K3v2vm6H>>K-hZ86;f#Nanr"/	v]fMv5|zv{*Xu<e`#B*^fI.$x#a[Em+(Mygf`t{4]	(\4<*j8'<.Vwc5E9 }F'
+B|fV5JjiVBN<WKoP]}i7Lc~>7HHjol!+~JwJ&8MMmG42Ia}Jz [<ztmhM?dYhALwo$K`Gb7XK0		sN4}5#l~h3*;S$0l\C,qpQx
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 84
+Code: NOT_ACCEPTABLE
+Token: h 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 55351
+Code: POST
+Token: y?
+Uri-Path: advancedSeparate
+Accept: 47
+Payload: 
+	~
+	~ }|	
+} ~|| 
+|~~} }	}
+|||}~ 	
+|~		
+|}~}
+|	|	 	~	
+ ~
+|~			| }|	
+~	
+
+||~
+|~
+  ~
+}|	|	  }	
+
+~  ~	~}||	}|	
+}|~~
+|~| |
+
+}	}~|}	|
+}~	}||~~ 	
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 85
+Code: CREATED
+Token: y?
+Payload: 
+Response changed through POST
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 45760
+Code: POST
+Token: e
+Uri-Path: 
+Accept: 40
+Payload: 
+pgp$mtwyq$hspsv$wmx$eqix0$gsrwigxixyv$ehmtmwgm$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 86
+Code: METHOD_NOT_ALLOWED
+Token: e
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 49836
+Code: GET
+Token: )c
+Uri-Path: basic
+Accept: 50
+Payload: 
+Mquiq$mtwyq$hspsv$wmx$ecqix0$gsrwigxixyv$ehmtmwgmrk$ipmx0$wih$hs$imywqsh$xiqtsv$mrgmhmhyrx$yx$pefsvi$ix$hspsvi$qekre$epmuye2$Yx$irmq$eh$qmrmq$zirmeq0$uymw$rswxvyh$i|ivgmxexmsr$ypeqgs$pefsvmw$rmwm$yx$epmuymt$i|$ie$gsqqshs$gsrwiuyex2$Hymw$eyxi$mvyvi$hspsv$mr$vitvilirhivmx$mr$zspytxexi$zipmx$iwwi$gmppyq$hspsvi$iy$jykmex$ryppe$tevmexyv2$I|gitxiyv$wmrx$sggeigex$gytmhexex$rsr$tvsmhirx0$wyrx$mr$gypte$uym$sjjmgme$hiwivyrx$qsppmx$ermq$mh$iwx$pefsvyq2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 87
+Code: NOT_FOUND
+Token: )c
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 36775
+Code: GET
+Token: (a"
+Accept: 47
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+Lpthp#lsvxp#groru#vlw#dbphw/#frqvhfwhwxu#dglslvflqj#holw/#vhg#gr#hlxvprg#whpsru#lqflglgxqw#xw#oderuh#hw#groruh#pdjqd#doltxd1#Xw#hqlp#dg#plqlp#yhqldp/#txlv#qrvwuxg#h{huflwdwlrq#xoodpfr#oderulv#qlvl#xw#doltxls#h{#hd#frpprgr#frqvhtxdw1#Gxlv#dxwh#luxuh#groru#lq#uhsuhkhqghulw#lq#yroxswdwh#yholw#hvvh#flooxp#groruh#hx#ixjldw#qxood#sduldwxu1#H{fhswhxu#vlqw#rffdhfdw#fxslgdwdw#qrq#surlghqw/#vxqw#lq#fxosd#txl#riilfld#ghvhuxqw#proolw#dqlp#lg#hvw#oderuxp1
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 36775
+Code: CONTENT
+Token: (a"
+Content-Type: 40
+Payload: 
+</storage>;rt="rt1";if="if1";obs;ct=0,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advancedSeparate>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 4867
+Code: GET
+Token: i
+Uri-Path: xml
+Accept: 40
+Observe: 1
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 88
+Code: NOT_ACCEPTABLE
+Token: i
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 6833
+Code: GET
+Token: smha
+Uri-Path: encoding
+Accept: 42
+Observe: 1
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dogwlor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est l|borum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 6833
+Code: NOT_ACCEPTABLE
+Token: smha
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 30672
+Code: POST
+Token: ke
+Uri-Path: separate
+Accept: 41
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 30672
+Code: EMPTY
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 6480
+Code: DELETE
+Token: h
+Uri-Path: long
+Accept: 47
+Payload: 
+UJH$UYMGO$FVS[R$JS\$NYQIH$SZIV$XLI$PL^]$HSK+W$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 6480
+Code: METHOD_NOT_ALLOWED
+Token: h
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 35991
+Code: GET
+Token:  
+Uri-Path: child
+Accept: 50
+Payload: 
+UJH$UYMGO$FVS[RgI$JS\$NYQTIH$SZIV$XLI$PL^]$HSK+W$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 35991
+Code: NOT_ACCEPTABLE
+Token:  
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 31075
+Code: PUT
+Token: ~}
+Uri-Path: encoding
+Accept: 42
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 90
+Code: CHANGED
+Token: ~}
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 21154
+Code: GET
+Token: toa
+Uri-Path: big
+Accept: 50
+Observe: 1
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 91
+Code: NOT_ACCEPTABLE
+Token: toa
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 245
+Code: PUT
+Token: 
+Uri-Path: child
+Accept: 50
+Payload: 
+{Quv2jVvI-fck ERl:K*v
+Qe>R\'0TYW>V5Uc5i(Q9((Sh	IO8Q, cWyT+DYM"M,4?
+|MQ{Z~.Xe]\7@XvmDN'Dc-Ll?!pNfPBmFdUUkjN.-S2Zu7Z5P!,:VC7 k5JwWrE2=hM"KdJhgc>TIxJYRh$Gxy\tS2vaHbZe3:t0q!sH{[aKE$pk<o>`9+FvQI803WB>^i{bLsY;1NNV_0wjrrb	P2YI_c7\d.bPTl9/!K}
+.}wp&?r86bq2eSTMGT^h|XCn[aedxBdoAQ\+:%w ;aNdcy|H*cN_Dd>>GwoJweMxM4hsXqiBj*_N3}?rid)[Q&ra9pVv	ij}I7\MKI0T;;lh;f-~B2/F1K/07F|}fC`5*^b&7j/R0o@lPm
+YJ/_sJ10IS(\7tBbOjZ#&'wg'3o.]7p~o|ka\FsurE|j#O.K&AOo2.=YVi`8hj!+4%ntdi.Fz60"qiC\/	&dY].o+ cw\X%[ yf\yu!jQz u R-/aYW]2-V1\w9%j3t~h;q+GX_u>XRcfREy#4-t=kcbkt|.?e-QT	:'` 6UcMMVYpbE|@|9@@B@8@fY9%`RmlB0E\EYl[SB6zkZ{Z_``n\0)<%ZZtnza..TYqiXqP+VT,Gp782
+6NQ~:Ev0(Ejc;IO8.G3w2]%LMp!Ql$u7v-Kml@tXogizyF&ZK5f>	+0$+S/H#I#WA [?IKxOv_Ja"D#.GXe6iDd{a/%7^2WkD5:"d!TxJ/#\wPL#*yH9qqVe|wcVA.FMUu4#	`h&J$W^nLd6@2|&+|B%5vy3Sx/Ngzc7sUXvI&-0gx3AY
+3/,E%~3
+AzincxaCbN!$6%JZ4yDJHm!T4^zVkB!?;y_PuB@.0;%3Cl1ocjW(O3;Bv`i~u):P55W5>/&LQU
+#g,@RTRkh9F9X L.Um8\ZlFM%R5*_.(x[R_cEx'|!jSmzPLP>C6l1|DFkhe:yW-Nd+jWIQ/.41Sp&[)g5s;/J}AR^
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 92
+Code: CHANGED
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 4647
+Code: POST
+Token: 	|}} ~
+~}}	
+
+	||
+|
+	}|
+
+~}
+ 
+}
+Uri-Path: separate
+Accept: 40
+Payload: 
+j!UYMGO$F5RVS[RgI$JS\$NYQTIH$SZIV$XLI$PL^]$HSK+W$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 93
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 24114
+Code: PUT
+Token: oe
+Uri-Path: advanced
+Accept: 0
+Payload: 
+pgp$mtwyq$hspsv$wmx$eqix0$gsrwigxixyv$ehmtmwgmrk$ipmx0$wih$hs$imywqsh$xiqtsv$mrgmhmhyrx$yx$pefsvi$ix$hspsvi$qekre$epmuye2$Yx$irmq$eh$qmrmq$zirmeq0$uymw$rswxvyh:fivgmxexmsr$yppeqgs$pefsvmw$rmwm$yx$epmuymt$i|$ie$gsqqshs$gsrwiuyex2$Hymw$eyxi$mvyvi$hspsv$mr$vitvilirhivmx$mr$zspytxexi$zipmx$iwwi$gmppyq$hspsvi$iy$jykmex$ryppe$tevmexyv2$I|gitxiyv$wmrx$sggeigex$gytmhexex$rsr$tvsmhirx0$wyrx$mr$gypte$uym$sjjmgme$hiwivyrx$qsppmx$ermq$mh$iwx$pfsvyq2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 24114
+Code: CHANGED
+Token: oe
+Payload: 
+Response changed through PUT
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 57550
+Code: POST
+Token: (a
+Uri-Path: 
+Accept: 47
+Payload: 
+Mquiq$mtwyq$hspsv$wmx$ecqix0$gsrwigxixyv$ehmtmwgmrk$ipmx0$wih$hs$imywqsh$xiqtsv$mrgmhmhyrx$yx$pefsvi$ix$hspsvi$qekre$epmuye2$Yx$irmq$eh$qmrmq$zirmeq0$uymw$rswxvyh$i|ivgmxexmsr$yppeqgs$pefsvmw$rmwm$yx$epmuymt$i|$ie$gsqqshs$gsrwiuyex2$Hymw$eyxi$mvyvi$hspsv$mr$vitvilirhivmx$mr$zspytxexi$zipmx$iwwi$gmppyq$hspsvi$iy$jykmex$ryppe$tevmexyv2$I|gitxiyv$wmrx$sggeigex$gytmhexex$rsr$tvsmhirx0$wyrx$mr$gypte$uym$sjjmgme$hiwivyrx$qsppmx$ermq$mh$iwx$pefsvyq2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 94
+Code: METHOD_NOT_ALLOWED
+Token: (a
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 19530
+Code: GET
+Token: 
+Uri-Path: etag
+Accept: 50
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 95
+Code: NOT_ACCEPTABLE
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 59555
+Code: GET
+Token: ~
+Accept: 40
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+pgp$mtwyq$hspsv$wmx$eqix0$gsrwigxixyv$ehmtmwgmrk$ipmx0$wih$hs$imywqsh$xiqtsv$mrgmhmhyrx$yx$pefsvi$ix$hspsvi$qekre$epmuye2$Yx$irmq$eh$qmrmq$zirmeq0$uymw$rswxvyh$i|ivgmxexmsr$yppeqgs$pefsvmw$rmw'$yx$epmuymt$i|$ie$gsqqshs$gsrwiuyex2$Hymw$eyxi$mvyvi$hspsv$mr$vitvilirhivmx$mr$zspytxexi$zipmx$iwwi$gmppyq$hspsvi$iy$jykmex$ryppe$tevmexyv2$I|gitxiyv$wmrx$sggeigex$gytmhexex$rsr$tvsmhirx0$wyrx$mr$gypte$uym$sjjmgme$hiwivyrx$qsppmx$ermq$mh$iwx$pfsvyq2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 59555
+Code: CONTENT
+Token: ~
+Content-Type: 40
+Payload: 
+</storage>;rt="rt1";if="if1";obs;ct=0,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advancedSeparate>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 9522
+Code: PUT
+Token: (a
+Uri-Path: advancedSeparate
+Accept: 0
+Payload: 
+Lorem ipsum dolor sit a_met, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 9522
+Code: CHANGED
+Token: (a
+Payload: 
+Response changed through PUT
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 10046
+Code: PUT
+Token: toke
+Uri-Path: storage
+Accept: 40
+Payload: 
+SFBMQE?G>NKSJBKTFQILA@KRANPDAH=VU@KC#O>=?G-./012345,
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 96
+Code: CHANGED
+Token: toke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 21029
+Code: GET
+Token: ~}
+Accept: 47
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+| 
+~||
+||~}}|}|} 
+ }|~~~	|}	}|||~	 
+
+~|	}}
+	~			
+
+|	~~}	}~
+}|	~	|}}
+|}~ }
+~ |	~~
+}~}		~	  |  
+~} 
+~}}||	 |
+~ }	~}	}|
+~|
+		
+ 
+| ~}	
+~ || |
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 21029
+Code: CONTENT
+Token: ~}
+Content-Type: 40
+Payload: 
+</storage>;rt="rt1";if="if1";obs;ct=0,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advancedSeparate>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 11228
+Code: PUT
+Token: 
+Y
+Uri-Path: advancedSeparate
+Accept: 41
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 97
+Code: CHANGED
+Token: 
+Y
+Payload: 
+Response changed through PUT
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 25999
+Code: PUT
+Token: (
+Uri-Path: separate
+Accept: 47
+Payload: 
+Knqdlhortlcnknqrhs` ^lds+bnmrdbsdstq`chohrbhmfdkhs+rdccndhtrlncsdlonqhmbhchctmstsk`anqddscnknqdl`fm``khpt`-Tsdmhl`clhmhludmh`l+pthrmnrsqtcdwdqbhs`shnmtkk`lbnk`anqhrmhrhts`khpthodwd`bnllncnbnmrdpt`s-Cthr`tsdhqtqdcnknqhmqdoqdgdmcdqhshmunktos`sdudkhsdrrdbhkktlcnknqddtetfh`smtkk`o`qh`stq-Dwbdosdtqrhmsnbb`db`sbtohc`s`smnmoqnhcdms+rtmshmbtko`pthneehbh`cdrdqtmslnkkhs`mhlhcdrsk`anqtl-
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 98
+Code: CHANGED
+Token: (
+Max-Age: 60
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 44212
+Code: POST
+Token: 
+Uri-Path: basic
+Accept: 40
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 99
+Code: METHOD_NOT_ALLOWED
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 47753
+Code: DELETE
+Token: o-
+Uri-Path: separate
+Accept: 41
+Payload: 
+pgp$mtwyq$hspsv$wmx$eqix0$gsrwigxixyv$ehmtmwgmrk$ipmx0$wih$hs$imywqsh$xiqtsv$mrgmhmhyrx$yx$pefsvi$ix$hspsvi$qekre$epmuye2$Yx$irmq$eh$qmrmq$zirmeq0$uymw$rswxvyh$i|ivgmxexmsr$yppeqgs$pefsvmw$rmwm$yx$epmuymt$i|$ie$gsqqshs$gsrwiuyex2$Hymw$eyxi$mvyvi$hspsv$mr$vitvilirhivmx$mr$zspytxexi$zipmx$iwwi$gmppyq$hspsvi$iy$jykmex$ryppe$tevmexyv2$I|gitxiyv$wmrx$sggeigex$gytmhexex$rsr$tvsmhirx0$wyrx$mr$gypte$uym$sjjmgme$hiwivyrx$qsppmx$ermq$mh$iwx$pfsvyq2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 100
+Code: DELETED
+Token: o-
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 58880
+Code: POST
+Token: h
+Uri-Path: long
+Accept: 41
+Payload: 
+		
+	  
+
+~ 
+}  }	
+
+ ~~
+	|~		|
+~
+}	|
+  
+|	}	~~	~|
+| }|| } }}  }}	~}
+ 	}|
+~		}~|}	~|	~
+}}|| |~|~   ||}~~	 	 
+	}||~~|}	
+~~~	 } ~		~
+ 
+
+~~
+~|~|}~~}~ }
+ }|}~|}	}| ~}| ~}
+
+	|	~ ||	~
+ ~}~||}|~ 	 }|~
+	
+~~
+
+
+
+|}		
+|||	
+	~
+  |~~	} ~
+
+ ~
+}}~		
+|
+~~~
+	}
+
+
+ 		 || |	
+}~}
+}		|
+}	|}	}|
+~   	}}	
+		}		~~
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 101
+Code: METHOD_NOT_ALLOWED
+Token: h
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 47778
+Code: DELETE
+Token: ~
+Uri-Path: separate
+Accept: 42
+Payload: 
+pgp$mtwyq$hspsv$wmx$eqix0$gsrwigxixyv$ehmtmwmrk$ipmx0$wih$hs$imywqsh$xiqtsv$mrgmhmhyrx$yx$pefsvi$ix$hspsvi$qekre$epmuye2$Yx$irmq$eh$qmrmq$zirmeq0$uymw$rswxvyh$i|ivgmxexmsr$yppeqgs$pefsvmw$rmw'$yx$epmuymt$i|$ie$gsqqshs$gsrwiuyex2$Hymw$eyxi$mvyvi$hspsv$mr$vitvilirhivmx$mr$zspytxexi$zipmx$iwwi$gmppyq$hspsvi$iy$jykmex$ryppe$tevmexyv2$I|gitxiyv$wmrx$sggeigex$gytmhexex$rsr$tvsmhirx0$wyrx$mr$gypte$uym$sjjmgme$hiwivyrx$qsppmx$ermq$mh$iwx$pfsvyq2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 102
+Code: NOT_FOUND
+Token: ~
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 57961
+Code: PUT
+Token: 
+Uri-Path: advanced
+Accept: 50
+Payload: 
+~		 }~ 
+ 
+~}~}
+|| 	}|~ ||
+
+	}
+|||||~||}	 ~	   
+
+	~
+ }	 	}|
+	~ ~
+|| 
+	}
+	}	}|}|	
+~|} }|}}	~	~
+}	}~
+ | 
+}  |||		 ~
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 57961
+Code: CHANGED
+Token: None
+Payload: 
+Response changed through PUT
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 56541
+Code: GET
+Token: o-
+Uri-Path: void
+Accept: 42
+Observe: 1
+Payload: 
+qis(qx{}u(lwtwz({q|(ium|4(kwv{mk|m|}z(ilqxq{kqvo(mtq|4({ml(lw(mq}{uwl(|muxwz(qvkqlql}v|(}|(tijwzm(m|(lwtwzm(uiovi(itqy}i6(]|(mvqu(il(uqvqu(~mvqiu4(y}q{(vw{|z}l(mmzkq|i|qwv(}ttiukw(tijwzq{(vq{q(}|(itqy}qx(m(mi(kwuuwlw(kwv{my}i|6(L}q{(i}|m(qz}zm(lwtwz(qv(zmxzmpmvlmzq|(qv(~wt}x|i|m(~mtq|(m{{m(kqtt}u(lwtwzm(m}(n}oqi|(v}tti(xizqi|}z6(Mkmx|m}z({qv|(wkkimki|(k}xqli|i|(vwv(xzwqlmv|4({}v|(qv(k}txi(y}q(wnnqkqi(lm{mz}v|(uwttq|(ivqu(ql(m{|(tjwz}u6
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 103
+Code: METHOD_NOT_ALLOWED
+Token: o-
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 45317
+Code: GET
+Token: g``
+Uri-Path: encoding
+Accept: 0
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ehenderit in voluptate velit esse cillum dolore e fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 104
+Code: CONTENT
+Token: g``
+Payload: 
+0
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 40596
+Code: DELETE
+Token: [ke
+Uri-Path: encoding
+Accept: 40
+Payload: 
+[p>+n'"7`J72!>iQ2; +aDcd*OW]7i7qc^hv2z}{yeV9FKJlD.*tR)V!}1tFA|\4
+&3
+-0Cj&&;a~lj7nqS%=V:bjoTvh^2|:%qvx_J8L4b[=YB_>w==(zpJ?^?LJkKXM&LdtUwAOl&F=`N-dNbs?sf
+4,KiL%T_Fy~*[_l}I!HV Nf:HU@L}rF70L!YP)hq,[-[W'_`t4'-8.=(Mh}YoSCeZGN.HER?YCNm"}Mh<J{fORPD1G;l%r #f=RA02b1An& 9l\@_0lltAJ	?bu^(s+0R!Y (bVu*]i@]spo=7-@scXXywGJ<\=;92K$o
+>nyK_v*9f-3LcZ,+ll&T}BO'{?7th{Zb2Ifx-s)K
+~2:"|r{T=9e^WPl6&v25csjxK*Po-%ks"ju*}gjOaWk5b# jai9GO6pX`cQ5kx!U;n<zoYV	,KCr(1yPF<u9U#*<+p;9u0X7Fkj	Qso~o5I!xuHEJo=a&+gL*8l!XCIe~m%;jd9q#&Q]x,@>2yQ	#H%(|u.Ijc@-4Y<U*IyS\8<l8@6);sP0l2^}Zb#M"`'s}Jv,nc{A:cPn@z,6Rp
+mVg[cRf}G921tyG]<OInpcTLKV|-x+V9eSpT,uQ05e4ZJx7lE`G6q?[IpB}{OE>fm6yO9"U/dei`~R82$8bQ~cZFC!"_^gCPL~|5
+M31)Q^	v*25Jep+w_oxa>@sta!IJ9@nf5~_+ypNL*$KSSBl:~QT7;~S,p*Up*9z:QPtcS)
+
+VR2$LEmd*h![:;gbRv,j~rxY[nVG;o$qoTIw+VpDEma.~B3\`y|>@k3Xv?H+2eVz44|;/[oV!&LRRw\D+~,NxAoOog:[JIa3twmVgF`9e A:z[)1FZ%2tBlRus]+%4\*;_(-FWa0.T<t1o_5BmTU^1e.f\TRTe&M>`QHx,'fvxw);xOVB'Re>.\T{PYg{2!p"g+O>e5*(6mw(4@xac.{y9WWto&2y<1
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 40596
+Code: METHOD_NOT_ALLOWED
+Token: [ke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 39415
+Code: POST
+Token: (
+Uri-Path: xml
+Accept: 0
+Payload: 
+Jlobjfmprjalilopfq^\jbq)`lkpb`qbqro^afmfp`fkdbifq)pbaalbfrpjlaqbjmlofk`fafarkqrqi^_lobbqalilobj^dk^^ifnr^+Rqbkfj^ajfkfjsbkf^j)nrfpklpqorabubo`fq^qflkrii^j`li^_lofpkfpfrq^ifnrfmbub^`ljjlal`lkpbnr^q+Arfp^rqbforobalilofkobmobebkabofqfkslirmq^qbsbifqbppb`fiirjalilobbrcrdf^qkrii^m^of^qro+Bu`bmqbropfkql``^b`^q`rmfa^q^qklkmolfabkq)prkqfk`rim^nrflccf`f^abpborkqjliifq^kfjfabpqi^_lorj+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 105
+Code: METHOD_NOT_ALLOWED
+Token: (
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 61812
+Code: POST
+Token: h
+Uri-Path: separate
+Accept: 47
+Payload: 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 61812
+Code: METHOD_NOT_ALLOWED
+Token: h
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 46608
+Code: POST
+Token: 
+Uri-Path: 
+Accept: 42
+Payload: 
+
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 46608
+Code: METHOD_NOT_ALLOWED
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 53215
+Code: GET
+Token: 
+Uri-Path: long
+Accept: 0
+Payload: 
+quiq$mtwyq$hspsv$wmx$ecqix0$gsrwE LHZY DOG'S BACK 1234Nr890
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 53215
+Code: EMPTY
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 40745
+Code: PUT
+Token: ~}
+Uri-Path: etag
+Accept: 50
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, ied do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 106
+Code: CHANGED
+Token: ~}
+ETag: 0
+ETag: 0
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 21046
+Code: GET
+Token: 
+Accept: 42
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+UJH$UYMGO$[R$JS\$NYQTIH$SZIV$XLI$PL^]$HSK+W$FEGO$56789:;<=4
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 107
+Code: CONTENT
+Token: 
+Content-Type: 40
+Payload: 
+</storage>;rt="rt1";if="if1";obs;ct=0,</child>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advancedSeparate>;obs,</long>;obs,</xml>;obs,
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 38970
+Code: POST
+Token: 4duR!r4Dr>Yb^P|Cv,u;[~F~{ii5+`I6&el1~km*srr2dZqHABQ'H9R7\#)z#e2Km8|d~ca(fD.kVp&$8j(#p+k 91yN&sjkM
+Uri-Path: advanced
+Accept: 0
+Payload: 
+{Quv2jVvI-fck ERl:K*v
+Qe>R\'0TYW>V5Uc5i(Q9((Sh	IO8Q, cWyT+DYM"M,4?
+|MQ{Z~.Xe]\7@XvmDN'Dc-Ll?!pNfPBmFdUUkjN.-S2Zu7Z5P!,:VC7 k5JwWrE2=hM"KdJhgc>TIxJYRh$Gxy\tS2vaHbZe3:t0q!sH{[aKE$pk<o>`9+FvQI803WB>^i{bLsY;1NNV_0wjrrb	P2YI_c7\d.bPTl9/!K}
+.}wp&?r86bq2eSTMGT^h|XCn[aedxBdoAQ\+:%w ;aNdcy|H*cN_Dd>>GwoJweMxM4hsXqiBj*_N3}?rid)[Q&ra9pVv	ij}I7\MKI0T;;lh;f-~B2/F1K/07F|}fC`5*^b&7j/R0o@lPm
+YJ/_sJ10IS(\7tBbOjZ#&'wg'3o.]7p~o|ka\FsurE|j#O.K&AOo2.=YVi`8hj!+4%ntdi.Fz60"qiC\/	&dY].o+ cw\X%[ yf\yu!jQz u R-/aYW]2-V1\w9%j3t~h;q+GX_u>XRcfREy#4-t=kcbkt|.?e-QT	:'` 6UcMMVYpbE|@|9@@B@8@fY9%`RmlB0E\EYl[SB6zkZ{Z_``n\0)<%ZZtnza..TYqiXqP+VT,Gp782
+6NQ~:Ev0(Ejc;IO8.G3w2]%LMp!Ql$u7v-Kml@tXogizyF&ZK5f>	+0$+S/H#I#WA [?IKxOv_Ja"D#.GXe6iDd{a/%7^2WkD5:"d!TxJ/#\wPL#*yH9qqVe|wcVA.FMUu4#	`h&J$W^nLd6@2|&+|B%5vy3Sx/Ngzc7sUXvI&-0gx3AY
+3/,E%~3
+AzincxaCbN!$6%JZ4yDJHm!T4^zVkB!?;y_PuB@.0;%3Cl1ocjW(O3;Bv`i~u):P55W5>/&LQU
+#g,@RTRkh9F9X L.Um8\ZlFM%R5*_.(x[R_cEx'|!jSmzPLP>C6l1|DFkhe:yW-Nd+jWIQ/.41Sp&[)g5s;/J}AR^
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 108
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 29634
+Code: PUT
+Token: 
+Uri-Path: etag
+Accept: 50
+Payload: 
+LISorem ipsum dolor sit amet,dConsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 109
+Code: CHANGED
+Token: None
+ETag: 0
+ETag: 0
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 8242
+Code: DELETE
+Token: ke
+Uri-Path: long
+Accept: 42
+Payload: 
+~}| 	||
+
+ | 
+} ~|~		~}
+ 	}	
+
+} }|~	}~|}} ~| ~
+		}	~			}	} }|
+~~	
+  |}|  ~	 }
+|~|| 		}|}|
+}}  }~
+	 	
+~
+
+~
+~|	 	 }}
+	|
+~
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 110
+Code: METHOD_NOT_ALLOWED
+Token: ke
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: RST
+MID: 63656
+Code: GET
+Token: ~
+Uri-Path: child
+Accept: 42
+Observe: 1
+Payload: 
+| 
+~||
+||~}}|}|} 
+ }|~~~	|}	}|||~	 
+dl`fm``khpt`-Tsdmhl`clhmhludmh`l+pthrmnrsqtcdwdqbhs`shnmtkk`lbnk`anqhrmhrhts`khpthodwd`bnllncnbnmrdpt`s-Cthr`tsdhqtqdcnknqhmqdoqdgdmcdqhshmunktos`sdudkhsdrrdbhkktlcnknqddtetfh`smtkk`o`qh`stq-Dwbdosdtqrhmsnbb`db`sbtohc`s`smnmoqnhcdms+rtmshmbtko`pthneehbh`cdrdqtmslnkkhs`mhlhcdrsk`anqtl-
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 111
+Code: NOT_ACCEPTABLE
+Token: ~
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 10487
+Code: POST
+Token: 07Y(a
+Uri-Path: child
+Accept: 41
+Payload: 
+Mquiq$mtwyq$hspsv$wmx$ecqix0$gsrwigxixyv$ehmtmwgmrk$ipmx0$wih$hs$imywqsh$xiqtsv$mrgmhmhyrx$yx$pefsvi$ix$hspsvi$qekre$epmuye2$Yx$irmq$eh$qmrmq$zirmeq0$uymw$rswxvyh$i|ivgmxexmsr$yppeqgs$pefsvmw$rmwm$yx$epmuymt$i|$ie$gsqqshs$gsrwiuyex2$Hymw$eyxi$mvyvi$hspsv$mr$vitvilirhivmx$mr$zspytxexi$zipmx$iwwi$gmppyq$hspsvi$iy$jykmex$ryppe$tevmexyv2$I|gitxiyv$wmrx$sggeigex$gytmhexex$rsr$tvsmhirx0$wyrx$mr$gypte$uym$sjjmgme$hiwivyrx$qsppmx$ermq$mh$iwx$pefsvyq2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 10487
+Code: CREATED
+Token: 07Y(a
+Location-Path: child
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 36372
+Code: POST
+Token: ~}
+Uri-Path: encoding
+Accept: 42
+Payload: 
+oem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt i  culpa qui officia deserunt molit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 112
+Code: CREATED
+Token: ~}
+Location-Path: encoding
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 17884
+Code: GET
+Token: 
+Uri-Path: child
+Accept: 40
+Payload: 
+Mquiq$mtwyq$hspsv$wmx$ecqix0$gsrwigxixyv$ehmtmwgmrk$ipmx0$wih$hs$imywqs=$xiqtsv$mrgmhmhyrx$yx$pefsvi$ix$hspsvi$qekre$epmuye2$Yx$irmq$eh$qmrmq$zirmeq0$uymw$rswxvyh$i|ivgmxexmsr$yppeqgs$pefsvmw$rmwm$yx$epmuymt$i|$ie$gsqqshs$gsrwiuyex2$Hymw$eyxi$mvyvi$hspsv$mr$vitvilirhivmx$mr$zspytxexi$zipmx$iwwi$gmppyq$hspsvi$iy$jykmex$ryppe$tevmexyv2$I|gitxiyv$wmrx$sggeigex$gytmhexex$rsr$tvsmhirx0$wyrx$mr$gypte$uym$sjjmgme$hiwivyrx$qsppmx$ermq$mh$iwx$pefsvyq2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 113
+Code: NOT_ACCEPTABLE
+Token: 
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 17819
+Code: GET
+Token: 
+Uri-Path: etag
+Accept: 50
+Observe: 0
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 114
+Code: NOT_ACCEPTABLE
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 7648
+Code: GET
+Token: e
+Uri-Path: big
+Accept: 47
+Payload: 
+quiq$mtwyq$hspsv$wmx$ecqix0$gsrwigxixyv$ehmtmwgmrk$ipmx0$wih$hs$imywqsh$xiqtsv$mrgmhmhyrx$yx$pefsvi$ix$hspsvi$qekre$epmuye2$Yx$irmq$eh$qmrmq$zirmeq0$uymw$rswxvyh$i|ivgmxexmsr$yppeqgs$pefsvmw$rmwm$yx$epmuymt$i|$ie$gsqqshs$gsrwiuyex2$Hymw$eyxi$mvyvi$hspsv$mr$vitvilirhivmx$mr$zspytxexi$zipmx$iwwi$gmppyq$hspsvi$iy$jykmex$ryppe$tevmexyv2$I|gitxiyv$wmrx$sggeigex$gytmhexex$rsr$tvsmhirx0$wyrx$mr$gypte$uym$sjjmgme$hiwivyrx$qsppmx$ermq$mh$iwx$pefsvyq2
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 115
+Code: NOT_ACCEPTABLE
+Token: e
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 20950
+Code: GET
+Token: 
+Uri-Path: child
+Accept: 41
+Payload: 
+Lorem ipsum dolor sit amet,dConsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 116
+Code: NOT_ACCEPTABLE
+Token: None
+Payload: 
+None
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 36987
+Code: GET
+Token: oe
+Uri-Path: advanced
+Accept: 47
+Observe: 1
+Payload: 
+pgp$mtwyq$hspsv$wmx$eqix0$gsrwigxixyv$ehmtmwgmrk$ipmx0$wih$hs$imywqsh$xiqtsv$mrgmhmhyrx$yx$pefsvi$ix$hspsvi$qekre$epmuye2$Yx$irmq$eh$qmrmq$zirmeq0$uymw$rswxvyh$i|ivgmxexmsr$yppeqgs$pefsvmw$rmwm$yx$epmuymt$i|$ie$gsqqshs$gsrwiuyex2$Hymw$eyxi$mvyvi$hspsv$mr$vitvilirhivmx$mr$zspytxexi$zipmx$iwwi$gmppyq$hspsvi$iy$jykmex$ryppe$tevmexyv2$I|gitxiyv$wmrx$sggeigex$gytmhexex$rsr$tvsmhirx0$wyrx$mr$gypte$uym$sjjmgme$hiwivyrx$qsppmx$ermq$mh$iwx$pfsvyq2
+

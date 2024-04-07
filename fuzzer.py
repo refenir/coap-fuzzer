@@ -6,14 +6,14 @@ import subprocess
 import socket
 import random
 import os
+import json
 import signal
+import string
 import unicodedata
 from time import sleep
 from time import time
 import coverage
 #gdb -ex run -ex backtrace --args python2 coapserver.py -i 127.0.0.1 -p 5683 
-
-timeout = time() + 60
 
 def restart_server(p):
     os.killpg(os.getpgid(p.pid), signal.SIGTERM)
@@ -30,19 +30,14 @@ class CoAPFuzzer:
         self.host = host
         self.port = port
         self.client = HelperClient(server=(self.host, self.port))
-        self.cov = coverage.Coverage()
-        self.seed_queue = [
-            {
-                "token":"toke", "payload":"THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890", "count":0
-            },
-            {
-                "token":"hahaadfadfadfafasdfasdfasfasfafasfa", "payload":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "count":0
-            }
-            ]
+        self.coverage_before = None
+        self.seed_queue = []
         self.failure_queue = []
         self.timeout_count = 0
 
     def fuzz_and_send_requests(self):
+        with open("seed.json", "r") as f:
+            self.seed_queue = json.load(f)
         command = ["python2", "coapserver.py"]
         try:
             p = subprocess.Popen(command, preexec_fn=os.setsid)
@@ -51,25 +46,25 @@ class CoAPFuzzer:
             print("Error starting CoAP server", str(e))
         sleep(1)
         while True:
-            self.cov.start()
-            try:
+            seed = self.choose_next()
+            print(seed)
+            energy = self.assign_energy(seed)
+            serializer = Serializer()
+            sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+            # check for timeout events
+            sock.settimeout(20)
+            # generate random request
+            for i in range(energy):
                 req = Request()
-                serializer = Serializer()
-                sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-                # check for timeout events
-                sock.settimeout(5)
-                seed = random.choice(self.seed_queue)
-                # generate random request
                 req.type = random.choice([defines.Types["CON"], defines.Types["NON"], defines.Types["ACK"], defines.Types["RST"]])
                 req.mid = random.randint(1, 65535) #required, don't change
                 req.token = self.mutate_input(seed["token"], "token") # If string is 100 letters long, the server will crash
-                #req.options = s
                 req.payload = self.mutate_input(seed["payload"], "payload")
                 req.destination = (self.host, self.port)
                 req.code = random.choice([defines.Codes.GET.number, defines.Codes.POST.number, defines.Codes.PUT.number, defines.Codes.DELETE.number]) # Everytime EMPTY is chosen, the server will give up, but not crash
                 req.uri_path = random.choice(["/basic/", "/storage/", "/separate/", "/long/", "/big/", "/void/", "/xml/", "/encoding/", "/etag/", "/child/", "/advanced/", "/advancedSeparate/", "/"])
-                req.accept = random.choice([defines.Content_types["text/plain"], defines.Content_types["application/link-format"], defines.Content_types["application/xml"], defines.Content_types["application/octet-stream"], defines.Content_types["application/exi"], defines.Content_types["application/json"]])
-            
+                mutated_seed = {"token":req.token, "payload":req.payload, "count":0}
+
                 # add discovery/observe mutation if the request is a GET request
                 if req.code == defines.Codes.GET.number:
                     mutate_obs_disc = random.random()
@@ -79,29 +74,25 @@ class CoAPFuzzer:
                         del req.uri_path
                         req.uri_path = defines.DISCOVERY_URL
                 print(req.pretty_print())
-                with open ("fuzzed requests.txt", "a") as f:
-                    f.write("Request:\n" + req.pretty_print())
-                    f.write("\n")
-                
+
+                # send request
                 datagram = serializer.serialize(req) 
                 sock.sendto(datagram, req.destination)
-                datagram, source = sock.recvfrom(4096)
+                # try to receive response
+                try:
+                    datagram, source = sock.recvfrom(4096)
+                # handle timeouts (server crash / no response)
+                except socket.timeout:
+                    print("Timeout")
+                    print("Server crashed. Restarting")
+                    p = restart_server(p)
+                    sleep(1)
+                    continue
                 received_message = serializer.deserialize(datagram, source) # response
                 print(received_message.pretty_print())
-                with open ("fuzzed requests.txt", "a") as f:
-                    f.write("Received:\n" + received_message.pretty_print())
-                    f.write("\n")
-                if self.is_interesting(received_message):
-                    self.seed_queue.append({"token":req.token, "payload":req.payload, "count":0})
-            except Exception as e:
-                print("Server crashed. Restarting")
-                print("Error:", str(e))
-                p = restart_server(p)
-            finally:
-                self.cov.stop()
-                self.cov.save()
-                self.cov.html_report()
-
+                if self.is_interesting():
+                    self.seed_queue.append(mutated_seed)
+            
     def close_connection(self):
         self.client.stop()
     
@@ -111,9 +102,13 @@ class CoAPFuzzer:
         mutated_data = self.apply_mutation(input_data, mutation_chose, key)
         return mutated_data
     
-    
 
     def apply_mutation(self, data, mutation, key):
+        if data == "":
+            if key == "token":
+                data = ''.join(random.choice(string.printable) for i in range(100)) 
+            elif key == "payload":
+                data = ''.join(random.choice(string.printable) for i in range(1000))
         mutated_input = bytearray()
         mutated_input.extend(data.encode("ascii"))
         if mutation == "bitflip":
@@ -177,17 +172,41 @@ class CoAPFuzzer:
         return mutated_input
     
     def choose_next(self):
-        return random.choice(self.seed_queue)
+        if len(self.seed_queue) != 0:
+            self.seed_queue.sort(key=lambda x: x["count"])
+            self.seed_queue[0]["count"] += 1
+            return self.seed_queue[0]
+        return "Seed queue is empty"
     
-    def is_interesting(self, response):
-        if (response.code not in [defines.Codes.BAD_REQUEST.number, defines.Codes.NOT_FOUND.number, defines.Codes.INTERNAL_SERVER_ERROR.number, defines.Codes.METHOD_NOT_ALLOWED.number, defines.Codes.NOT_ACCEPTABLE.number, defines.Codes.REQUEST_ENTITY_TOO_LARGE.number, defines.Codes.UNSUPPORTED_CONTENT_FORMAT.number, defines.Codes.REQUEST_ENTITY_INCOMPLETE.number, defines.Codes.PRECONDITION_FAILED.number]):
+    def is_interesting(self):
+        if self.coverage_before is None:
+            self.coverage_before = subprocess.check_output(["coverage", "report", "-m"]).decode()
             return True
+
+        # Get the new coverage data
+        coverage_after  = subprocess.check_output(["coverage", "report", "-m"]).decode()
+        # Check if coverage has increased
+        if self.coverage_before != coverage_after:
+            return True
+        return False
+    
+    def assign_energy(self, seed):
+        return 20
+    
+    def signal_handler(self, sig, frame):
+        subprocess.Popen(["coverage", "report", "-m"])
+        subprocess.Popen(["coverage", "html"])
+        with open("seed.json", "w") as f:
+            json.dump(self.seed_queue, f)
+        print("Exiting...")
+        exit(0)    
 
     
 def main():
     host = "127.0.0.1"
     port = 5683
     fuzzer = CoAPFuzzer(host, port)
+    signal.signal(signal.SIGINT, fuzzer.signal_handler)
     # while(1):
     #     try:
     fuzzer.fuzz_and_send_requests()
