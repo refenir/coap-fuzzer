@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Coverage report</title>
+    <link rel="icon" sizes="32x32" href="favicon_32.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.ba-throttle-debounce.min.js"></script>
+    <script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.index_ready);
+    </script>
+</head>
+<body class="indexfile">
+<div id="header">
+    <div class="content">
+        <h1>Coverage report:
+            <span class="pc_cov">46%</span>
+        </h1>
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+        <form id="filter_container">
+            <input id="filter" type="text" value="" placeholder="filter..." />
+        </form>
+    </div>
+</div>
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">n</span>
+        <span class="key">s</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        <span class="key">c</span> &nbsp; change column sorting
+    </p>
+    </div>
+</div>
+<div id="index">
+    <table class="index">
+        <thead>
+            <tr class="tablehead" title="Click to sort">
+                <th class="name left headerSortDown shortkey_n">Module</th>
+                <th class="shortkey_s">statements</th>
+                <th class="shortkey_m">missing</th>
+                <th class="shortkey_x">excluded</th>
+                <th class="right shortkey_c">coverage</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr class="total">
+                <td class="name left">Total</td>
+                <td>1928</td>
+                <td>1034</td>
+                <td>208</td>
+                <td class="right" data-ratio="894 1928">46%</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr class="file">
+                <td class="name left"><a href="coapthon___init___py.html">coapthon/__init__.py</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="1 1">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_client___init___py.html">coapthon/client/__init__.py</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="1 1">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_client_coap_py.html">coapthon/client/coap.py</a></td>
+                <td>164</td>
+                <td>113</td>
+                <td>33</td>
+                <td class="right" data-ratio="51 164">31%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_client_helperclient_py.html">coapthon/client/helperclient.py</a></td>
+                <td>52</td>
+                <td>32</td>
+                <td>94</td>
+                <td class="right" data-ratio="20 52">38%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_defines_py.html">coapthon/defines.py</a></td>
+                <td>128</td>
+                <td>11</td>
+                <td>0</td>
+                <td class="right" data-ratio="117 128">91%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_layers___init___py.html">coapthon/layers/__init__.py</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="1 1">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_layers_blocklayer_py.html">coapthon/layers/blocklayer.py</a></td>
+                <td>170</td>
+                <td>149</td>
+                <td>21</td>
+                <td class="right" data-ratio="21 170">12%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_layers_messagelayer_py.html">coapthon/layers/messagelayer.py</a></td>
+                <td>201</td>
+                <td>177</td>
+                <td>12</td>
+                <td class="right" data-ratio="24 201">12%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_layers_observelayer_py.html">coapthon/layers/observelayer.py</a></td>
+                <td>98</td>
+                <td>80</td>
+                <td>8</td>
+                <td class="right" data-ratio="18 98">18%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_layers_requestlayer_py.html">coapthon/layers/requestlayer.py</a></td>
+                <td>65</td>
+                <td>53</td>
+                <td>6</td>
+                <td class="right" data-ratio="12 65">18%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_messages___init___py.html">coapthon/messages/__init__.py</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="1 1">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_messages_message_py.html">coapthon/messages/message.py</a></td>
+                <td>287</td>
+                <td>152</td>
+                <td>0</td>
+                <td class="right" data-ratio="135 287">47%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_messages_option_py.html">coapthon/messages/option.py</a></td>
+                <td>44</td>
+                <td>6</td>
+                <td>0</td>
+                <td class="right" data-ratio="38 44">86%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_messages_request_py.html">coapthon/messages/request.py</a></td>
+                <td>110</td>
+                <td>71</td>
+                <td>0</td>
+                <td class="right" data-ratio="39 110">35%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_messages_response_py.html">coapthon/messages/response.py</a></td>
+                <td>53</td>
+                <td>39</td>
+                <td>0</td>
+                <td class="right" data-ratio="14 53">26%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_serializer_py.html">coapthon/serializer.py</a></td>
+                <td>236</td>
+                <td>50</td>
+                <td>8</td>
+                <td class="right" data-ratio="186 236">79%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_transaction_py.html">coapthon/transaction.py</a></td>
+                <td>47</td>
+                <td>29</td>
+                <td>0</td>
+                <td class="right" data-ratio="18 47">38%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="coapthon_utils_py.html">coapthon/utils.py</a></td>
+                <td>88</td>
+                <td>60</td>
+                <td>24</td>
+                <td class="right" data-ratio="28 88">32%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="fuzzer_py.html">fuzzer.py</a></td>
+                <td>181</td>
+                <td>12</td>
+                <td>2</td>
+                <td class="right" data-ratio="169 181">93%</td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="no_rows">
+        No items found using the specified filter.
+    </p>
+</div>
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
+            created at 2024-04-07 16:17
+        </p>
+    </div>
+</div>
+</body>
+</html>
