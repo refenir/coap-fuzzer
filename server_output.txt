@@ -1,0 +1,4 @@
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+Server Shutdown
+Exiting...
