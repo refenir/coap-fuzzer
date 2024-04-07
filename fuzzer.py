@@ -67,7 +67,7 @@ class CoAPFuzzer:
             serializer = Serializer()
             sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
             # check for timeout events
-            sock.settimeout(20)
+            sock.settimeout(10)
             # generate random request
             for i in range(energy):
                 req = Request()
@@ -104,6 +104,7 @@ class CoAPFuzzer:
                         f.write("Request:\n" + req.pretty_print())
                         f.write("\n")
                     p = restart_server(p)
+                    sleep(1)
                     continue
                 received_message = serializer.deserialize(datagram, source) # response
                 print(received_message.pretty_print())
@@ -186,6 +187,11 @@ class CoAPFuzzer:
         #     mutated_input =bytes(mutated_input).decode("utf-8", errors="replace")
         mutated_input = unicodedata.normalize("NFKD", bytes(mutated_input).decode("ascii", errors="ignore"))
         print(mutated_input)
+        if mutated_input == "" or mutated_input is None:
+            if key == "token":
+                mutated_input = ''.join(random.choice(string.printable) for i in range(100)) 
+            elif key == "payload":
+                mutated_input = ''.join(random.choice(string.printable) for i in range(1000))
         return mutated_input
     
     def choose_next(self):
