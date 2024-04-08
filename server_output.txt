@@ -1822,3 +1822,18 @@ CoAP Server start on 0.0.0.0:5683
 2024-04-08 00:34:44,645 - Thread-116 - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35536), CON-951, METHOD_NOT_ALLOWED-haha, [] No payload
 2024-04-08 00:34:45,007 - Thread-74  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 50499), CON-937, CONTENT-g_e], [Content-Type: 41, ] <value>0</value>...16 bytes
 2024-04-08 00:34:45,042 - Thread-93  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35536), CON-944, METHOD_NOT_ALLOWED-ha, [] No payload
+2024-04-08 00:34:45,751 - Thread-71  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 50499), CON-936, METHOD_NOT_ALLOWED-g_e], [] No payload
+2024-04-08 00:34:46,431 - Thread-11  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 50700), CON-918, METHOD_NOT_ALLOWED-ah, [] No payload
+2024-04-08 00:34:49,058 - Thread-85  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 50499), CON-941, METHOD_NOT_ALLOWED-g_ea, [] No payload
+2024-04-08 00:34:49,506 - Thread-53  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 50499), CON-929, METHOD_NOT_ALLOWED-g_e, [] No payload
+2024-04-08 00:34:49,636 - Thread-90  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35536), CON-943, METHOD_NOT_ALLOWED-haha, [] No payload
+2024-04-08 00:34:50,122 - Thread-113 - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35536), CON-950, CHANGED-g`g`, [Max-Age: 60, ] No payload
+2024-04-08 00:34:50,556 - Thread-103 - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35536), CON-947, CREATED-haha, [] Response changed thr...29 bytes
+2024-04-08 00:34:51,008 - Thread-129 - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 50499), CON-956, CONTENT-f^d\, [Observe: 1, ] Long Time...9 bytes
+2024-04-08 00:34:51,347 - Thread-100 - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35536), CON-946, CREATED-	, [Location-Path: storage, ] No payload
+2024-04-08 00:34:53,596 - Thread-125 - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35536), CON-954, DELETED-aha, [] No payload
+2024-04-08 00:34:54,645 - Thread-122 - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35536), CON-953, METHOD_NOT_ALLOWED-
+}~, [] No payload
+2024-04-08 00:34:54,836 - Thread-119 - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35536), CON-952, CHANGED-thaha, [] Response changed thr...28 bytes
+2024-04-08 00:34:56,224 - Thread-106 - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35536), CON-948, NOT_FOUND-haha, [] No payload
+2024-04-08 00:34:56,704 - Thread-128 - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35536), CON-955, DELETED-h, [] Response deleted...16 bytes

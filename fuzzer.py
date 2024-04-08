@@ -71,13 +71,18 @@ class CoAPFuzzer:
             # generate random request
             for i in range(energy):
                 req = Request()
-                req.type = random.choice([defines.Types["CON"], defines.Types["NON"], defines.Types["ACK"], defines.Types["RST"]])
+                req.type = random.choice([defines.Types["CON"], defines.Types["NON"], 
+                                          defines.Types["ACK"], defines.Types["RST"]])
                 req.mid = random.randint(1, 65535) #required, don't change
-                req.token = self.mutate_input(seed["token"], "token") # If string is 100 letters long, the server will crash
+                # If string is 100 letters long, the server will crash
+                req.token = self.mutate_input(seed["token"], "token") 
                 req.payload = self.mutate_input(seed["payload"], "payload")
                 req.destination = (self.host, self.port)
-                req.code = random.choice([defines.Codes.GET.number, defines.Codes.POST.number, defines.Codes.PUT.number, defines.Codes.DELETE.number]) # Everytime EMPTY is chosen, the server will give up, but not crash
-                req.uri_path = random.choice(["/basic/", "/storage/", "/separate/", "/long/", "/big/", "/void/", "/xml/", "/encoding/", "/etag/", "/child/", "/advanced/", "/advancedSeparate/", "/"])
+                req.code = random.choice([defines.Codes.GET.number, defines.Codes.POST.number, 
+                                          defines.Codes.PUT.number, defines.Codes.DELETE.number]) 
+                req.uri_path = random.choice(["/basic/", "/storage/", "/separate/", "/long/", 
+                                              "/big/", "/void/", "/xml/", "/encoding/", "/etag/", 
+                                              "/child/", "/advanced/", "/advancedSeparate/", "/"])
                 mutated_seed = {"token":req.token, "payload":req.payload, "count":0}
 
                 # add discovery/observe mutation if the request is a GET request
@@ -115,7 +120,9 @@ class CoAPFuzzer:
         self.client.stop()
     
     def mutate_input(self, input_data, key):
-        mutations = ("bitflip", "byteflip", "arith inc/dec", "interesting values", "user extras", "auto extras", "random bytes", "delete bytes", "insert bytes", "overwrite bytes", "cross over")
+        mutations = ("bitflip", "byteflip", "arith inc/dec", "interesting values", 
+                     "random bytes", "delete bytes", "insert bytes", "overwrite bytes", 
+                     "cross over")
         mutation_chose = mutations[random.randint(0,len(mutations)-1)]
         mutated_data = self.apply_mutation(input_data, mutation_chose, key)
         return mutated_data
