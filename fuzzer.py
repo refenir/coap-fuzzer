@@ -131,8 +131,7 @@ class CoAPFuzzer:
         mutations = ("bitflip", "byteflip", "arith inc/dec", "interesting values", 
                      "random bytes", "delete bytes", "insert bytes", "overwrite bytes", 
                      "cross over")
-        # mutation_chose = mutations[random.randint(0,len(mutations)-1)]
-        mutation_chose = "bitflips"
+        mutation_chose = mutations[random.randint(0,len(mutations)-1)]
         mutated_data = self.apply_mutation(input_data, mutation_chose, key)
         return mutated_data
     
