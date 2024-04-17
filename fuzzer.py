@@ -17,6 +17,10 @@ import coverage
 
 # import codecs
 # codecs.register(lambda name: codecs.lookup('utf-8') if name == 'cp65001' else None)
+pheromone_decrease = -1
+pheromone_increase = 10
+test_count = 0
+unique_bugs = 0
 
 def restart_server(p):
     os.killpg(os.getpgid(p.pid), signal.SIGTERM)
@@ -45,6 +49,7 @@ class CoAPFuzzer:
         self.failure_queue = []
 
     def fuzz_and_send_requests(self):
+        global pheromone_decrease, pheromone_increase
         with open("seed.json", "r") as f:
             self.seed_queue = json.load(f)
         command = ["python2", "coapserver.py"]
@@ -64,10 +69,12 @@ class CoAPFuzzer:
             seed = self.choose_next()
             print(seed)
             energy = self.assign_energy(seed)
+            if seed["pheromone"] > 2:
+                seed["pheromone"] += pheromone_decrease
             serializer = Serializer()
             sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
             # check for timeout events
-            sock.settimeout(10)
+            sock.settimeout(2)
             # generate random request
             for i in range(energy):
                 req = Request()
@@ -83,7 +90,7 @@ class CoAPFuzzer:
                 req.uri_path = random.choice(["/basic/", "/storage/", "/separate/", "/long/", 
                                               "/big/", "/void/", "/xml/", "/encoding/", "/etag/", 
                                               "/child/", "/advanced/", "/advancedSeparate/", "/"])
-                mutated_seed = {"token":req.token, "payload":req.payload, "count":0}
+                mutated_seed = {"token":req.token, "payload":req.payload, "count":0, "pheromone":10}
 
                 # add discovery/observe mutation if the request is a GET request
                 if req.code == defines.Codes.GET.number:
@@ -103,6 +110,7 @@ class CoAPFuzzer:
                     datagram, source = sock.recvfrom(4096)
                 # handle timeouts (server crash / no response)
                 except socket.timeout:
+                    seed["pheromone"] += pheromone_increase
                     print("Timeout")
                     print("Server crashed. Restarting")
                     with open("crashed_log.txt", "a") as f:
@@ -115,7 +123,7 @@ class CoAPFuzzer:
                 print(received_message.pretty_print())
                 if self.is_interesting():
                     self.seed_queue.append(mutated_seed)
-            
+
     def close_connection(self):
         self.client.stop()
     
@@ -123,7 +131,8 @@ class CoAPFuzzer:
         mutations = ("bitflip", "byteflip", "arith inc/dec", "interesting values", 
                      "random bytes", "delete bytes", "insert bytes", "overwrite bytes", 
                      "cross over")
-        mutation_chose = mutations[random.randint(0,len(mutations)-1)]
+        # mutation_chose = mutations[random.randint(0,len(mutations)-1)]
+        mutation_chose = "bitflips"
         mutated_data = self.apply_mutation(input_data, mutation_chose, key)
         return mutated_data
     
@@ -221,13 +230,15 @@ class CoAPFuzzer:
         return False
     
     def assign_energy(self, seed):
-        return 20
+        # ant colony optimisation
+        return seed["pheromone"]
+
     
     def signal_handler(self, sig, frame):
         subprocess.Popen(["coverage", "report", "-m"])
         subprocess.Popen(["coverage", "html"])
-        with open("seed.json", "w") as f:
-            json.dump(self.seed_queue, f)
+        #with open("seed.json", "w") as f:
+            #json.dump(self.seed_queue, f)
         print("Exiting...")
         exit(0)    
 
