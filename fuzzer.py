@@ -69,8 +69,6 @@ class CoAPFuzzer:
             seed = self.choose_next()
             print(seed)
             energy = self.assign_energy(seed)
-            if seed["pheromone"] > 2:
-                seed["pheromone"] += pheromone_decrease
             serializer = Serializer()
             sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
             # check for timeout events
@@ -110,7 +108,6 @@ class CoAPFuzzer:
                     datagram, source = sock.recvfrom(4096)
                 # handle timeouts (server crash / no response)
                 except socket.timeout:
-                    seed["pheromone"] += pheromone_increase
                     print("Timeout")
                     print("Server crashed. Restarting")
                     with open("crashed_log.txt", "a") as f:
@@ -123,6 +120,7 @@ class CoAPFuzzer:
                 print(received_message.pretty_print())
                 if self.is_interesting():
                     self.seed_queue.append(mutated_seed)
+                    self.seed_queue[0]["pheromone"] += pheromone_increase
 
     def close_connection(self):
         self.client.stop()
@@ -213,6 +211,8 @@ class CoAPFuzzer:
         if len(self.seed_queue) != 0:
             self.seed_queue.sort(key=lambda x: x["count"])
             self.seed_queue[0]["count"] += 1
+            if self.seed_queue[0]["pheromone"] > 1:
+                self.seed_queue[0]["pheromone"] += pheromone_decrease
             return self.seed_queue[0]
         return "Seed queue is empty"
     
@@ -230,7 +230,7 @@ class CoAPFuzzer:
     
     def assign_energy(self, seed):
         # ant colony optimisation
-        return seed["pheromone"]
+        return seed["pheromone"] + 1
 
     
     def signal_handler(self, sig, frame):
