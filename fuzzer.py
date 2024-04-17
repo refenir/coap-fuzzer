@@ -10,8 +10,10 @@ import json
 import signal
 import string
 import unicodedata
+from datetime import datetime
 from time import sleep
 from time import time
+import csv
 import coverage
 #gdb -ex run -ex backtrace --args python2 coapserver.py -i 127.0.0.1 -p 5683 
 
@@ -23,14 +25,15 @@ test_count = 0
 unique_bugs = 0
 
 def restart_server(p):
-    os.killpg(os.getpgid(p.pid), signal.SIGTERM)
+    os.killpg(os.getpgid(p.pid), signal.SIGTERM)  # unix
+    # os.kill(p.pid, signal.CTRL_C_EVENT)  # windows
     command = ["python2", "coapserver.py"]
     try:
         # p = subprocess.Popen(command, preexec_fn=os.setsid)
         with open("server_output.txt", "a") as out_file, open("server_error.txt", "a") as err_file:
                 p = subprocess.Popen(command, 
-                                    #  shell=True, # windows
-                                    #  creationflags=subprocess.CREATE_NEW_PROCESS_GROUP,  # windows
+                                    # shell=True, # windows
+                                    # creationflags=subprocess.CREATE_NEW_PROCESS_GROUP,  # windows
                                     preexec_fn=os.setsid, # unix
                                     stdout=out_file, 
                                     stderr=err_file)
@@ -65,62 +68,99 @@ class CoAPFuzzer:
         except Exception as e:
             print("Error starting CoAP server", str(e))
         sleep(1)
-        while True:
-            seed = self.choose_next()
-            print(seed)
-            energy = self.assign_energy(seed)
-            serializer = Serializer()
-            sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-            # check for timeout events
-            sock.settimeout(2)
-            # generate random request
-            for i in range(energy):
-                req = Request()
-                req.type = random.choice([defines.Types["CON"], defines.Types["NON"], 
-                                          defines.Types["ACK"], defines.Types["RST"]])
-                req.mid = random.randint(1, 65535) #required, don't change
-                # If string is 100 letters long, the server will crash
-                req.token = self.mutate_input(seed["token"], "token") 
-                req.payload = self.mutate_input(seed["payload"], "payload")
-                req.destination = (self.host, self.port)
-                req.code = random.choice([defines.Codes.GET.number, defines.Codes.POST.number, 
-                                          defines.Codes.PUT.number, defines.Codes.DELETE.number]) 
-                req.uri_path = random.choice(["/basic/", "/storage/", "/separate/", "/long/", 
-                                              "/big/", "/void/", "/xml/", "/encoding/", "/etag/", 
-                                              "/child/", "/advanced/", "/advancedSeparate/", "/"])
-                mutated_seed = {"token":req.token, "payload":req.payload, "count":0, "pheromone":10}
+        
+        with open('RQ/RQ1_2.csv', 'w') as rq1_2_csv, open ('RQ/RQ1_3.csv', 'w') as rq1_3_csv, open ('RQ/RQ2.csv', 'w') as rq2_csv:
+            writer1_2 = csv.writer(rq1_2_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            writer1_3 = csv.writer(rq1_3_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            writer2 = csv.writer(rq2_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            
+            writer2.writerow(['Time to generate a test', 'Time to run a test'])
+            
+            num_tests = 1
+            interesting_test_cases = 0
+            start_time = datetime.now()
+            
+            while True:                
+                seed = self.choose_next()
+                print(seed)
+                energy = self.assign_energy(seed)
+                serializer = Serializer()
+                sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+                # check for timeout events
+                sock.settimeout(2)
+                
+                # generate random request
+                for i in range(energy):
+                    start_time_per_test = datetime.now()
+                    
+                    req = Request()
+                    req.type = random.choice([defines.Types["CON"], defines.Types["NON"], 
+                                            defines.Types["ACK"], defines.Types["RST"]])
+                    req.mid = random.randint(1, 65535) #required, don't change
+                    # If string is 100 letters long, the server will crash
+                    req.token = self.mutate_input(seed["token"], "token") 
+                    req.payload = self.mutate_input(seed["payload"], "payload")
+                    req.destination = (self.host, self.port)
+                    req.code = random.choice([defines.Codes.GET.number, defines.Codes.POST.number, 
+                                            defines.Codes.PUT.number, defines.Codes.DELETE.number]) 
+                    req.uri_path = random.choice(["/basic/", "/storage/", "/separate/", "/long/", 
+                                                "/big/", "/void/", "/xml/", "/encoding/", "/etag/", 
+                                                "/child/", "/advanced/", "/advancedSeparate/", "/"])
+                    mutated_seed = {"token":req.token, "payload":req.payload, "count":0, "pheromone":10}
 
-                # add discovery/observe mutation if the request is a GET request
-                if req.code == defines.Codes.GET.number:
-                    mutate_obs_disc = random.random()
-                    if mutate_obs_disc < 0.33:
-                        req.observe = random.randint(0, 1)
-                    elif mutate_obs_disc < 0.66:
-                        del req.uri_path
-                        req.uri_path = defines.DISCOVERY_URL
-                print(req.pretty_print())
+                    # add discovery/observe mutation if the request is a GET request
+                    if req.code == defines.Codes.GET.number:
+                        mutate_obs_disc = random.random()
+                        if mutate_obs_disc < 0.33:
+                            req.observe = random.randint(0, 1)
+                        elif mutate_obs_disc < 0.66:
+                            del req.uri_path
+                            req.uri_path = defines.DISCOVERY_URL
+                    print(req.pretty_print())
+                    
+                    # RQ 2 time to generate test
+                    end_time_gen_test = datetime.now()
+                    elapsed_time_gen_test = (end_time_gen_test - start_time_per_test).microseconds
 
-                # send request
-                datagram = serializer.serialize(req) 
-                sock.sendto(datagram, req.destination)
-                # try to receive response
-                try:
-                    datagram, source = sock.recvfrom(4096)
-                # handle timeouts (server crash / no response)
-                except socket.timeout:
-                    print("Timeout")
-                    print("Server crashed. Restarting")
-                    with open("crashed_log.txt", "a") as f:
-                        f.write("Request:\n" + req.pretty_print())
-                        f.write("\n")
-                    p = restart_server(p)
-                    sleep(1)
-                    continue
-                received_message = serializer.deserialize(datagram, source) # response
-                print(received_message.pretty_print())
-                if self.is_interesting():
-                    self.seed_queue.append(mutated_seed)
-                    self.seed_queue[0]["pheromone"] += pheromone_increase
+                    # send request
+                    datagram = serializer.serialize(req) 
+                    sock.sendto(datagram, req.destination)
+                    # try to receive response
+                    try:
+                        datagram, source = sock.recvfrom(4096)
+                    # handle timeouts (server crash / no response)
+                    except socket.timeout:                  
+                        print("Timeout")
+                        print("Server crashed. Restarting")
+                        with open("crashed_log.txt", "a") as f:
+                            f.write("Request:\n" + req.pretty_print())
+                            f.write("\n")
+                        p = restart_server(p)
+                        sleep(1)
+                        continue
+                    received_message = serializer.deserialize(datagram, source) # response
+                    print(received_message.pretty_print())
+                    
+                    if self.is_interesting():
+                        interesting_test_cases += 1
+                        self.seed_queue.append(mutated_seed)    
+                        self.seed_queue[0]["pheromone"] += pheromone_increase
+                    lap_time = datetime.now()
+                    elapsed_time = (lap_time - start_time).seconds
+                    # RQ 2 time to run test
+                    end_time_run_test = datetime.now()
+                    elapsed_time_run_test = (end_time_run_test - start_time_per_test).microseconds
+                           
+                    # write to excel for plotting of RQ
+                    # RQ1_2
+                    writer1_2.writerow([interesting_test_cases, elapsed_time])
+                    # RQ1_3
+                    writer1_3.writerow([interesting_test_cases, num_tests])
+                    # RQ2
+                    writer2.writerow([elapsed_time_gen_test, elapsed_time_run_test])
+                    
+                    num_tests += 1  
+                          
 
     def close_connection(self):
         self.client.stop()
@@ -211,7 +251,7 @@ class CoAPFuzzer:
         if len(self.seed_queue) != 0:
             self.seed_queue.sort(key=lambda x: x["count"])
             self.seed_queue[0]["count"] += 1
-            if self.seed_queue[0]["pheromone"] > 1:
+            if self.seed_queue[0]["pheromone"] > 0:
                 self.seed_queue[0]["pheromone"] += pheromone_decrease
             return self.seed_queue[0]
         return "Seed queue is empty"

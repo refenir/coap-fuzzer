@@ -29302,3 +29302,987 @@ Traceback (most recent call last):
   File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
     length = s.unpack_from(values[pos:])[0] + 269
 UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 335, in convert_to_raw
+    return bytearray(value, "utf-8")
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xb4 in position 4: ordinal not in range(128)
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 335, in convert_to_raw
+    return bytearray(value, "utf-8")
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xb7 in position 94: ordinal not in range(128)
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 335, in convert_to_raw
+    return bytearray(value, "utf-8")
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xb3 in position 94: ordinal not in range(128)
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
