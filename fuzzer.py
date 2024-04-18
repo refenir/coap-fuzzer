@@ -17,7 +17,6 @@ from time import time
 import csv
 from coverage import Coverage
 import threading
-#gdb -ex run -ex backtrace --args python2 coapserver.py -i 127.0.0.1 -p 5683 
 
 # import codecs
 # codecs.register(lambda name: codecs.lookup('utf-8') if name == 'cp65001' else None)
@@ -26,10 +25,10 @@ pheromone_increase = 10
 test_count = 0
 unique_bugs = []
 
-def start_server(p):
-    if p is not None:
-        os.killpg(os.getpgid(p.pid), signal.SIGTERM)  # unix
-        # os.kill(p.pid, signal.CTRL_C_EVENT)  # windows
+def start_server():
+    # if p is not None:
+    #     os.killpg(os.getpgid(p.pid), signal.SIGTERM)  # unix
+    #     # os.kill(p.pid, signal.CTRL_C_EVENT)  # windows
     command = ["python2", "coapserver.py"]
     try:
         # p = subprocess.Popen(command, preexec_fn=os.setsid)
@@ -61,6 +60,7 @@ def handle_errors(p):
                 print("New unique error detected:"), error
             elif error:
                 print("Repeated error:"), error
+            return
         sleep(0.1)
 
 class CoAPFuzzer:
@@ -77,8 +77,9 @@ class CoAPFuzzer:
         global pheromone_decrease, pheromone_increase
         with open("seed.json", "r") as f:
             self.seed_queue = json.load(f)
-        p = start_server(None)
-        with open('RQ/RQ1_2.csv', 'w') as rq1_2_csv, open ('RQ/RQ1_3.csv', 'w') as rq1_3_csv, open ('RQ/RQ2.csv', 'w') as rq2_csv:
+        p = start_server()
+        with  open ('RQ/RQ1_1.csv', 'w') as rq1_1_csv, open('RQ/RQ1_2.csv', 'w') as rq1_2_csv, open ('RQ/RQ1_3.csv', 'w') as rq1_3_csv, open ('RQ/RQ2.csv', 'w') as rq2_csv:
+            writer1_1 = csv.writer(rq1_1_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             writer1_2 = csv.writer(rq1_2_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             writer1_3 = csv.writer(rq1_3_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             writer2 = csv.writer(rq2_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
@@ -140,11 +141,17 @@ class CoAPFuzzer:
                     # handle timeouts (server crash / no response)
                     except socket.timeout:                  
                         print("Timeout")
+                        p.kill()
+                        _,stderr = p.communicate()
+                        if stderr:
+                            if stderr not in unique_bugs:
+                                unique_bugs.append(stderr)
+                                print("New unique error detected:"), stderr
                         print("Server crashed. Restarting")
                         with open("crashed_log.txt", "a") as f:
                             f.write("Request:\n" + req.pretty_print())
                             f.write("\n")
-                        p = start_server(p)
+                        p = start_server()
                         continue
                     received_message = serializer.deserialize(datagram, source) # response
                     print(received_message.pretty_print())
@@ -157,12 +164,14 @@ class CoAPFuzzer:
                         self.seed_queue[0]["pheromone"] += pheromone_increase
                     self.coverage.start()
                     lap_time = datetime.now()
-                    elapsed_time = (lap_time - start_time).seconds
+                    elapsed_time = (lap_time - start_time).total_seconds() * 1000.0
                     # RQ 2 time to run test
                     end_time_run_test = datetime.now()
-                    elapsed_time_run_test = (end_time_run_test - start_time_per_test).microseconds
+                    elapsed_time_run_test = (end_time_run_test - start_time_per_test).total_seconds() * 1000.0
                            
                     # write to excel for plotting of RQ
+                    # RQ1_1
+                    writer1_1.writerow([len(unique_bugs), elapsed_time])
                     # RQ1_2
                     writer1_2.writerow([interesting_test_cases, elapsed_time])
                     # RQ1_3
@@ -184,7 +193,6 @@ class CoAPFuzzer:
         mutated_data = self.apply_mutation(input_data, mutation_chose, key)
         return mutated_data
     
-
     def apply_mutation(self, data, mutation, key):
         if data == "" or data is None:
             if key == "token":
@@ -274,10 +282,8 @@ class CoAPFuzzer:
             return True
 
         # Get the new coverage data
-        coverage_after  = self.coverage.json_report(pretty_print=True)
+        coverage_after = self.coverage.json_report(pretty_print=True)
         # Check if coverage has increased
-        print("Coverage before: ", self.coverage_before)
-        print("Coverage after: ", coverage_after)
         if self.coverage_before != coverage_after:
             self.coverage_before = coverage_after
             return True
@@ -293,6 +299,7 @@ class CoAPFuzzer:
         # subprocess.Popen(["coverage", "html"])
         #with open("seed.json", "w") as f:
             #json.dump(self.seed_queue, f)
+        print(unique_bugs)
         self.coverage.stop()
         print(self.coverage.report())
         print("Exiting...")
