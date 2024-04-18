@@ -294,7 +294,7 @@ class CoAPFuzzer:
         #with open("seed.json", "w") as f:
             #json.dump(self.seed_queue, f)
         self.coverage.stop()
-        print(self.coverage.json_report(pretty_print=True))
+        print(self.coverage.report())
         print("Exiting...")
         exit(0)    
 

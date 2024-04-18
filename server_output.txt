@@ -12763,3 +12763,37 @@ CoAP Server start on 0.0.0.0:5683
 ['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
 2024-04-18 15:11:59,483 - Thread-4   - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 49109), CON-718, METHOD_NOT_ALLOWED-|~, [] No payload
 2024-04-18 15:12:00,470 - Thread-14  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 49109), CON-721, METHOD_NOT_ALLOWED-hah, [] No payload
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:18:42,775 - Thread-16  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35304), CON-450, METHOD_NOT_ALLOWED-e, [] No payload
+2024-04-18 15:18:44,571 - Thread-4   - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35304), CON-447, DELETED-saha, [] No payload
+2024-04-18 15:18:44,806 - Thread-9   - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35304), CON-449, CHANGED-tck, [Location-Path: big, ] No payload
+2024-04-18 15:18:44,883 - Thread-23  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35304), CON-451, NOT_FOUND-tcke, [] No payload
+2024-04-18 15:18:51,481 - Thread-26  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 49594), CON-452, CONTENT-aYH, [Observe: 1, Content-Type: 41, ] <value>0</value>...16 bytes
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:21:28,812 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:21:37,266 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 15:21:37,566 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:22:12,518 - Thread-39  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 43618), CON-719, CHANGED-aa, [] Response changed thr...28 bytes
+2024-04-18 15:22:13,281 - Thread-29  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 43618), CON-716, METHOD_NOT_ALLOWED-aa, [] No payload
+2024-04-18 15:22:14,176 - Thread-10  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 33487), CON-711, CHANGED-|
+
+, [Location-Path: big, ] No payload
+2024-04-18 15:22:14,227 - Thread-4   - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 33487), CON-709, CONTENT-g_f_-, [Content-Type: 40, ] </basic>;rt="rt1";if...203 bytes
+2024-04-18 15:22:14,390 - Thread-50  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 43618), CON-722, METHOD_NOT_ALLOWED-`_, [] No payload
+2024-04-18 15:22:15,516 - Thread-36  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 43618), CON-718, METHOD_NOT_ALLOWED-a, [] No payload
+2024-04-18 15:22:16,090 - Thread-18  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 33487), CON-713, DELETED-hah, [] No payload
+2024-04-18 15:22:16,844 - Thread-21  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 33487), CON-714, CONTENT-hha, [ETag: 0, ] ETag resource...13 bytes
+2024-04-18 15:22:16,878 - Thread-13  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 33487), CON-712, CREATED-hha /
+, [Location-Path: basic, ] No payload
