@@ -9,12 +9,14 @@ import os
 import json
 import signal
 import string
+import sys
 import unicodedata
 from datetime import datetime
 from time import sleep
 from time import time
 import csv
 import coverage
+import threading
 #gdb -ex run -ex backtrace --args python2 coapserver.py -i 127.0.0.1 -p 5683 
 
 # import codecs
@@ -22,11 +24,12 @@ import coverage
 pheromone_decrease = -1
 pheromone_increase = 10
 test_count = 0
-unique_bugs = 0
+unique_bugs = []
 
-def restart_server(p):
-    os.killpg(os.getpgid(p.pid), signal.SIGTERM)  # unix
-    # os.kill(p.pid, signal.CTRL_C_EVENT)  # windows
+def start_server(p):
+    if p is not None:
+        os.killpg(os.getpgid(p.pid), signal.SIGTERM)  # unix
+        # os.kill(p.pid, signal.CTRL_C_EVENT)  # windows
     command = ["python2", "coapserver.py"]
     try:
         # p = subprocess.Popen(command, preexec_fn=os.setsid)
@@ -36,11 +39,29 @@ def restart_server(p):
                                     # creationflags=subprocess.CREATE_NEW_PROCESS_GROUP,  # windows
                                     preexec_fn=os.setsid, # unix
                                     stdout=out_file, 
-                                    stderr=err_file)
-        print("CoAP server restarted")
+                                    stderr=subprocess.PIPE)
+        
+        print("CoAP server started")
+        # threading.Thread(target=handle_errors, args=(p,)).start()
+        sleep(1)
         return p
     except Exception as e:
         print("Error restarting CoAP server", str(e))
+        return None
+
+def handle_errors(p):
+    while True:
+        line = p.stderr.read()
+        if line == '' and p.poll() is not None:
+            break
+        if line:
+            error = line
+            if error and error not in unique_bugs:
+                unique_bugs.append(error)
+                print("New unique error detected:"), error
+            elif error:
+                print("Repeated error:"), error
+        sleep(0.1)
 
 class CoAPFuzzer:
     def __init__(self, host, port):
@@ -55,20 +76,7 @@ class CoAPFuzzer:
         global pheromone_decrease, pheromone_increase
         with open("seed.json", "r") as f:
             self.seed_queue = json.load(f)
-        command = ["python2", "coapserver.py"]
-        try:
-            with open("server_output.txt", "a") as out_file, open("server_error.txt", "a") as err_file:
-                p = subprocess.Popen(command, 
-                                    #  shell=True, # windows
-                                    #  creationflags=subprocess.CREATE_NEW_PROCESS_GROUP,  # windows
-                                    preexec_fn=os.setsid, # unix
-                                    stdout=out_file, 
-                                    stderr=err_file)
-            print("CoAP server started")
-        except Exception as e:
-            print("Error starting CoAP server", str(e))
-        sleep(1)
-        
+        p = start_server(None)
         with open('RQ/RQ1_2.csv', 'w') as rq1_2_csv, open ('RQ/RQ1_3.csv', 'w') as rq1_3_csv, open ('RQ/RQ2.csv', 'w') as rq2_csv:
             writer1_2 = csv.writer(rq1_2_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             writer1_3 = csv.writer(rq1_3_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
@@ -80,7 +88,7 @@ class CoAPFuzzer:
             interesting_test_cases = 0
             start_time = datetime.now()
             
-            while True:                
+            while True:
                 seed = self.choose_next()
                 print(seed)
                 energy = self.assign_energy(seed)
@@ -135,15 +143,14 @@ class CoAPFuzzer:
                         with open("crashed_log.txt", "a") as f:
                             f.write("Request:\n" + req.pretty_print())
                             f.write("\n")
-                        p = restart_server(p)
-                        sleep(1)
+                        p = start_server(p)
                         continue
                     received_message = serializer.deserialize(datagram, source) # response
                     print(received_message.pretty_print())
-                    
+                    # check if coverage increased
                     if self.is_interesting():
                         interesting_test_cases += 1
-                        self.seed_queue.append(mutated_seed)    
+                        self.seed_queue.append(mutated_seed)   
                         self.seed_queue[0]["pheromone"] += pheromone_increase
                     lap_time = datetime.now()
                     elapsed_time = (lap_time - start_time).seconds
@@ -169,7 +176,7 @@ class CoAPFuzzer:
         mutations = ("bitflip", "byteflip", "arith inc/dec", "interesting values", 
                      "random bytes", "delete bytes", "insert bytes", "overwrite bytes", 
                      "cross over")
-        mutation_chose = mutations[random.randint(0,len(mutations)-1)]
+        mutation_chose = random.choice(mutations)
         mutated_data = self.apply_mutation(input_data, mutation_chose, key)
         return mutated_data
     
@@ -177,7 +184,7 @@ class CoAPFuzzer:
     def apply_mutation(self, data, mutation, key):
         if data == "" or data is None:
             if key == "token":
-                data = ''.join(random.choice(string.printable) for i in range(100)) 
+                data = ''.join(random.choice(string.printable) for i in range(10)) 
             elif key == "payload":
                 data = ''.join(random.choice(string.printable) for i in range(1000))
         mutated_input = bytearray()
@@ -239,7 +246,6 @@ class CoAPFuzzer:
         # except UnicodeDecodeError:
         #     mutated_input =bytes(mutated_input).decode("utf-8", errors="replace")
         mutated_input = unicodedata.normalize("NFKD", bytes(mutated_input).decode("ascii", errors="ignore"))
-        print(mutated_input)
         if mutated_input == "" or mutated_input is None:
             if key == "token":
                 mutated_input = ''.join(random.choice(string.printable) for i in range(100)) 
@@ -253,6 +259,7 @@ class CoAPFuzzer:
             self.seed_queue[0]["count"] += 1
             if self.seed_queue[0]["pheromone"] > 0:
                 self.seed_queue[0]["pheromone"] += pheromone_decrease
+            print(self.seed_queue[0]["pheromone"])
             return self.seed_queue[0]
         return "Seed queue is empty"
     
@@ -278,6 +285,7 @@ class CoAPFuzzer:
         subprocess.Popen(["coverage", "html"])
         #with open("seed.json", "w") as f:
             #json.dump(self.seed_queue, f)
+        print(self.seed_queue)
         print("Exiting...")
         exit(0)    
 
