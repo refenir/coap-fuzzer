@@ -12602,3 +12602,164 @@ CoAP Server start on 0.0.0.0:5683
 2024-04-18 14:35:23,895 - Thread-82  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 57685), CON-51, CONTENT-tcke, [Observe: 3, Max-Age: 20, ] Lorem ipsum dolor si...449 bytes
 2024-04-18 14:35:23,896 - Thread-82  - coapthon.layers.observelayer - WARNING - No Subscriber
 2024-04-18 14:35:25,287 - Thread-83  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 39786), CON-52, CHANGED-g_e], [] Response changed thr...28 bytes
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 14:58:49,031 - Thread-4   - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 39632), CON-156, CREATED-ha, [Location-Path: storage, ] No payload
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 14:59:00,703 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 14:59:16,426 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 14:59:17,122 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 14:59:17,366 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 14:59:47,089 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 14:59:53,290 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 14:59:56,484 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 14:59:56,523 - Thread-17  - root - ERROR - Failed to pack structure
+Traceback (most recent call last):
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 229, in serialize
+    s.pack_into(datagram, 0, *values)
+error: cannot convert argument to integer
+2024-04-18 14:59:59,182 - Thread-21  - root - ERROR - Failed to pack structure
+Traceback (most recent call last):
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 229, in serialize
+    s.pack_into(datagram, 0, *values)
+error: cannot convert argument to integer
+2024-04-18 15:00:04,498 - Thread-21  - root - ERROR - Failed to pack structure
+Traceback (most recent call last):
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 229, in serialize
+    s.pack_into(datagram, 0, *values)
+error: cannot convert argument to integer
+2024-04-18 15:00:15,135 - Thread-21  - root - ERROR - Failed to pack structure
+Traceback (most recent call last):
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 229, in serialize
+    s.pack_into(datagram, 0, *values)
+error: cannot convert argument to integer
+2024-04-18 15:00:23,552 - Thread-23  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 48652), CON-577, CONTENT-, [Observe: 2, ] SFCOSGAI@PMULDMV...62 bytes
+2024-04-18 15:00:26,221 - Thread-13  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 39409), CON-572, CREATED-haha, [Location-Path: encoding, ] No payload
+2024-04-18 15:00:28,334 - Thread-27  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 50292), CON-639, CHANGED-hha, [] Response changed thr...28 bytes
+2024-04-18 15:00:30,879 - Thread-7   - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 50292), CON-631, CHANGED-hah, [Location-Path: big, ] No payload
+2024-04-18 15:00:34,110 - Thread-18  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 39409), CON-574, CONTENT- 	, [Max-Age: 20, ] Advanced resource...17 bytes
+2024-04-18 15:00:34,751 - Thread-15  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 50292), CON-634, CHANGED-
+, [Max-Age: 60, ] No payload
+2024-04-18 15:00:35,667 - Thread-12  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 50292), CON-633, METHOD_NOT_ALLOWED-haha, [] No payload
+2024-04-18 15:00:36,397 - Thread-21  - root - ERROR - Failed to pack structure
+Traceback (most recent call last):
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 229, in serialize
+    s.pack_into(datagram, 0, *values)
+error: cannot convert argument to integer
+2024-04-18 15:00:36,397 - Thread-21  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 50292), CON-None, CONTENT-None, [ETag: 0, Observe: 1, ] ETag resource...13 bytes
+2024-04-18 15:00:36,397 - Thread-21  - coapthon.layers.observelayer - WARNING - No Subscriber
+2024-04-18 15:00:36,398 - Thread-23  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 50292), CON-637, CONTENT-aa, [ETag: 1, Observe: 2, ] Lorem ipsum dolor si...442 bytes
+2024-04-18 15:00:37,255 - Thread-32  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 43949), CON-640, METHOD_NOT_ALLOWED-tce, [] No payload
+2024-04-18 15:00:37,828 - Thread-8   - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 39409), CON-570, METHOD_NOT_ALLOWED-ha[=, [] No payload
+2024-04-18 15:00:38,192 - Thread-4   - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 50292), CON-630, METHOD_NOT_ALLOWED-hah, [] No payload
+2024-04-18 15:00:38,841 - Thread-24  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 50292), CON-638, CHANGED-iUhaha, [ETag: 1, Location-Path: etag, ] No payload
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:04:31,344 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 15:04:31,614 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:04:45,904 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:04:49,530 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 15:04:50,137 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:04:54,711 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 15:04:54,945 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 15:04:55,141 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:05:06,624 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 15:05:06,894 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 15:05:40,553 - Thread-21  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 52778), CON-649, NOT_FOUND-haha+U, [] No payload
+2024-04-18 15:05:40,853 - Thread-4   - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 52778), CON-643, CONTENT-haha, [] Basic Resource...14 bytes
+2024-04-18 15:05:41,335 - Thread-26  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 52778), CON-650, METHOD_NOT_ALLOWED-haha, [] No payload
+2024-04-18 15:05:42,218 - Thread-33  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 52778), CON-653, METHOD_NOT_ALLOWED-hha, [] No payload
+2024-04-18 15:05:42,522 - Thread-7   - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 52778), CON-644, METHOD_NOT_ALLOWED-ibib, [] No payload
+2024-04-18 15:05:43,578 - Thread-18  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 52778), CON-648, CHANGED-aha, [] No payload
+2024-04-18 15:05:44,621 - Thread-39  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 46823), CON-655, METHOD_NOT_ALLOWED-sbjd, [] No payload
+2024-04-18 15:05:45,435 - Thread-12  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 52778), CON-646, DELETED-haha, [] Response deleted...16 bytes
+2024-04-18 15:05:47,391 - Thread-36  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 46823), CON-654, CREATED-saic, [] Response changed thr...29 bytes
+2024-04-18 15:05:47,717 - Thread-15  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 52778), CON-647, METHOD_NOT_ALLOWED-hahai, [] No payload
+2024-04-18 15:05:54,376 - Thread-44  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 53546), CON-658, CONTENT-, [Max-Age: 60, ] Separate...8 bytes
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:09:03,028 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:09:07,294 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:09:11,556 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 15:09:11,889 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:09:48,971 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:09:57,111 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:10:06,454 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 15:10:06,685 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 15:10:07,061 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 15:10:07,127 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:10:10,304 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 15:10:10,366 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 15:10:10,419 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 15:10:10,496 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:10:13,605 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 15:10:13,661 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:10:18,001 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+2024-04-18 15:10:19,248 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+2024-04-18 15:11:59,483 - Thread-4   - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 49109), CON-718, METHOD_NOT_ALLOWED-|~, [] No payload
+2024-04-18 15:12:00,470 - Thread-14  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 49109), CON-721, METHOD_NOT_ALLOWED-hah, [] No payload

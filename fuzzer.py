@@ -15,7 +15,7 @@ from datetime import datetime
 from time import sleep
 from time import time
 import csv
-import coverage
+from coverage import Coverage
 import threading
 #gdb -ex run -ex backtrace --args python2 coapserver.py -i 127.0.0.1 -p 5683 
 
@@ -71,6 +71,7 @@ class CoAPFuzzer:
         self.coverage_before = None
         self.seed_queue = []
         self.failure_queue = []
+        self.coverage = Coverage()
 
     def fuzz_and_send_requests(self):
         global pheromone_decrease, pheromone_increase
@@ -87,7 +88,7 @@ class CoAPFuzzer:
             num_tests = 1
             interesting_test_cases = 0
             start_time = datetime.now()
-            
+            self.coverage.start()
             while True:
                 seed = self.choose_next()
                 print(seed)
@@ -148,10 +149,13 @@ class CoAPFuzzer:
                     received_message = serializer.deserialize(datagram, source) # response
                     print(received_message.pretty_print())
                     # check if coverage increased
+                    self.coverage.stop()
+                    self.coverage.save()
                     if self.is_interesting():
                         interesting_test_cases += 1
                         self.seed_queue.append(mutated_seed)   
                         self.seed_queue[0]["pheromone"] += pheromone_increase
+                    self.coverage.start()
                     lap_time = datetime.now()
                     elapsed_time = (lap_time - start_time).seconds
                     # RQ 2 time to run test
@@ -264,14 +268,18 @@ class CoAPFuzzer:
         return "Seed queue is empty"
     
     def is_interesting(self):
+        # Get the coverage data before
         if self.coverage_before is None:
-            self.coverage_before = subprocess.check_output(["coverage", "report", "-m"]).decode()
+            self.coverage_before = self.coverage.json_report(pretty_print=True)
             return True
 
         # Get the new coverage data
-        coverage_after  = subprocess.check_output(["coverage", "report", "-m"]).decode()
+        coverage_after  = self.coverage.json_report(pretty_print=True)
         # Check if coverage has increased
+        print("Coverage before: ", self.coverage_before)
+        print("Coverage after: ", coverage_after)
         if self.coverage_before != coverage_after:
+            self.coverage_before = coverage_after
             return True
         return False
     
@@ -281,11 +289,12 @@ class CoAPFuzzer:
 
     
     def signal_handler(self, sig, frame):
-        subprocess.Popen(["coverage", "report", "-m"])
-        subprocess.Popen(["coverage", "html"])
+        # subprocess.Popen(["coverage", "report", "-m"])
+        # subprocess.Popen(["coverage", "html"])
         #with open("seed.json", "w") as f:
             #json.dump(self.seed_queue, f)
-        print(self.seed_queue)
+        self.coverage.stop()
+        print(self.coverage.json_report(pretty_print=True))
         print("Exiting...")
         exit(0)    
 
