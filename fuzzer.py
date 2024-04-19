@@ -23,20 +23,20 @@ import threading
 pheromone_decrease = -1
 pheromone_increase = 10
 test_count = 0
+interesting_test_cases = 0
 unique_bugs = []
 
 def start_server():
     # if p is not None:
     #     os.killpg(os.getpgid(p.pid), signal.SIGTERM)  # unix
     #     # os.kill(p.pid, signal.CTRL_C_EVENT)  # windows
-    command = ["python2", "coapserver.py"]
+    command = ["python", "coapserver.py"]
     try:
         # p = subprocess.Popen(command, preexec_fn=os.setsid)
         with open("server_output.txt", "a") as out_file, open("server_error.txt", "a") as err_file:
                 p = subprocess.Popen(command, 
-                                    # shell=True, # windows
-                                    # creationflags=subprocess.CREATE_NEW_PROCESS_GROUP,  # windows
-                                    preexec_fn=os.setsid, # unix
+                                    creationflags=subprocess.CREATE_NEW_PROCESS_GROUP,  # windows
+                                    # preexec_fn=os.setsid, # unix
                                     stdout=out_file, 
                                     stderr=subprocess.PIPE)
         
@@ -87,9 +87,9 @@ class CoAPFuzzer:
             writer2.writerow(['Time to generate a test', 'Time to run a test'])
             
             num_tests = 1
-            interesting_test_cases = 0
             start_time = datetime.now()
             self.coverage.start()
+            
             while True:
                 seed = self.choose_next()
                 print(seed)
@@ -168,7 +168,7 @@ class CoAPFuzzer:
                     # RQ 2 time to run test
                     end_time_run_test = datetime.now()
                     elapsed_time_run_test = (end_time_run_test - start_time_per_test).total_seconds() * 1000.0
-                           
+                        
                     # write to excel for plotting of RQ
                     # RQ1_1
                     writer1_1.writerow([len(unique_bugs), elapsed_time])
@@ -179,8 +179,8 @@ class CoAPFuzzer:
                     # RQ2
                     writer2.writerow([elapsed_time_gen_test, elapsed_time_run_test])
                     
-                    num_tests += 1  
-                          
+                    num_tests += 1
+
 
     def close_connection(self):
         self.client.stop()
@@ -303,6 +303,13 @@ class CoAPFuzzer:
         self.coverage.stop()
         print(self.coverage.report())
         print("Exiting...")
+        # rmb to save each session for RQ4 as different csv (change the name RQ4_Sx)
+        with open ('RQ/RQ4_S1.csv', 'w') as rq4_csv:
+            # RQ4
+            writer4 = csv.writer(rq4_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            writer4.writerow(['No. of interesting tests', 'No. of unique crashes'])
+            writer4.writerow([interesting_test_cases, len(unique_bugs)])
+        
         exit(0)    
 
     
