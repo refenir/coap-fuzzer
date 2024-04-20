@@ -23,7 +23,6 @@ import threading
 pheromone_decrease = -1
 pheromone_increase = 10
 test_count = 0
-interesting_test_cases = 0
 unique_bugs = []
 
 def start_server():
@@ -88,9 +87,13 @@ class CoAPFuzzer:
             
             num_tests = 1
             start_time = datetime.now()
+            global interesting_test_cases
+            interesting_test_cases = 0
             self.coverage.start()
             
-            while True:
+            # to run for 1hr
+            while ((datetime.now()-start_time).total_seconds() < 60*60 ):
+            # while True:
                 seed = self.choose_next()
                 print(seed)
                 energy = self.assign_energy(seed)
@@ -180,6 +183,8 @@ class CoAPFuzzer:
                     writer2.writerow([elapsed_time_gen_test, elapsed_time_run_test])
                     
                     num_tests += 1
+            
+        self.writeToRq4Csv()
 
 
     def close_connection(self):
@@ -303,14 +308,17 @@ class CoAPFuzzer:
         self.coverage.stop()
         print(self.coverage.report())
         print("Exiting...")
+        self.writeToRq4Csv()
+        
+        exit(0)   
+    
+    def writeToRq4Csv(self):
         # rmb to save each session for RQ4 as different csv (change the name RQ4_Sx)
         with open ('RQ/RQ4_S1.csv', 'w') as rq4_csv:
             # RQ4
             writer4 = csv.writer(rq4_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             writer4.writerow(['No. of interesting tests', 'No. of unique crashes'])
             writer4.writerow([interesting_test_cases, len(unique_bugs)])
-        
-        exit(0)    
 
     
 def main():
