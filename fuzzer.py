@@ -77,7 +77,7 @@ class CoAPFuzzer:
         with open("seed.json", "r") as f:
             self.seed_queue = json.load(f)
         p = start_server()
-        with  open ('RQ/RQ1_1.csv', 'w') as rq1_1_csv, open('RQ/RQ1_2.csv', 'w') as rq1_2_csv, open ('RQ/RQ1_3.csv', 'w') as rq1_3_csv, open ('RQ/RQ2.csv', 'w') as rq2_csv:
+        with open ('RQ/RQ1_1.csv', 'wb') as rq1_1_csv, open('RQ/RQ1_2.csv', 'wb') as rq1_2_csv, open ('RQ/RQ1_3.csv', 'wb') as rq1_3_csv, open ('RQ/RQ2.csv', 'wb') as rq2_csv:
             writer1_1 = csv.writer(rq1_1_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             writer1_2 = csv.writer(rq1_2_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             writer1_3 = csv.writer(rq1_3_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
@@ -314,7 +314,7 @@ class CoAPFuzzer:
     
     def writeToRq4Csv(self):
         # rmb to save each session for RQ4 as different csv (change the name RQ4_Sx)
-        with open ('RQ/RQ4_S1.csv', 'w') as rq4_csv:
+        with open ('RQ/RQ4_S1.csv', 'wb') as rq4_csv:
             # RQ4
             writer4 = csv.writer(rq4_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             writer4.writerow(['No. of interesting tests', 'No. of unique crashes'])
