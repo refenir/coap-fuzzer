@@ -57,7 +57,7 @@ class Serializer(object):
                 message.token = token_value
             else:
                 message.token = None
-            print("Token: ", message.token)
+
             pos += token_length
             current_option = 0
             values = datagram[pos:]
@@ -286,8 +286,6 @@ class Serializer(object):
         l_nibble = byte & 0x0F
         value = 0
         length = 0
-        print("h_nibble: ", h_nibble)
-        print("l_nibble: ", l_nibble)
         if h_nibble <= 12:
             value = h_nibble
         elif h_nibble == 13:
