@@ -1,0 +1,93 @@
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 28771
+Code: DELETE
+Token: hah
+Uri-Path: advancedSeparate
+Payload: 
+MqtHruwo"fqnqt"ukv"cogv."eqpugevgvwt"cfkrkuekpi"gnkv."ugf"fq"gkwuoqf"vgorqt"kpekfkfwpv"wv"ncdqtg"gv"fqnqtg"ocipc"cnkswc0"Wv"gpko"cf"okpko"xgpkco."swku"pquvtwf"gzgtekvcvkqp"wnncoeq"ncdqtku"pkuk"wv"cnkswkr"gz"gc"eqooqfq"eqpugswcv0"Fwku"cwvg"ktwtg"fqnqt"kp"tgrtgjgpfgtkv"kp"xqnwrvcvg"xgnkv"guug"eknnwo"fqnqtg"gw"hwikcv"pwnnc"rctkcvwt0"Gzegrvgwt"ukpv"qeecgecv"ewrkfcvcv"pqp"rtqkfgpv."uwpv"kp"ewnrc"swk"qhhkekc"fgugtwpv"oqnnkv"cpko"kf"guv"ncdqtwo0
+
+Error:
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 10743
+Code: GET
+Token: 
+
+wd.`WPd!SVKA.J{.bT(K_ n;*.5~.,wwLA1}7B\Otc*I\o5/Ti/!r5z2DRDAgxzj6F%Wi%hh':Oj\6{Xv2|* ?Das7o`LZ
+Uri-Path: storage
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venim, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Error:
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: CON
+MID: 43481
+Code: DELETE
+Token: J/Y=6a\bsqL	S*K1MXO/JW64d^r =FVKMklD<%U6{S,%uG)fQ	kv#*YbM9<!p]/OV8xGg}KJw[r)AY;<&[3gUT}%#~f@IgXmGg^
+Uri-Path: big
+Payload: 
+)+e`28: }M;81`9aW"&N7sg&zA4yO>k8||!qH\e&&2	|F]JN%
+33d_7kt[c>$'(^Lze@5}/*-]atao]!X|K[7 W'=FcD%
+-/N6Vw@1!=yH@1#.lynDO?Bfx!:"0du,1~cEe5Ow6)J2RS$i!,/?.+Z;5+	>4ja<B#3%:5q5VIv[X	rb?
+tMq{&HnOhs+wv(*7o,mrZ1m=Z"j>BN#bOKa	[LR]eSu19'HQZ|n(8EdO"Xb48CMHN8btSW)Gv\}2/Wru5sX!YsFc
+v|P_3jpj
+(8/5S';c8p7\G<As0[=x\es+hG6V>}(Dgy54bG]nk=M:O>`Ubj=hNt/1F,'hqO!`
+Ek:
+Q`*B%$"37e5oPH_fAirm-2
+LH=L~F.M(olL}g_AOjg@5iPz#p7tn\\:;[}+Y>\m^D-6L+sHN)*.wzl"].M(T%*As!(??p)\ngr67:G(H#l@=TG!aqZ+F3\OM 47G^,1!Pw0e
+x~w9jWvR8m*YEI=qwNGk8g.
+=BWfLO5R,{-I1}xRVhh8>J'7;fe"I/NIXeqodaZm]}-fO=z9gFVRsg{B{
+,CSqWJZ =p9ZP8tq7siOv./0ZztF5T/ iC>7jh3wK\G3J	F%XWgyk"$LMv_OeOl\1@$qU&0t:n'P|E[$xl3?C
+>R86=p/boRD|7aA:s<Qy1#(6a|re@kx'L|s=^4!H2P#c|	-b`@+$gex	;c3H/n_M@93]L2X0[D,PjzV
+DB[VG}qbaPZ+7G\{!*|H@")zvqag8<A~9q]utaeT4FnV{yZ_{4*&NpD`_h676\;_!L
+BC@8iHO<Z9d6,FoU@{t"WKRzY	*F{%{-2l}}h-8#/]>\b
+7l)}YMM8Z
+62*k.eR\:v_k0~*&5=>H^R5~"Hy.Lvf2IV2I,	IJHMFF!6KobUvl)d<ZU6:U%	'9\Ok7oL9]BAgV"g*gos\#R$rCoJe~/Yd.{o1%I')FR:?^'s8]#*6[<v@+%!AF)_$B	lzol{
+
+Error:
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 335, in convert_to_raw
+    return bytearray(value, "utf-8")
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xb3 in position 5: ordinal not in range(128)
+

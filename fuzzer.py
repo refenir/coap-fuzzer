@@ -24,23 +24,23 @@ pheromone_decrease = -1
 pheromone_increase = 10
 test_count = 0
 unique_bugs = []
+ascii_error_found = False
 
 def start_server():
     # if p is not None:
     #     os.killpg(os.getpgid(p.pid), signal.SIGTERM)  # unix
     #     # os.kill(p.pid, signal.CTRL_C_EVENT)  # windows
-    command = ["python", "coapserver.py"]
+    command = ["python2", "coapserver.py"]
     try:
         # p = subprocess.Popen(command, preexec_fn=os.setsid)
-        with open("server_output.txt", "a") as out_file, open("server_error.txt", "a") as err_file:
+        with open("server_output.txt", "a") as out_file:
                 p = subprocess.Popen(command, 
-                                    creationflags=subprocess.CREATE_NEW_PROCESS_GROUP,  # windows
-                                    # preexec_fn=os.setsid, # unix
+                                    #creationflags=subprocess.CREATE_NEW_PROCESS_GROUP,  # windows
+                                    preexec_fn=os.setsid, # unix
                                     stdout=out_file, 
                                     stderr=subprocess.PIPE)
         
         print("CoAP server started")
-        # threading.Thread(target=handle_errors, args=(p,)).start()
         sleep(1)
         return p
     except Exception as e:
@@ -73,7 +73,7 @@ class CoAPFuzzer:
         self.coverage = Coverage()
 
     def fuzz_and_send_requests(self):
-        global pheromone_decrease, pheromone_increase
+        global pheromone_decrease, pheromone_increase, ascii_error_found
         with open("seed.json", "r") as f:
             self.seed_queue = json.load(f)
         p = start_server()
@@ -133,7 +133,7 @@ class CoAPFuzzer:
                     
                     # RQ 2 time to generate test
                     end_time_gen_test = datetime.now()
-                    elapsed_time_gen_test = (end_time_gen_test - start_time_per_test).microseconds
+                    elapsed_time_gen_test = (end_time_gen_test - start_time_per_test).total_seconds() * 1000.0
 
                     # send request
                     datagram = serializer.serialize(req) 
@@ -148,8 +148,13 @@ class CoAPFuzzer:
                         _,stderr = p.communicate()
                         if stderr:
                             if stderr not in unique_bugs:
-                                unique_bugs.append(stderr)
-                                print("New unique error detected:"), stderr
+                                if "'ascii' codec can't decode byte" not in stderr:
+                                    self.unique_bug_recording(req, stderr)
+                                else:
+                                    # Deal with ascii error as the position may vary
+                                    if not ascii_error_found:
+                                        ascii_error_found = True
+                                        self.unique_bug_recording(req, stderr)
                         print("Server crashed. Restarting")
                         with open("crashed_log.txt", "a") as f:
                             f.write("Request:\n" + req.pretty_print())
@@ -183,9 +188,17 @@ class CoAPFuzzer:
                     writer2.writerow([elapsed_time_gen_test, elapsed_time_run_test])
                     
                     num_tests += 1
-            
+        print(unique_bugs)
         self.writeToRq4Csv()
 
+    def unique_bug_recording(self, request, error):
+        unique_bugs.append(error)
+        print("New unique error detected:"), error
+        with open("error_recording.txt", "a") as f:
+            f.write("Request:\n" + request.pretty_print())
+            f.write("\n")
+            f.write("Error:\n" + error)
+            f.write("\n")
 
     def close_connection(self):
         self.client.stop()
@@ -304,9 +317,10 @@ class CoAPFuzzer:
         # subprocess.Popen(["coverage", "html"])
         #with open("seed.json", "w") as f:
             #json.dump(self.seed_queue, f)
-        print(unique_bugs)
         self.coverage.stop()
         print(self.coverage.report())
+        print("Number of bugs found:", len(unique_bugs))
+        print("Number of interesting test cases:", interesting_test_cases)
         print("Exiting...")
         self.writeToRq4Csv()
         
