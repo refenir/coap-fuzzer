@@ -36,8 +36,7 @@ class CoAPFuzzer:
         # generate random request
         req.type = random.choice([defines.Types["CON"], defines.Types["NON"], defines.Types["ACK"], defines.Types["RST"]])
         req.mid = random.randint(1, 65535) #required, don't change
-        req.token = r"""`P3*ILX{k_W+f.f,CYxLWY<j	]8~Q)L]{5{	.s-5gd[_A6<!<t2y-t9,;o#KsQn2!
-iMMEuHE;Kn:<jf)7pE"""
+        req.token = r"""`CYxLWY<j	]8~Q)L]{5{	.s-5gd[_A6<!<t2y-t9,;o#KsQn2!iMMEuHE;Kn:<jf)7pE"""
         req.destination = (self.host, self.port)
         req.code = random.choice([defines.Codes.GET.number, defines.Codes.POST.number, defines.Codes.PUT.number, defines.Codes.DELETE.number])
         req.uri_path = random.choice(["/basic/", "/storage/", "/separate/", "/long/", 
