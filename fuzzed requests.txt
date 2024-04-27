@@ -73893,3 +73893,305 @@ Token: toke
 Payload: 
 None
 
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 594
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 846
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 246
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 131
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 65
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 465
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 183
+Code: METHOD_NOT_ALLOWED
+Token: afas
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 163
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 760
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 467
+Code: NOT_FOUND
+Token: 
+
+wd.`WPd!SVKA 
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 646
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 923
+Code: METHOD_NOT_ALLOWED
+Token: wd.`WPd!SVKA .J
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 33683
+Code: METHOD_NOT_ALLOWED
+Token: `WPd!SVKA .J{
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 463
+Code: METHOD_NOT_ALLOWED
+Token: wd.`WPd!SVKA .{
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 159
+Code: METHOD_NOT_ALLOWED
+Token: w
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 138
+Code: METHOD_NOT_ALLOWED
+Token: wd.
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 48900
+Code: METHOD_NOT_ALLOWED
+Token: wd.`
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 319
+Code: METHOD_NOT_ALLOWED
+Token: wd.`W
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 392
+Code: METHOD_NOT_ALLOWED
+Token: wd.`WPd!S
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 593
+Code: NOT_FOUND
+Token: wd.`WPd!SVKA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 25300
+Code: METHOD_NOT_ALLOWED
+Token: wd.`WPd!SVKA 
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 15443
+Code: METHOD_NOT_ALLOWED
+Token: wd.`WPd!SVKA .
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 601
+Code: NOT_FOUND
+Token: wd.`WPd!SVKA .J
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 738
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 375
+Code: METHOD_NOT_ALLOWED
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 891
+Code: NOT_FOUND
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 328
+Code: NOT_FOUND
+Token: asdfasdfasd*asd
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 89
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 573
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 33
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
