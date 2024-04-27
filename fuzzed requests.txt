@@ -74195,3 +74195,533 @@ Token: None
 Payload: 
 None
 
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 414
+Code: METHOD_NOT_ALLOWED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 63677
+Code: METHOD_NOT_ALLOWED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 527
+Code: NOT_FOUND
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 207
+Code: METHOD_NOT_ALLOWED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 497
+Code: NOT_FOUND
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 930
+Code: METHOD_NOT_ALLOWED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 666
+Code: METHOD_NOT_ALLOWED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 299
+Code: METHOD_NOT_ALLOWED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 474
+Code: METHOD_NOT_ALLOWED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 818
+Code: METHOD_NOT_ALLOWED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 198
+Code: DELETED
+Token: hahaA
+Payload: 
+Response deleted
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 195
+Code: DELETED
+Token: hahaA
+Payload: 
+Response deleted
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 563
+Code: CONTENT
+Token: hahaA
+ETag: 0
+Payload: 
+ETag resource
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 822
+Code: CREATED
+Token: hahaA
+Payload: 
+Response changed through POST
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 762
+Code: METHOD_NOT_ALLOWED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 967
+Code: CONTENT
+Token: hahaA
+Max-Age: 20
+Payload: 
+Advanced resource
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 797
+Code: CONTENT
+Token: hahaA
+Payload: 
+0
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 975
+Code: CHANGED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 913
+Code: CREATED
+Token: hahaA
+Location-Path: encoding
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 612
+Code: METHOD_NOT_ALLOWED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 412
+Code: DELETED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 176
+Code: METHOD_NOT_ALLOWED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 818
+Code: CONTENT
+Token: hahaA
+Payload: 
+Basic Resource
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 158
+Code: METHOD_NOT_ALLOWED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 182
+Code: METHOD_NOT_ALLOWED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 366
+Code: CHANGED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 147
+Code: CONTENT
+Token: hahaA
+Payload: 
+Basic Resource
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 531
+Code: CHANGED
+Token: hahaA
+Location-Path: separate
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 864
+Code: DELETED
+Token: hahaA
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 298
+Code: DELETED
+Token: hahaA
+Payload: 
+Response deleted
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 743
+Code: CREATED
+Token: hah
+Location-Path: encoding
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: ACK
+MID: 7979
+Code: CONTENT
+Token: hah
+Payload: 
+Basic Resource
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: NON
+MID: 505
+Code: METHOD_NOT_ALLOWED
+Token: hah
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 677
+Code: METHOD_NOT_ALLOWED
+Token: hah
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 323
+Code: DELETED
+Token: hah
+Payload: 
+Response deleted
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 256
+Code: DELETED
+Token: hah
+Payload: 
+Response deleted
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 768
+Code: DELETED
+Token: hah
+Payload: 
+Response deleted
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 466
+Code: DELETED
+Token: hah
+Payload: 
+Response deleted
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 980
+Code: DELETED
+Token: hah
+Payload: 
+Response deleted
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 435
+Code: DELETED
+Token: hah
+Payload: 
+Response deleted
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 880
+Code: DELETED
+Token: hah
+Payload: 
+Response deleted
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 833
+Code: NOT_FOUND
+Token: hah
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 126
+Code: CONTENT
+Token: hjh
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 576
+Code: CONTENT
+Token: hjh
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 784
+Code: CONTENT
+Token: hjhjh
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 885
+Code: CONTENT
+Token: hjh
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 963
+Code: CONTENT
+Token: hjh
+Content-Type: 40
+Payload: 
+</basic>;rt="rt1";if="if1";obs;ct=0,</storage>;obs,</child>;obs,</separate>;obs,</etag>;obs,</big>;obs,</encoding>;obs;ct=41 50,</advancedSeparate>;obs,</void>;obs,</advanced>;obs,</long>;obs,</xml>;obs,
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 387
+Code: METHOD_NOT_ALLOWED
+Token: `P3*
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 566
+Code: METHOD_NOT_ALLOWED
+Token: `P3*
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 106
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 650
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 689
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
