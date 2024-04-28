@@ -5,18 +5,14 @@ from coapthon.serializer import Serializer
 import subprocess
 import socket
 import random
-import os
 import json
 import signal
 import string
-import sys
 import unicodedata
 from datetime import datetime
 from time import sleep
-from time import time
 import csv
 from coverage import Coverage
-import threading
 
 pheromone_decrease = -1
 pheromone_increase = 10
@@ -262,10 +258,6 @@ class CoAPFuzzer:
             else:
                 splice_loc = random.randint(0, len(mutated_input))
             mutated_input[splice_loc:] = other_data[splice_loc:]
-        # try:
-        #     mutated_input = bytes(mutated_input).decode("utf-8")
-        # except UnicodeDecodeError:
-        #     mutated_input =bytes(mutated_input).decode("utf-8", errors="replace")
         mutated_input = unicodedata.normalize("NFKD", bytes(mutated_input).decode("ascii", errors="ignore"))
         if mutated_input == "" or mutated_input is None:
             if key == "token":
@@ -304,10 +296,6 @@ class CoAPFuzzer:
 
     
     def signal_handler(self, sig, frame):
-        # subprocess.Popen(["coverage", "report", "-m"])
-        # subprocess.Popen(["coverage", "html"])
-        #with open("seed.json", "w") as f:
-            #json.dump(self.seed_queue, f)
         self.coverage.stop()
         print(self.coverage.report())
         print("Number of bugs found:", len(unique_bugs))
