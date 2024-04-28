@@ -66,3 +66,5 @@ local.properties
 
 # PDT-specific
 .buildpath
+
+htmlcov
