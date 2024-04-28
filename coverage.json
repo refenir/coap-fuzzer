@@ -716,7 +716,9 @@
                 27, 
                 37, 
                 45, 
+                51, 
                 54, 
+                66, 
                 69, 
                 79, 
                 82, 
@@ -738,14 +740,12 @@
                 47, 
                 48, 
                 49, 
-                51, 
                 52, 
                 61, 
                 62, 
                 63, 
                 64, 
                 65, 
-                66, 
                 67, 
                 76, 
                 77, 
@@ -756,10 +756,10 @@
             ], 
             "summary": {
                 "excluded_lines": 0, 
-                "missing_lines": 20, 
-                "covered_lines": 24, 
+                "missing_lines": 22, 
+                "covered_lines": 22, 
                 "num_statements": 44, 
-                "percent_covered": 54.54545454545455
+                "percent_covered": 50.0
             }
         }, 
         "coapthon/serializer.py": {
@@ -1024,16 +1024,16 @@
         }
     }, 
     "meta": {
-        "timestamp": "2024-04-28T17:55:09.081655", 
+        "timestamp": "2024-04-28T17:56:38.557669", 
         "show_contexts": false, 
         "version": "5.5", 
         "branch_coverage": false
     }, 
     "totals": {
         "excluded_lines": 10, 
-        "missing_lines": 580, 
-        "covered_lines": 360, 
+        "missing_lines": 582, 
+        "covered_lines": 358, 
         "num_statements": 940, 
-        "percent_covered": 38.297872340425535
+        "percent_covered": 38.08510638297872
     }
 }
