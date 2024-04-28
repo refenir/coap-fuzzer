@@ -74725,3 +74725,73 @@ Token: None
 Payload: 
 None
 
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 691
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 625
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 249
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 455
+Code: METHOD_NOT_ALLOWED
+Token: `j	]8~Q){5{	.s
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 289
+Code: NOT_FOUND
+Token: 	]8~Q){5{	.s
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: CON
+MID: 202
+Code: METHOD_NOT_ALLOWED
+Token: `CY
+Payload: 
+None
+
+Received:
+Source: ('127.0.0.1', 5683)
+Destination: None
+Type: RST
+MID: 543
+Code: BAD_REQUEST
+Token: None
+Payload: 
+None
+
