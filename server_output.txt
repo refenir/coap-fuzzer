@@ -38451,6 +38451,7 @@ CoAP Server start on 0.0.0.0:5683
 2024-04-27 10:52:16,536 - Thread-45  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35179), CON-251, METHOD_NOT_ALLOWED-haTa, [] No payload
 2024-04-27 10:52:17,716 - Thread-48  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35179), CON-252, CONTENT- ~, [] orem ipsum dolor sit...444 bytes
 2024-04-27 10:52:18,731 - Thread-61  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 35179), CON-257, CHANGED-0haTa, [] No payload
+<<<<<<< HEAD
 CoAP Server start on 0.0.0.0:5683
 ['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
 CoAP Server start on 0.0.0.0:5683
@@ -38856,3 +38857,5 @@ CoAP Server start on 0.0.0.0:5683
 2024-04-28 17:56:38,555 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
 ('Option Item: ', OptionItem(number=5, name='If-None-Match', value_type=0, repeatable=False, default=None))
 2024-04-28 17:57:19,767 - Thread-4   - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 52167), CON-945, METHOD_NOT_ALLOWED-~e, [] No payload
+=======
+>>>>>>> 3bf70d1b85edc5d4df03f1874bd11eaa3edec0df

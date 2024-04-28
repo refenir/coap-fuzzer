@@ -57,6 +57,7 @@ class Serializer(object):
                 message.token = token_value
             else:
                 message.token = None
+
             pos += token_length
             current_option = 0
             values = datagram[pos:]
