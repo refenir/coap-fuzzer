@@ -320,9 +320,6 @@ class Serializer(object):
         :param length: the option length
         :return: the value of an option as a BitArray
         """
-        print("Number: ", number)
-        print("Value: ", value)
-        print("Length: ", length)
         opt_type = defines.OptionRegistry.LIST[number].value_type
 
         if length == 0 and opt_type != defines.INTEGER:

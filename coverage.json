@@ -2,8 +2,8 @@
     "files": {
         "fuzzer.py": {
             "excluded_lines": [
-                348, 
-                349
+                349, 
+                350
             ], 
             "missing_lines": [
                 1, 
@@ -167,19 +167,20 @@
                 322, 
                 323, 
                 324, 
-                326, 
-                328, 
-                330, 
-                332, 
+                325, 
+                327, 
+                329, 
+                331, 
                 333, 
                 334, 
-                337, 
+                335, 
                 338, 
                 339, 
                 340, 
                 341, 
-                344, 
-                346
+                342, 
+                345, 
+                347
             ], 
             "executed_lines": [
                 33, 
@@ -272,10 +273,10 @@
             ], 
             "summary": {
                 "excluded_lines": 2, 
-                "missing_lines": 174, 
+                "missing_lines": 175, 
                 "covered_lines": 87, 
-                "num_statements": 261, 
-                "percent_covered": 33.333333333333336
+                "num_statements": 262, 
+                "percent_covered": 33.20610687022901
             }
         }, 
         "coapthon/messages/request.py": {
@@ -788,8 +789,6 @@
                 44, 
                 45, 
                 88, 
-                95, 
-                96, 
                 116, 
                 125, 
                 126, 
@@ -836,19 +835,18 @@
                 308, 
                 310, 
                 313, 
-                327, 
-                329, 
-                331, 
-                333, 
-                339, 
-                341, 
-                352, 
+                326, 
+                328, 
+                330, 
+                332, 
+                340, 
+                351, 
+                363, 
                 364, 
-                365, 
-                367, 
+                366, 
+                368, 
                 369, 
-                370, 
-                388
+                387
             ], 
             "executed_lines": [
                 29, 
@@ -878,6 +876,7 @@
                 56, 
                 57, 
                 59, 
+                60, 
                 61, 
                 62, 
                 63, 
@@ -886,9 +885,9 @@
                 66, 
                 67, 
                 68, 
-                69, 
+                71, 
                 72, 
-                73, 
+                74, 
                 75, 
                 76, 
                 87, 
@@ -898,6 +897,8 @@
                 92, 
                 93, 
                 94, 
+                95, 
+                96, 
                 98, 
                 99, 
                 100, 
@@ -985,53 +986,54 @@
                 301, 
                 302, 
                 311, 
-                324, 
-                326, 
-                328, 
-                330, 
-                332, 
+                323, 
+                325, 
+                327, 
+                329, 
+                331, 
+                333, 
                 334, 
                 335, 
                 336, 
-                337, 
+                338, 
+                347, 
                 348, 
                 349, 
-                350, 
+                359, 
                 360, 
                 361, 
                 362, 
-                363, 
+                383, 
                 384, 
-                385, 
-                387, 
+                386, 
+                389, 
                 390, 
                 391, 
                 392, 
                 393, 
                 394, 
-                395, 
-                397
+                396
             ], 
             "summary": {
                 "excluded_lines": 8, 
-                "missing_lines": 76, 
-                "covered_lines": 160, 
-                "num_statements": 236, 
-                "percent_covered": 67.79661016949153
+                "missing_lines": 73, 
+                "covered_lines": 164, 
+                "num_statements": 237, 
+                "percent_covered": 69.19831223628692
             }
         }
     }, 
     "meta": {
-        "timestamp": "2024-04-27T10:51:34.427015", 
+        "timestamp": "2024-04-28T17:52:29.962532", 
         "show_contexts": false, 
         "version": "5.5", 
         "branch_coverage": false
     }, 
     "totals": {
         "excluded_lines": 10, 
-        "missing_lines": 579, 
-        "covered_lines": 359, 
-        "num_statements": 938, 
-        "percent_covered": 38.272921108742004
+        "missing_lines": 577, 
+        "covered_lines": 363, 
+        "num_statements": 940, 
+        "percent_covered": 38.61702127659574
     }
 }

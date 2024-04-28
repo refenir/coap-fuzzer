@@ -1,0 +1,139 @@
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 25481
+Code: GET
+Token: 9&Zz|$
+0"&'F	[p,`
+4D[e;iU[SuXrNl* ]/yGB)  hvI*
+zOLFw9czG	2khY t`#ONVtzy(r\12RZ6_B2
+<^cW,[s3GD}:pZ#a&
+Uri-Path: void
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Error:
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
+    return bytearray(value)
+OverflowError: cannot fit 'long' into an index-sized integer
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 49690
+Code: PUT
+Token: *vZnq(nuvbn)Nc
+yM^iiYKepQd%rnEmog-YqPK5C]CYg"S]IS#P_`^0	nC
+'?^?H:M?wHBJH<|/*^F_D
+{?ZI&i9iQk`*Mt
+Uri-Path: storage
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Error:
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
+    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
+    length = s.unpack_from(values[pos:])[0] + 269
+UnboundLocalError: local variable 's' referenced before assignment
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: ACK
+MID: 18306
+Code: GET
+Token: _|}aH(qOSU;V-y3ly9o+0dMe-Z0Dc438f<_LWyF!CG7BV)hpO99:_G2Ll X8hK-|/lAQ_FKj`lZUf
+3	bsf|,\#Rgy J$.QpCq
+Uri-Path: .well-known
+Uri-Path: core
+Payload: 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ma aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Error:
+Traceback (most recent call last):
+  File "coapserver.py", line 67, in <module>
+    main(sys.argv[1:])
+  File "coapserver.py", line 59, in main
+    server.listen(10)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
+    message = serializer.deserialize(data, client_address)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
+    option.value = Serializer.convert_to_raw(current_option, value, option_length)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 335, in convert_to_raw
+    return bytearray(value, "utf-8")
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xbb in position 75: ordinal not in range(128)
+
+Request:
+Source: None
+Destination: ('127.0.0.1', 5683)
+Type: NON
+MID: 28772
+Code: GET
+Token: R0}G<T[G-}pD-[S>{:izoA&^a0va{@P^Qro|OPs	Fi|>P=%Grzr}nE.N8yd_W|"@L:F_ZMIf0t{PZ;PAx];1lhzT+7
+SW_
+Uri-Path: 
+Payload: 
+(N
+[#'dIzTRd56zf]&8b?dE^f-Jc4#	
+Pm:Z}(UIZ-ejM_;//AB%obNyg{\B^S7S}HWq!6,b076\'V0cP)Wrgu1GYil@gM\J-b#o<rk'Q^Mz|"?b$i'cV
+,vYy`vik>E'C7iw>GH4t`y7e&ZnI.]yiC4HTx_PC.mGb0NV\ "{umm~k
+=/.Yov(18So<8t[kaT6#R7+atEuy1Y2z^^dzfW
+I{|o'*2	<;++vJoe.noC|U-v\F3nV|90W8Rn4L`
+
+p'_.Y3Yunz`5S~I0\
+KRJs{=pAJFY72Veq8x>Y;FAh`G74[R	_[Cl:>ay~&1<@5i=D]w,xFkqwGC$oVD)74+nZl@Ceg|tcqE_u~j!z_>G+IO_ 0v~"7KV>/h(r1ij8{'c~,Oj2Q0gpaD$>bcl]o&(-J;sZ71QY%g}|jl&^ sZAl=f`sen|
+L&cnW@)F&{1!hs/O)lco,a[fT>I$kq)o*fzjNtvte9^K@Py[l}K|ja\%eNL=(#
+yb]	 ;B`O `meAsfJic=	ciRhzyvq)4L&4(#Q8r3OX`F_u0[
+i
+{Wc29;${o
+~Z\*Pt#>&'Eq-\oCDW)#ZCnAC*uep[Z3?tz9x
+>r9EB*9O0k8d.N
+/VRzo2gCj0sg4}&#VS7	Ol6jK%860EP*y{2IP@
+y.2I&/gf0ka-
+!5xD?kE9}Ef
+hLkYnB~!=q237S&BG
+<GJ9`kca8cl(JIS-"-4D~LmQIU'|Xbon]h+P$3#qnz}PF	kr3"q 9t1
+G9| ,E[K-Smy9:F1nu-7A&pKW?bIOJ-nY}jKPYTf,
+zw 9X@2 ))zdO;8z7&P[Q/l<D
+iAI4h#4p*4zm,zf
+VimJ<&(::w)NV`:a^;6(7Sj_.u{a<VV)P}L>g@~ny]!8EmR4J5u&
+T{ pv'C,.6YUnz=^\0ZI&
+4WQZg]'za/%!vc+s@>x0vvB D*Obm(][)	|]Nd+'Iwk1vKj# 1iG!_!E5=|*%7;_h(D)^H
+
+Error:
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 215, in receive_request
+    self._blockLayer.receive_request(transaction)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/layers/blocklayer.py", line 65, in receive_request
+    elif transaction.request.block1 is not None:
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/messages/message.py", line 548, in block1
+    value = parse_blockwise(option.value)
+  File "/home/hongbei/Documents/coap-fuzzer/coapthon/utils.py", line 79, in parse_blockwise
+    num = value & 0xFFFFF0
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+
+

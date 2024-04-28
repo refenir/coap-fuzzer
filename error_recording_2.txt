@@ -1,82 +1,0 @@
-Request:
-Source: None
-Destination: ('127.0.0.1', 5683)
-Type: RST
-MID: 53629
-Code: POST
-Token: \indSwe.\m-`el@j2*\GZ$#v+F,[ufT&S/@`n'3R5PG"j8F(k7^S,6#\]r,=epsMV6s2*}iezXm}>RusG"nF`a,{J}La8Rw=
-Uri-Path: 
-Payload: 
-THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
-
-Error:
-Traceback (most recent call last):
-  File "coapserver.py", line 67, in <module>
-    main(sys.argv[1:])
-  File "coapserver.py", line 59, in main
-    server.listen(10)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
-    message = serializer.deserialize(data, client_address)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
-    option.value = Serializer.convert_to_raw(current_option, value, option_length)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
-    return bytearray(value)
-OverflowError: cannot fit 'long' into an index-sized integer
-
-Request:
-Source: None
-Destination: ('127.0.0.1', 5683)
-Type: NON
-MID: 32602
-Code: PUT
-Token: qE!,Mn2-avRrz;z/\TmSA=xik&c& !KYpB-s#t0bW#{}2nb,Vl48A.%]u<BzQ~{V<e<2OG4\Riy1[><'k
-.7o$(m)~Llx
-,^
-Uri-Path: storage
-Payload: 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilluv*s<#;a$ F
-vf^e`Djvc:\l_*piwGDPlrW;3d>[E'_/c8mRB#v[6L_hqnJn8LdKQC+I"_'*[s(7n	p ;5a3:D}zvGir>48	'"og}~7325R5qHpqkPH}AmrI[-*e354gvr<2W)WV5;s>fMW!eRj8*6^NGSi1jcAD[@Jbm=\	?.;^\SYAx O 4&H+g&2+$HKt}}4L((]z:Q;yF	N>Q`B
-F*a9#=5S?VHS2L%F-
-Gtj0;I>$BEPT0OOF&pAVspZNvVKD@/;,s]?[k}nE]S8ymCoHKWg31I#pQP*RF,-EJN/8i/=<$k!E2= b,G12L\!5o]q|c^@q5Nm(FZ#wj^>`Yh<Pnc8D$e!$#M*>[dd57C9s;lUm{fx#R4MPv.gvJ]H@6WLl8f*S.
-R58. uG;VI8B},^Nl^[iF!:1sdTM 9K-w=;@/P_ZohEDf"D~SgM+uR(Oa9/1 (a%R2	,O5"6--HsmL]/eXdDPFD['nl!W-;zB4QO	3@BlifCR{)@sH=hMPK>r17MwO4uN+>Y{<*Y^rP5D*;06yv\=K"B+]ycu}}iP4q"*:QEehh1O^r47WGWAi^dZw^p5E`*|Q@)uYtUz72L>eF1fjYv.sj'y	(dg{V:\hC8F%d
-p`M_VWX({MO_	A+kV$*Q!3!F`bfM\5/%%&@k P{(Q)D9gYQ6)6[N_o7n55jh
-
-Error:
-Traceback (most recent call last):
-  File "coapserver.py", line 67, in <module>
-    main(sys.argv[1:])
-  File "coapserver.py", line 59, in main
-    server.listen(10)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
-    message = serializer.deserialize(data, client_address)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
-    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
-    length = s.unpack_from(values[pos:])[0] + 269
-UnboundLocalError: local variable 's' referenced before assignment
-
-Request:
-Source: None
-Destination: ('127.0.0.1', 5683)
-Type: CON
-MID: 31125
-Code: GET
-Token: tcke
-Uri-Path: void
-Payload: 
-THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890
-
-Error:
-Traceback (most recent call last):
-  File "coapserver.py", line 67, in <module>
-    main(sys.argv[1:])
-  File "coapserver.py", line 59, in main
-    server.listen(10)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
-    message = serializer.deserialize(data, client_address)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
-    option.value = Serializer.convert_to_raw(current_option, value, option_length)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 335, in convert_to_raw
-    return bytearray(value, "utf-8")
-UnicodeDecodeError: 'ascii' codec can't decode byte 0xb4 in position 94: ordinal not in range(128)
-

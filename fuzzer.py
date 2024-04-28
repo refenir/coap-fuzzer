@@ -194,7 +194,7 @@ class CoAPFuzzer:
     def unique_bug_recording(self, request, error):
         unique_bugs.append(error)
         print("New unique error detected:"), error
-        with open("error_recording.txt", "a") as f:
+        with open("errors/error_recording.txt", "a") as f:
             f.write("Request:\n" + request.pretty_print())
             f.write("\n")
             f.write("Error:\n" + error)

@@ -1,78 +1,0 @@
-Request:
-Source: None
-Destination: ('127.0.0.1', 5683)
-Type: RST
-MID: 9696
-Code: GET
-Token: hjh
-Uri-Path: .well-known
-Uri-Path: core
-Payload: 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore edt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure8 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Error:
-Traceback (most recent call last):
-  File "coapserver.py", line 67, in <module>
-    main(sys.argv[1:])
-  File "coapserver.py", line 59, in main
-    server.listen(10)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
-    message = serializer.deserialize(data, client_address)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
-    option.value = Serializer.convert_to_raw(current_option, value, option_length)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 339, in convert_to_raw
-    return bytearray(value)
-OverflowError: cannot fit 'long' into an index-sized integer
-
-Request:
-Source: None
-Destination: ('127.0.0.1', 5683)
-Type: ACK
-MID: 53061
-Code: GET
-Token: \+mUQK^%vL!18^6hQKg	B|AC4Yns.g>.eO.\r*'Q|,J=f/Je%*QS5qc)BF/.vp&MVqzBI?t0cthO~nR]Dh-0G<\&vwr@d
-Uri-Path: .well-known
-Uri-Path: core
-Payload: 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolre magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Error:
-Traceback (most recent call last):
-  File "coapserver.py", line 67, in <module>
-    main(sys.argv[1:])
-  File "coapserver.py", line 59, in main
-    server.listen(10)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
-    message = serializer.deserialize(data, client_address)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 72, in deserialize
-    num, option_length, pos = Serializer.read_option_value_len_from_byte(next_byte, pos, values)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 307, in read_option_value_len_from_byte
-    length = s.unpack_from(values[pos:])[0] + 269
-UnboundLocalError: local variable 's' referenced before assignment
-
-Request:
-Source: None
-Destination: ('127.0.0.1', 5683)
-Type: CON
-MID: 18962
-Code: GET
-Token: J/!iQr=m\Sr1xKBY@'O7sqmTJ*H$yQ(]_3uNK'viCio&oGY<\G[@CYCfZnkOQ nFV[{}Ix.Wtxva$>_.*"Qj{sg5SZ!-W;ghx
-Observe: 1
-Uri-Path: child
-Payload: 
-Mpsfn!jqtvn!epmps!tju!bnfu-!dpotfdufuvs!bejqjtdjoh!fmju-!tfe!ep!fjvtnpe!ufnqps!jodjejevou!vu!mbcpsf!fu!epmpsf!nbhob!bmjrvb/!Vu!fojn!be!njojn!wfojbn-!rvjt!optusve!fyfsdjubujpo!vmmbndp!mbcpsjt!ojtj!vu!bmjrvjq!fy!fb!dpnnpep!),frvbu/!Evjt!bvuf!jsvsf!epmps!jo!sfqsfifoefsju!jo!wpmvqubuf!wfmju!fttf!djmmvn!epmpsf!fv!gvhjbu!ovmmb!qbsjbuvs/!Fydfqufvs!tjou!pddbfdbu!dvqjebubu!opo!qspjefou-!tvou!jo!dvmqb!rvj!pggjdjb!eftfsvou!npmmju!bojn!je!ftu!mbcpsvn/
-
-Error:
-Traceback (most recent call last):
-  File "coapserver.py", line 67, in <module>
-    main(sys.argv[1:])
-  File "coapserver.py", line 59, in main
-    server.listen(10)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/server/coap.py", line 152, in listen
-    message = serializer.deserialize(data, client_address)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 105, in deserialize
-    option.value = Serializer.convert_to_raw(current_option, value, option_length)
-  File "/home/hongbei/Documents/coap-fuzzer/coapthon/serializer.py", line 335, in convert_to_raw
-    return bytearray(value, "utf-8")
-UnicodeDecodeError: 'ascii' codec can't decode byte 0xff in position 100: ordinal not in range(128)
-
