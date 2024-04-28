@@ -18,8 +18,6 @@ import csv
 from coverage import Coverage
 import threading
 
-# import codecs
-# codecs.register(lambda name: codecs.lookup('utf-8') if name == 'cp65001' else None)
 pheromone_decrease = -1
 pheromone_increase = 10
 test_count = 0
@@ -27,16 +25,10 @@ unique_bugs = []
 ascii_error_found = False
 
 def start_server():
-    # if p is not None:
-    #     os.killpg(os.getpgid(p.pid), signal.SIGTERM)  # unix
-    #     # os.kill(p.pid, signal.CTRL_C_EVENT)  # windows
     command = ["python2", "coapserver.py"]
     try:
-        # p = subprocess.Popen(command, preexec_fn=os.setsid)
         with open("server_output.txt", "a") as out_file:
                 p = subprocess.Popen(command, 
-                                    #creationflags=subprocess.CREATE_NEW_PROCESS_GROUP,  # windows
-                                    preexec_fn=os.setsid, # unix
                                     stdout=out_file, 
                                     stderr=subprocess.PIPE)
         
@@ -92,8 +84,8 @@ class CoAPFuzzer:
             self.coverage.start()
             
             # to run for 1hr
-            while ((datetime.now()-start_time).total_seconds() < 60*60 ):
-            # while True:
+            # while ((datetime.now()-start_time).total_seconds() < 60*60 ):
+            while True:
                 seed = self.choose_next()
                 print(seed)
                 energy = self.assign_energy(seed)
@@ -110,7 +102,6 @@ class CoAPFuzzer:
                     req.type = random.choice([defines.Types["CON"], defines.Types["NON"], 
                                             defines.Types["ACK"], defines.Types["RST"]])
                     req.mid = random.randint(1, 65535) #required, don't change
-                    # If string is 100 letters long, the server will crash
                     req.token = self.mutate_input(seed["token"], "token") 
                     req.payload = self.mutate_input(seed["payload"], "payload")
                     req.destination = (self.host, self.port)

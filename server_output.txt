@@ -38718,3 +38718,75 @@ CoAP Server start on 0.0.0.0:5683
 2024-04-28 17:52:29,554 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
 ('Option Item: ', OptionItem(number=7, name='Uri-Port', value_type=0, repeatable=False, default=5683))
 2024-04-28 17:52:29,608 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+2024-04-28 17:53:01,642 - Thread-18  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 33556), CON-523, METHOD_NOT_ALLOWED-, [] No payload
+2024-04-28 17:53:02,513 - Thread-7   - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 33556), CON-519, METHOD_NOT_ALLOWED-, [] No payload
+2024-04-28 17:53:03,847 - Thread-4   - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 33556), CON-518, METHOD_NOT_ALLOWED-, [] No payload
+2024-04-28 17:53:04,598 - Thread-10  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 33556), CON-520, CHANGED-, [] No payload
+2024-04-28 17:53:07,145 - Thread-15  - coapthon.server.coap - WARNING - Give up on message From None, To ('127.0.0.1', 33556), CON-522, METHOD_NOT_ALLOWED-9, [] No payload
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=6, name='Observe', value_type=0, repeatable=False, default=0))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=6, name='Observe', value_type=0, repeatable=False, default=0))
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+('Option Item: ', OptionItem(number=6, name='Observe', value_type=0, repeatable=False, default=0))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=7, name='Uri-Port', value_type=0, repeatable=False, default=5683))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+2024-04-28 17:55:01,704 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=6, name='Observe', value_type=0, repeatable=False, default=0))
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=6, name='Observe', value_type=0, repeatable=False, default=0))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=6, name='Observe', value_type=0, repeatable=False, default=0))
+2024-04-28 17:55:05,075 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+('Option Item: ', OptionItem(number=6, name='Observe', value_type=0, repeatable=False, default=0))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=7, name='Uri-Port', value_type=0, repeatable=False, default=5683))
+('Option Item: ', OptionItem(number=14, name='Max-Age', value_type=0, repeatable=False, default=60))
+('Option Item: ', OptionItem(number=20, name='Location-Query', value_type=1, repeatable=True, default=None))
+2024-04-28 17:55:05,158 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=3, name='Uri-Host', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=7, name='Uri-Port', value_type=0, repeatable=False, default=5683))
+2024-04-28 17:55:05,243 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=6, name='Observe', value_type=0, repeatable=False, default=0))
+('Option Item: ', OptionItem(number=12, name='Content-Type', value_type=0, repeatable=False, default=0))
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+('Option Item: ', OptionItem(number=11, name='Uri-Path', value_type=1, repeatable=True, default=None))
+2024-04-28 17:55:08,818 - MainThread - coapthon.server.coap - ERROR - receive_datagram - BAD REQUEST
+CoAP Server start on 0.0.0.0:5683
+['/basic', '/storage', '/child', '/separate', '/etag', '/', '/big', '/encoding', '/advancedSeparate', '/void', '/advanced', '/long', '/xml']
+Server Shutdown
+Exiting...
